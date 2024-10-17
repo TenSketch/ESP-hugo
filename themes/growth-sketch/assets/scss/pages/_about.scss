@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+
+.esp-evolution {
+    background-color: $light-clr;
+    padding: 5rem 0;
+    
+    h1, h2, h3 {
+      color: $secondary-clr;
+    }
+  
+    p {
+      color: $secondary-clr;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  
+    ul {
+      padding-left: 1.5rem;
+      list-style: none;
+  
+      li {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        position: relative;
+  
+        &:before {
+          content: "\2022";
+          color: $secondary-clr;
+          font-weight: bold;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1.5rem;
+        }
+      }
+    }
+  
+    .container {
+      max-width: 800px;
+    }
+  }
+  

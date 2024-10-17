@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="py-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center border-3 border-top border-bottom py-2">
+        <div class="col-auto">
+          <div class="d-flex align-items-center gap-2">
+            <!-- <img class="img-rouded img-profile" src="/images/logo.png" alt="profile picture Muralidharan"> -->
+            <p class="mb-0">Mr. Muralidharan</p>
+          </div>
+        </div>
+        <div class="col-auto">
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format ":date_long" }}
+          <small class="text-sm-end mb-0">
+            Published on
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </small>
+        </div>
+      </div>
+      <div class="row mt-4 mt-md-5">
+        <!-- <h1>{{ .Title }}</h1> -->
+        <div class="col-md-8 mx-auto">
+          {{ .Content }}
+          {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

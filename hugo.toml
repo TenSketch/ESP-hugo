@@ -1,0 +1,46 @@
+baseURL = "https://espeople.netlify.app/"
+languageCode = "en-us"
+title = "ESP | Energize, Synergize, People - Unlock Your Business Potential"
+theme = 'growth-sketch'
+[params]
+favicon = "/favicon.ico"
+description = "ESP (Energize, Synergize, People) helps businesses unlock their potential through innovative training, leadership development, and team-building solutions. Focused on enhancing organizational growth and performance through proven methods."
+keywords = "business training, leadership development, team building, organizational growth, corporate training, ESP, Energize Synergize People, business consulting, performance improvement"
+author = "Balachandiran - TenSketch"
+logo = "/images/logo.png"
+og_image = "/ogimage.jpg"
+[asset]
+  # Enable Hugo pipes for SCSS
+  enable = true
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "ESP Approach"
+    url = "/esp-approach"
+    weight = 2
+
+  [[menu.main]]
+    name = "Clientele Beneficiaries"
+    url = "/clientele-beneficiaries"
+    weight = 3
+
+  [[menu.main]]
+    name = "Other L&D Services"
+    url = "/other-L-and-D-services"
+    weight = 4
+
+  [[menu.main]]
+    name = "Career"
+    url = "/career"
+    weight = 5
+
+  [[menu.main]]
+    name = "Contact Us"
+    url = "/contact-us"
+    weight = 6

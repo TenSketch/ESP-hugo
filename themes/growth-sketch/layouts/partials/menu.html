@@ -1,0 +1,44 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand p-0" href="/">
+      <img src="/images/logo.png" alt="ESPeople logo" title="ESPeople logo">
+      <!-- <p>Logo URL: {{ .Site.Params.logo | absURL }}</p> -->
+      <span class="font-weight-bold h4">ESPeople</span>
+    </a>
+    <!-- <a class="navbar-brand" href="/">ESPeople</a> -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {{- with index site.Menus $menuID }}
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        {{- end }}
+      </ul>
+      <div class="d-flex align-items-center ms-3 d-none">
+        <p class="mb-0 me-3"><i class="fa-solid fa-mobile-screen-button me-2"></i><a
+            href="tel:+919962006364">9962006364</a></p>
+        <p class="mb-0"><i class="fa-regular fa-envelope me-2"></i><a
+            href="mailto:link2rmd@gmail.com">link2rmd@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+
+</script>

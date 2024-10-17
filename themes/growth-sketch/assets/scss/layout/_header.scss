@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+
+.navbar-brand{
+    img{
+        min-width: 60px;
+        width: 70px;
+        max-width: 80%;
+        flex-basis: 50%;
+    }
+}
+// .navbar {
+//     background-color: transparent;
+// }
+
+// .navbar-toggler {
+//     border: none;
+// }
+
+// .navbar-toggler-icon {
+//     background-image: url('hamburger-icon.svg');
+// }
+
+// .offcanvas {
+//     background-color: $dark-clr;
+//     color: $light-clr;
+// }
