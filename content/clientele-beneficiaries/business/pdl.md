@@ -1,7 +1,7 @@
 ---
 title: "People Developmental Learning (PDL)"
 date: 2024-10-17T14:37:47+05:30
-draft: false
+draft: true
 ---
 
 ## People Developmental Learning (PDL)

@@ -26,7 +26,7 @@ og_image = "/ogimage.jpg"
     weight = 2
 
   [[menu.main]]
-    name = "Clientele Beneficiaries"
+    name = "Clientele"
     url = "/clientele-beneficiaries"
     weight = 3
 
@@ -34,11 +34,6 @@ og_image = "/ogimage.jpg"
     name = "Other L&D Services"
     url = "/other-L-and-D-services"
     weight = 4
-
-  [[menu.main]]
-    name = "Career"
-    url = "/career"
-    weight = 5
 
   [[menu.main]]
     name = "Contact Us"

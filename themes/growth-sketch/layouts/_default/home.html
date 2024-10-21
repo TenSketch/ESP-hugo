@@ -9,8 +9,10 @@
               <p class="lead mt-3 mb-5">At ESPeople, we energize and synergize teams to achieve tactical and strategic
                   goals through collaborative efforts.</p>
               <div class="btn-row mt-2">
-                  <button class="btn btn-secondary">Discover Our Approach</button>
-                  <button class="btn btn-outline-secondary ms-md-3">Main features</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target ="#ourApproach">Know us</button>
+                <!-- <a href="#approach" class="btn btn-secondary">Discover us</a> -->
+                  <!-- <button class="btn btn-secondary">Discover Our Approach</button> -->
+                  <button class="btn btn-outline-secondary ms-md-3" >Main features</button>
               </div>
           </div>
           <div class="col-md-6 mt-5 mt-md-0">
@@ -22,9 +24,9 @@
 </section>
 
 <!-- Section 2- About us -->
-<section class="about-us py-5">
+<section class="about-us py-5 d-none">
   <div class="container text-center">
-    <h2 class="section-title mb-4">About Us</h2>
+    <h2 class="section-title mb-4">ESP Approach</h2>
     <div class="row justify-content-center">
       <!-- Who We Are -->
       <div class="col-md-4">
@@ -98,7 +100,7 @@
 </section>
 
 <!-- section 2- ESP - idea -->
-<section class="power-collaboration py-5 bg-dark text-white">
+<section id="approach" class="power-collaboration py-5 bg-dark text-white d-none">
   <div class="container">
       <!-- Title -->
       <h2 class="section-title mb-5 text-center ">ESP is our key</h2>
@@ -148,9 +150,10 @@
 
 <!-- section 3 - for whom we deliver -->
 
-<section class="training-section py-6">
+<section class="training-section py-6 d-none">
   <div class="container text-center">
       <!-- Title -->
+       <h4>Our Beneficiaries</h4>
       <h2 class="section-title mb-5">Who We Empower with ESP?</h2>
 
       <div class="row justify-content-around">
@@ -200,7 +203,7 @@
 </section>
 
 <!-- business organizations -->
-<section class="business-learning py-6 text-white">
+<section class="business-learning py-6 text-white d-none">
   <div class="container text-center">
       <!-- Title -->
       <h2 class="section-title mb-5">FOR BUSINESSES: Tailored Learning Programs</h2>
@@ -262,7 +265,7 @@
 
 <!-- why choose us -->
 
-<section class="why-choose-us py-5">
+<section class="why-choose-us py-5 d-none">
   <div class="container text-center">
     <!-- Title -->
     <h2 class="section-title mb-5">What Sets Us Apart – Energize & Synergize (ESP)</h2>
@@ -389,5 +392,36 @@
   </div>
 </section>
 
+
+<!-- bootstrap modal dialog box  -->
+ <!-- modal trigger btn -->
+ 
+ <div class="modal fade" id="ourApproach" tabindex="-1" aria-labelledby="exampleModalLabel" aria
+ hidden="true">
+ <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Our Approach</h5>
+    </div>
+    <div class="modal-body">
+      <h1 class="mb-4">The Evolution of ESPeople</h1>
+      <p>Every great organisation starts with a dream—a vision for achieving excellence. But to turn that vision into
+        reality, you need the right people who have the energy and ability to make things happen. That's where ESPeople
+        come in. We partner with organisations to develop and empower their teams, helping them turn their original dream
+        into reality and inspire new heights of success.</p>
+      <h2 class="mt-5 mb-3">ESP Vision & Mission</h2>
+        <h5 class="mb-4"><strong>Energize & Synergize People capabilities through effective learning interventions</strong></h5>
+        <!-- change font of above and below line -->
+        <h5 class="font-weight-bold"><strong>Be a best training service provider in enabling people</strong></h5>
+      </p>
+      <ul class="mt-4">
+        <li>To maximize their energy &</li>
+        <li>To effectively employ it in synergy with their team</li>
+        <li>Towards attaining organizational goals achievement</li>
+    </div>
+  </div>
+ </div>
+
+</div>
 
 {{ end }}
