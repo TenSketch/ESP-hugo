@@ -141,45 +141,87 @@
     }
 }
 
+.beneficiaries {
+  padding: 50px 0;
+  background-color: #000;
+  color: #fff;
 
+  .text-box {
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #000;
+    }
+  }
 
-.training-section {
-    background-color: $light-clr;
-    // padding: 2rem 0;
+  .beneficiary-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
 
-    .section-title {
-        font-size: 2.5rem;
-        color: #333;
+    img {
+      max-width: 100px;
+      margin-bottom: 15px;
     }
 
-    .neumorphic-card {
-        background: linear-gradient(145deg, $card-dark, $white);
-        box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
-        border-radius: 10px;
-        padding: 2rem;
-        transition: all 0.3s ease;
-        width: 85%;
-        margin-inline: auto;
-
-        h4 {
-            font-size: 1.5rem;
-            margin-block: 1rem;
-            color: #333;
-        }
-
-        p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        &:hover {
-            box-shadow: 10px 10px 30px $card-shadow-dark, -10px -10px 30px $card-shadow-light;
-            transform: scale(1.05);
-        }
+    h4 {
+      font-size: 1.25rem;
+      color: #fff;
     }
 
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
 
+  @media (max-width: 767px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
 }
+
+
+// .training-section {
+//     background-color: $light-clr;
+//     // padding: 2rem 0;
+
+//     .section-title {
+//         font-size: 2.5rem;
+//         color: #333;
+//     }
+
+//     .neumorphic-card {
+//         background: linear-gradient(145deg, $card-dark, $white);
+//         box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $card-shadow-light;
+//         border-radius: 10px;
+//         padding: 2rem;
+//         transition: all 0.3s ease;
+//         width: 85%;
+//         margin-inline: auto;
+
+//         h4 {
+//             font-size: 1.5rem;
+//             margin-block: 1rem;
+//             color: #333;
+//         }
+
+//         p {
+//             font-size: 1rem;
+//             color: #666;
+//         }
+
+//         &:hover {
+//             box-shadow: 10px 10px 30px $card-shadow-dark, -10px -10px 30px $card-shadow-light;
+//             transform: scale(1.05);
+//         }
+//     }
+
+
+// }
 
 // business org section
 .glassmorphism {

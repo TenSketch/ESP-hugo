@@ -7,6 +7,9 @@
 .mb-6 {
   margin-bottom: 6rem; }
 
+.icon {
+  width: 100px; }
+
 .attributions {
   opacity: 0.5; }
 
@@ -69,19 +72,19 @@ footer {
     border-color: #007BFF !important;
     color: #ff8400 !important; }
 
-.btn-outline-primary {
+.btn-primary-outline {
   background-color: transparent;
   color: #007BFF;
   border-color: #007BFF; }
-  .btn-outline-primary:hover {
+  .btn-primary-outline:hover {
     background-color: #007BFF !important;
     color: #ff8400 !important; }
-  .btn-outline-primary:focus-visible {
+  .btn-primary-outline:focus-visible {
     box-shadow: none;
     background-color: #007BFF !important;
     border-color: #007BFF !important;
     color: #ff8400 !important; }
-  .btn-outline-primary:active {
+  .btn-primary-outline:active {
     background-color: #007BFF !important;
     border-color: #007BFF !important;
     color: #ff8400 !important; }
@@ -103,19 +106,19 @@ footer {
     border-color: #2C2C2C !important;
     color: lightgray !important; }
 
-.btn-outline-secondary {
+.btn-secondary-outline {
   background-color: transparent;
   color: #2C2C2C;
   border-color: transparent; }
-  .btn-outline-secondary:hover {
+  .btn-secondary-outline:hover {
     background-color: #2C2C2C !important;
     color: lightgray !important; }
-  .btn-outline-secondary:focus-visible {
+  .btn-secondary-outline:focus-visible {
     box-shadow: none;
     background-color: #2C2C2C !important;
     border-color: #2C2C2C !important;
     color: lightgray !important; }
-  .btn-outline-secondary:active {
+  .btn-secondary-outline:active {
     background-color: #2C2C2C !important;
     border-color: #2C2C2C !important;
     color: lightgray !important; }
@@ -198,30 +201,32 @@ footer {
   .stage {
     min-height: 250px; } }
 
-.training-section {
-  background-color: #F4F4F9; }
-  .training-section .section-title {
-    font-size: 2.5rem;
-    color: #333; }
-  .training-section .neumorphic-card {
-    background: linear-gradient(145deg, #dcdce0, #fff);
-    box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #dcdce0;
-    border-radius: 10px;
-    padding: 2rem;
-    transition: all 0.3s ease;
-    width: 85%;
-    margin-inline: auto; }
-    .training-section .neumorphic-card h4 {
-      font-size: 1.5rem;
-      margin-block: 1rem;
-      color: #333; }
-    .training-section .neumorphic-card p {
-      font-size: 1rem;
-      color: #666; }
-    .training-section .neumorphic-card:hover {
-      box-shadow: 10px 10px 30px #cfcfd4, -10px -10px 30px #dcdce0;
-      transform: scale(1.05); }
-
+.beneficiaries {
+  padding: 50px 0;
+  background-color: #000;
+  color: #fff; }
+  .beneficiaries .text-box .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000; }
+  .beneficiaries .beneficiary-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease; }
+    .beneficiaries .beneficiary-card img {
+      max-width: 100px;
+      margin-bottom: 15px; }
+    .beneficiaries .beneficiary-card h4 {
+      font-size: 1.25rem;
+      color: #fff; }
+    .beneficiaries .beneficiary-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 767px) {
+    .beneficiaries .title {
+      font-size: 1.5rem; } }
 .glassmorphism {
   background: rgba(0, 123, 255, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
