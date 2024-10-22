@@ -184,6 +184,72 @@
   }
 }
 
+.evolution-vision-mission {
+  background: rgba(252, 252, 252, 0.5) url('/images/eye-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  // color: white;
+  padding: 100px 0;
+  min-height: 100vh;
+  .evolution-section {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 5px solid black;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+
+  .vision-mission-section {
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 1rem;
+      font-weight: 500;
+
+      li {
+        margin-bottom: 10px;
+        &::before {
+          content: "•";
+          // color: white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .vertical-divider {
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: auto;
+  }
+}
+
 
 // .training-section {
 //     background-color: $light-clr;

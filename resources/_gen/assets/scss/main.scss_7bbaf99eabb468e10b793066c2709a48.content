@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .pt-8 {
   padding-top: 8rem; }
 
@@ -227,6 +228,49 @@ footer {
   @media (max-width: 767px) {
     .beneficiaries .title {
       font-size: 1.5rem; } }
+.evolution-vision-mission {
+  background: rgba(252, 252, 252, 0.5) url("/images/eye-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 100px 0;
+  min-height: 100vh; }
+  .evolution-vision-mission .evolution-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 5px solid black;
+    padding-bottom: 5px; }
+  .evolution-vision-mission .evolution-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px; }
+  .evolution-vision-mission .evolution-section .btn {
+    font-size: 1rem;
+    padding: 10px 20px; }
+  .evolution-vision-mission .vision-mission-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .evolution-vision-mission .vision-mission-section p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 10px; }
+  .evolution-vision-mission .vision-mission-section ul {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500; }
+    .evolution-vision-mission .vision-mission-section ul li {
+      margin-bottom: 10px; }
+      .evolution-vision-mission .vision-mission-section ul li::before {
+        content: "•";
+        margin-right: 10px; }
+  .evolution-vision-mission .vertical-divider {
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: auto; }
+
 .glassmorphism {
   background: rgba(0, 123, 255, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
