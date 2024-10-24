@@ -1,6 +1,70 @@
 @import '../abstracts/variables';
 
 footer {
+}
+
+.footer {
   background-color: $secondary-clr;
   color: $light-clr;
+  // background-color: #222; // Dark background
+  padding: 40px 0;
+  // color: #fff; // White text
+  position: relative;
+  text-align: center;
+
+  // Footer logo styling
+  .footer-logo {
+      .logo-img {
+          max-width: 80px;
+          margin-bottom: 20px;
+      }
+  }
+  .nav{
+    @media(max-width:991px){
+      flex-direction: column;
+    }
+    .nav-item{      
+     text-align: center;
+    }
+  }
+
+  // Navigation Links
+  .nav-link {
+      color: #bbb;
+      margin: 0 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+
+      &:hover {
+          color: #fff; // Change color on hover
+      }
+  }
+
+  // Social Icons
+  .social-icons {
+      .social-link {
+          color: #bbb;
+          margin: 0 10px;
+          font-size: 24px;
+          transition: color 0.3s ease, transform 0.3s ease;
+
+          &:hover {
+              color: #fff;
+              transform: scale(1.2); // Enlarge icon on hover
+          }
+      }
+  }
+
+  // Copyright Text
+  .footer-copyright {
+      font-size: 14px;
+      margin-top: 20px;
+      // color: #666;
+      a{
+        color: $light-clr;
+      }
+  }
+  
 }
