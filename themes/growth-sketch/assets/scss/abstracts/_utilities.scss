@@ -6,11 +6,22 @@
 
 .py-6 {
     padding-block: map-get($sizes, 600);
-
+}
+.py-8{
+    padding-block: map-get($sizes, 800);
+}
+.py-evolve{
+    padding-block: map-get($sizes, 10000);
 }
 .mb-6{
     margin-bottom: map-get($sizes, 600);
 }
 .icon{
-    width: 100px;
+    width: 60px;
 }
+.neumorphism {
+    background: linear-gradient(145deg, $card-shadow-light, $white);
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $white;
+    // padding: 2rem;
+  }

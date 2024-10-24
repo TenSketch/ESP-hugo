@@ -5,11 +5,19 @@
 .py-6 {
   padding-block: 6rem; }
 
+.py-8 {
+  padding-block: 8rem; }
+
 .mb-6 {
   margin-bottom: 6rem; }
 
 .icon {
-  width: 100px; }
+  width: 60px; }
+
+.neumorphism {
+  background: linear-gradient(145deg, #dcdce0, #fff);
+  border-radius: 10px;
+  box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #fff; }
 
 .attributions {
   opacity: 0.5; }
@@ -22,7 +30,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-top: 13vh; }
 
 h1 {
   line-height: 1.3 !important; }
@@ -48,6 +57,13 @@ img {
   width: 70px;
   max-width: 80%;
   flex-basis: 50%; }
+
+.navbar {
+  height: 13vh; }
+
+@media (max-width: 991px) {
+  .nav-item {
+    text-align: right; } }
 
 footer {
   background-color: #2C2C2C;
@@ -142,98 +158,138 @@ footer {
     color: #0b0b06 !important; }
 
 .hero {
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 87vh; }
 
-.about-us {
-  background-color: #f4f4f9; }
-  .about-us .section-title {
-    font-size: 2rem;
-    color: #333; }
-  .about-us .info-box {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
-    .about-us .info-box h4 {
-      font-size: 1.5rem;
-      color: #007bff; }
-    .about-us .info-box p {
-      font-size: 1rem;
-      color: #666; }
+.carousel-indicators {
+  bottom: -20px;
+  /* Adjust position of the dots */ }
 
-.power-collaboration {
-  background-color: #f9f9f9; }
+.carousel-inner {
+  border-radius: 10px;
+  height: 400px;
+  /* Set a fixed height */ }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold; }
-
-.stage {
-  padding: 20px;
-  text-align: center; }
-
-.stage-icon {
-  width: 80px;
-  margin-bottom: 15px;
-  font-size: 5rem;
-  color: yellow; }
-
-.stage-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 15px; }
-
-.collaboration-img-container {
-  text-align: center; }
-
-.collaboration-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; }
-
-.cta a {
-  padding: 12px 30px;
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-@media (min-width: 768px) {
-  .stage {
-    min-height: 250px; } }
+.carousel-image {
+  min-height: 400px;
+  /* Make sure the image fills the height */
+  object-fit: cover;
+  /* Preserve aspect ratio and cover the area */ }
 
 .beneficiaries {
   padding: 50px 0;
-  background-color: #000;
+  background-color: #1e1e1e;
   color: #fff; }
-  .beneficiaries .text-box .title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000; }
+  .beneficiaries .text-box {
+    background-color: #F4F4F9; }
+    .beneficiaries .text-box .title {
+      color: #2C2C2C; }
+
+@keyframes slideInFromRight {
+  0% {
+    left: -100%;
+    /* Start offscreen */
+    opacity: 0;
+    /* Invisible initially */ }
+  100% {
+    left: 50%;
+    /* Final position */
+    opacity: 1;
+    /* Fully visible */ } }
   .beneficiaries .beneficiary-card {
-    background-color: #2e2e2e;
-    padding: 20px;
-    border-radius: 15px;
+    background: linear-gradient(145deg, #191919, #1e1e1e);
     text-align: center;
-    transition: all 0.3s ease; }
-    .beneficiaries .beneficiary-card img {
-      max-width: 100px;
-      margin-bottom: 15px; }
-    .beneficiaries .beneficiary-card h4 {
-      font-size: 1.25rem;
-      color: #fff; }
+    transition: all 0.3s ease;
+    position: relative;
+    /* For icon animation */
+    overflow: hidden;
+    /* Ensure nothing overflows */
+    height: 200px;
+    /* Hover effect for subtle change */
+    /* Icon styling and slide-in animation */ }
     .beneficiaries .beneficiary-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); }
+      border-radius: 10px;
+      background: linear-gradient(145deg, #191919, #1e1e1e);
+      box-shadow: 20px 20px 60px #181818, -20px -20px 60px #474747; }
+    .beneficiaries .beneficiary-card i {
+      color: #007BFF;
+      font-size: 4rem;
+      position: absolute;
+      top: 50%;
+      left: -100%;
+      /* Initially positioned offscreen */
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      /* Hidden initially */
+      animation: slideInFromRight 0.8s ease forwards;
+      /* Trigger animation */
+      animation-delay: 0.5s;
+      /* Delay to ensure smooth entry */ }
   @media (max-width: 767px) {
     .beneficiaries .title {
       font-size: 1.5rem; } }
+.industry-section {
+  position: relative;
+  padding: 4rem 0;
+  /* Wave Shape */
+  /* Blob Shape */ }
+  .industry-section .industry-title {
+    font-size: 2rem;
+    font-weight: bold; }
+  .industry-section .industry-programs {
+    list-style: none;
+    padding: 0; }
+    .industry-section .industry-programs li {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem; }
+      .industry-section .industry-programs li i {
+        color: #007BFF;
+        margin-right: 0.5rem; }
+  .industry-section .stats {
+    font-size: 1.1rem; }
+    .industry-section .stats i {
+      color: #007BFF;
+      margin-right: 0.5rem; }
+  .industry-section .industry-icon {
+    width: 70%;
+    margin-inline: auto;
+    display: block; }
+  .industry-section .wave-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(/img/wave.svg) no-repeat;
+    background-size: cover; }
+  .industry-section .blob-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background: url("img/blob-shape.svg") no-repeat;
+    background-size: contain; }
+
 .evolution-vision-mission {
-  background: rgba(252, 252, 252, 0.5) url("/images/eye-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  background-blend-mode: overlay;
-  padding: 100px 0;
-  min-height: 100vh; }
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 9rem 0;
+  border-radius: 10px; }
+  .evolution-vision-mission::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background: url("/images/wave.svg") no-repeat bottom;
+    background-size: cover;
+    z-index: 1; }
+  .evolution-vision-mission .content {
+    position: relative;
+    z-index: 2; }
   .evolution-vision-mission .evolution-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -271,59 +327,20 @@ footer {
     background-color: rgba(255, 255, 255, 0.6);
     margin: auto; }
 
-.glassmorphism {
-  background: rgba(0, 123, 255, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 10px; }
-
-.business-learning {
-  background: url(/images/dark-blue-bg-with-circles-3.png) no-repeat center center fixed;
-  background-size: cover; }
-  .business-learning .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem; }
-  .business-learning .learning-card {
-    border-radius: 10px;
-    padding: 2rem;
-    transition: transform 0.3s ease; }
-    .business-learning .learning-card h4 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem; }
-    .business-learning .learning-card .learning-question {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem; }
-    .business-learning .learning-card .learning-solution {
-      font-size: 1rem; }
-    .business-learning .learning-card .learning-img {
-      height: 300px;
-      aspect-ratio: 2/1;
-      margin-inline: auto;
-      object-fit: cover;
-      border-radius: 10px; }
-    .business-learning .learning-card:hover {
-      transform: scale(1.05); }
-  .business-learning .cta {
-    margin-top: 3rem; }
-
 .why-choose-us {
   background-color: #F4F4F9; }
   .why-choose-us .section-title {
     font-size: 2.5rem;
     margin-bottom: 3rem; }
   .why-choose-us .neumorphic-card {
-    background: linear-gradient(145deg, #dcdce0, #ffffff);
-    border-radius: 10px;
-    box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
     padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%; }
     .why-choose-us .neumorphic-card h4 {
       font-size: 1.75rem;
       margin-bottom: 1rem; }
-    .why-choose-us .neumorphic-card p, .why-choose-us .neumorphic-card ul {
+    .why-choose-us .neumorphic-card p,
+    .why-choose-us .neumorphic-card ul {
       font-size: 1rem;
       color: #333;
       text-align: left; }
@@ -335,46 +352,6 @@ footer {
     .why-choose-us .neumorphic-card:hover {
       transform: scale(1.05);
       box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5); }
-
-.faq-section {
-  background-color: #F4F4F9; }
-  .faq-section .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #333; }
-  .faq-section .accordion-item {
-    background: linear-gradient(145deg, #dcdce0, #ffffff);
-    border-radius: 50px;
-    box-shadow: 20px 20px 60px #cfcfd4, -20px -20px 60px #ffffff;
-    margin-bottom: 1rem; }
-    .faq-section .accordion-item .accordion-button {
-      border-radius: 50px;
-      padding: 1rem 1.5rem;
-      background: none;
-      color: #333;
-      font-size: 1.1rem;
-      transition: box-shadow 0.3s ease; }
-      .faq-section .accordion-item .accordion-button:focus {
-        box-shadow: none; }
-      .faq-section .accordion-item .accordion-button::after {
-        background-image: none;
-        content: '\f078';
-        /* Font Awesome chevron down icon */
-        font-family: "FontAwesome";
-        font-size: 1rem;
-        color: #333;
-        margin-left: auto; }
-      .faq-section .accordion-item .accordion-button.collapsed::after {
-        content: '\f054';
-        /* Font Awesome chevron right icon */ }
-    .faq-section .accordion-item .accordion-body {
-      background-color: #ffffff;
-      padding: 1.25rem;
-      font-size: 1rem;
-      color: #666; }
-    .faq-section .accordion-item:hover {
-      transform: scale(1.02);
-      box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.1), -25px -25px 75px rgba(255, 255, 255, 0.5); }
 
 .contact-section {
   background-color: #F4F4F9;
@@ -456,6 +433,7 @@ footer {
         color: #007BFF;
         margin-right: 0.5rem; }
     .industries-we-serve .industry-section .industry-icon {
+      width: 70%;
       margin-bottom: 2rem; }
     .industries-we-serve .industry-section .wave-shape {
       position: absolute;

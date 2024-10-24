@@ -8,9 +8,10 @@
         flex-basis: 50%;
     }
 }
-// .navbar {
-//     background-color: transparent;
-// }
+.navbar {
+    height: 13vh;
+    // background-color: transparent;
+}
 
 // .navbar-toggler {
 //     border: none;
@@ -24,3 +25,10 @@
 //     background-color: $dark-clr;
 //     color: $light-clr;
 // }
+
+.nav-item{
+    @media(max-width:991px){
+        text-align: right;
+    }
+}
+

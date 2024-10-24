@@ -31,7 +31,7 @@ og_image = "/ogimage.jpg"
     weight = 3
 
   [[menu.main]]
-    name = "Other L&D Services"
+    name = "Other L&D"
     url = "/other-L-and-D-services"
     weight = 4
 
