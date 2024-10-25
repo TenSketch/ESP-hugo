@@ -7,21 +7,38 @@
 .py-6 {
     padding-block: map-get($sizes, 600);
 }
-.py-8{
+
+.py-8 {
     padding-block: map-get($sizes, 800);
 }
-.py-evolve{
+
+.py-evolve {
     padding-block: map-get($sizes, 10000);
 }
-.mb-6{
+
+.mb-6 {
     margin-bottom: map-get($sizes, 600);
 }
-.icon{
+
+.icon {
     width: 60px;
 }
+
 .neumorphism {
     background: linear-gradient(145deg, $card-shadow-light, $white);
     border-radius: 10px;
     box-shadow: 20px 20px 60px $card-shadow-dark, -20px -20px 60px $white;
     // padding: 2rem;
-  }
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.bg-primary {
+    background-color: $primary-clr;
+}
+
+.text-primary {
+    color: $primary-clr;
+}

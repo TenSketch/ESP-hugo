@@ -11,3 +11,6 @@ Photo by Kampus Production: https://www.pexels.com/photo/people-having-a-meeting
 
 option 4 - graph bg
 Photo by Artem Podrez: https://www.pexels.com/photo/a-man-in-black-suit-jacket-talking-to-a-group-of-people-sitting-with-him-5716015/
+
+slider govt
+Photo by Maahid Photos: https://www.pexels.com/photo/rashtrapati-bhavan-in-delhi-3881113/

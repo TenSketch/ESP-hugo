@@ -27,6 +27,9 @@
 // }
 
 .nav-item{
+    .nav-link, .dropdown-item{
+        color: $primary-clr;
+    }
     @media(max-width:991px){
         text-align: right;
     }

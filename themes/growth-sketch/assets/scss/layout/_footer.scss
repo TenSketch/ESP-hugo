@@ -30,7 +30,7 @@ footer {
 
   // Navigation Links
   .nav-link {
-      color: #bbb;
+      color: $accent-clr;
       margin: 0 15px;
       text-transform: uppercase;
       font-weight: 500;
@@ -45,7 +45,7 @@ footer {
   // Social Icons
   .social-icons {
       .social-link {
-          color: #bbb;
+          color: $accent-clr;
           margin: 0 10px;
           font-size: 24px;
           transition: color 0.3s ease, transform 0.3s ease;
@@ -63,7 +63,11 @@ footer {
       margin-top: 20px;
       // color: #666;
       a{
-        color: $light-clr;
+        color: $accent-clr;
+        // transition: text-decoration 2000ms ease;
+        &:hover{
+          text-decoration: underline;
+        }
       }
   }
   

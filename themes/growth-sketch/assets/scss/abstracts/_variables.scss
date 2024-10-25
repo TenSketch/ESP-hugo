@@ -1,11 +1,21 @@
 // Colors
-$primary-clr: #007BFF;
-$secondary-clr: #2C2C2C;
+// $secondary-clr: #2C2C2C;
 $white: #fff;
 $black: #000;
 $dark-clr: #2C2C2C;
-$light-clr: #F4F4F9;
 $text-dark: hsl(240, 29%, 07%);
+
+
+/* SCSS HSL */
+$primary-clr: hsla(194, 86%, 36%, 1);
+$secondary-clr: hsla(200, 57%, 9%, 1);
+$light-clr: hsla(195, 33%, 98%, 1);
+$primary-clr--dark: hsla(206, 79%, 17%, 1);
+$charcoal: hsla(198, 18%, 29%, 1);
+$accent-clr: hsl(45, 100%, 51%);
+
+$primary-clr: hsla(210, 100%, 25%, 1);
+$accent-clr: hsla(36, 100%, 50%, 1);
 
 // cards
 $card-dark: #dcdce0;

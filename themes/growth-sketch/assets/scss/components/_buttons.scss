@@ -58,7 +58,7 @@
 .btn-secondary-outline {
   background-color: transparent;
   color: $secondary-clr;
-  border-color: transparent;
+  border-color: $secondary-clr;
 
   @include btn-state($secondary-clr); // Use the secondary color for inversion
 }

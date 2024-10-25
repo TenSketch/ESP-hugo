@@ -22,7 +22,7 @@ Renders a menu for the given menu ID.
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse bg-light" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         {{- with index site.Menus $menuID }}
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
