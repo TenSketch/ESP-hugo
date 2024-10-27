@@ -1,37 +1,43 @@
 @import '../abstracts/variables';
 
-.navbar-brand{
-    img{
-        min-width: 60px;
-        width: 70px;
-        max-width: 80%;
-        flex-basis: 50%;
-    }
-}
 .navbar {
-    height: 13vh;
-    // background-color: transparent;
-}
+    height: $navbar-height;
 
-// .navbar-toggler {
-//     border: none;
-// }
+    .navbar-brand {
+        img {
+            width: clamp(50px, 60px, 12vw);
+        }
 
-// .navbar-toggler-icon {
-//     background-image: url('hamburger-icon.svg');
-// }
-
-// .offcanvas {
-//     background-color: $dark-clr;
-//     color: $light-clr;
-// }
-
-.nav-item{
-    .nav-link, .dropdown-item{
-        color: $primary-clr;
+        .brand-name {
+            font-size: min(0.8rem, 1rem);
+        }
     }
-    @media(max-width:991px){
-        text-align: right;
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-collapse {
+        @media(max-width:768px) {
+            position: absolute;
+            top: $navbar-height;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    // .navbar-toggler-icon {
+    //     background-image: url('hamburger-icon.svg');
+    // }
+    .nav-item {
+
+        .nav-link,
+        .dropdown-item {
+            color: $primary-clr;
+        }
+
+        @media(max-width:991px) {
+            text-align: right;
+        }
     }
 }
-

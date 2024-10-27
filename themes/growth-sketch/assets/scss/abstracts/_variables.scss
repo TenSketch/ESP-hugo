@@ -40,3 +40,4 @@ $sizes: (); // An empty map to store the size values
   // Store the sizes in the map
   $sizes: map-merge($sizes, ($size: $size-value));
 }
+$navbar-height: 10vh

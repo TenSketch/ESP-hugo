@@ -1,23 +1,23 @@
 {{ define "main" }}
 <!-- Section 1- Hero -->
-<section class="hero d-flex align-items-center py-8 px-4 px-md-0 bg-primary text-light">
+<section class="hero d-flex align-items-center pt-0 pt-md-3 pb-3  bg-primary text-light">
   <div class="container text-center text-md-start">
     <div class="row align-items-center justify-content-between">
-      <div class="col-md-5 mt-5 mt-md-0">
+      <div class="col-md-5 mt-3 mt-md-0">
         <h1 class="display-5 mb-2">Is your business/organization struggling to achieve its' goals and to energize your
           team?</h1>
           <em>At ESPeople, we energize and synergize your teams to achieve tactical and strategic goals through collaborative efforts.</em>
-          <p class="mt-3">We integrate your teams full collective potentials and optimize your management & leadership capabilities towards mission accomplishments</p>
+          <p class="mt-2 mt-md-3 mb-0">We integrate your teams full collective potentials and optimize your management & leadership capabilities towards mission accomplishments</p>
         <!-- <p class="mt-3">At ESPeople, we energize and synergize people. We integrate your teams' full collective
           potentials and optimize your management & leadership towards mission accomplishments</p> -->
         <em>Thus we are ESPeople Trainingsmiths</em> 
-        <div class="btn-row mt-4 d-none">
+        <div class="btn-row mt-2 mt-md-3 d-none">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ourApproach">Know
             us</button>
           <!-- <button class="btn btn-secondary-outline ms-md-3">Main features</button> -->
         </div>
       </div>
-      <div class="col-md-6 order-first order-md-2">
+      <div class="col-md-6 order-first order-md-2 px-0 px-md-2">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -32,8 +32,14 @@
                 <h5>ESP Non-Profit</h5>
               </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <img src="/images/hero-img-3.jpg" class="d-block w-100 carousel-image neumorphism " alt="Third Image">
+              <div class="carousel-caption d-md-block bg-dark py-1 rounded-2 opacity-50">
+                <h5>ESP Education</h5>
+              </div>
+            </div> -->
+            <div class="carousel-item">
+              <img src="/images/education-img-1.jpeg" class="d-block w-100 carousel-image neumorphism " alt="Third Image">
               <div class="carousel-caption d-md-block bg-dark py-1 rounded-2 opacity-50">
                 <h5>ESP Education</h5>
               </div>
@@ -50,6 +56,7 @@
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
           </div>
         </div>
       </div>
@@ -60,7 +67,7 @@
 <!-- <hr class="text-center section-divider mx-auto"> -->
 
 <!-- section 2 - for whom we deliver -->
-<section class="beneficiaries py-4 px-4 px-md-0">
+<section class="beneficiaries py-5 px-4 px-md-0">
   <div class="container">
     <div class="row align-items-center justify-content-around">
       <!-- Left Section (Text) -->
@@ -251,6 +258,49 @@
   </div>
   </div>
 </section>
+
+<!-- learning model flower blossom animation section -->
+<div class="learning-model-container">
+  <div class="my-4 text-center">
+    <h1 class="my-3">ESP Learning model</h1>
+    <a class="btn btn-primary" onclick="nextStage('awareness')">Start Learning</a>
+  </div>
+  <div class="stage awareness" onclick="nextStage('understanding')">
+    <img src="/images/bud.png" alt="Awareness Bud">
+    <p>Awareness</p>
+  </div>
+  <div class="stage understanding" onclick="nextStage('learning')">
+    <img src="/images/leaf-small.png" alt="Understanding Leaf">
+    <p>Understanding</p>
+  </div>
+  <div class="stage learning" onclick="nextStage('realization')">
+    <img src="/images/leaf-medium.png" alt="Learning Leaf">
+    <p>Learning</p>
+  </div>
+  <div class="stage realization" onclick="nextStage('habitualization')">
+    <img src="/images/leaf-large.png" alt="Realization Leaf">
+    <p>Realization</p>
+  </div>
+  <div class="stage habitualization">
+    <img src="/images/flower.png" alt="Habitualization Flower">
+    <p>Habitualization</p>
+  </div>
+</div>
+<script>
+  function nextStage(nextStageClass) {
+    // Reset all stages
+    document.querySelectorAll('.stage').forEach(stage => {
+      stage.classList.remove('active');
+    });
+
+    // Activate the next stage
+    const nextStageElement = document.querySelector(`.${nextStageClass}`);
+    nextStageElement.classList.add('active');
+
+    // Scroll to the activated stage
+    nextStageElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+</script>
 
 <!-- esp core belief and learning model -->
 <section class="why-choose-us py-8">

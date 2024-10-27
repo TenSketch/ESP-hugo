@@ -2,6 +2,10 @@
 
 html {
     scroll-behavior: smooth;
+
+    @media(max-width:425px){
+        font-size: 14px;
+    }
 }
 
 body {
@@ -10,7 +14,7 @@ body {
     overflow-x: hidden;
     // padding-top: $navbar-height;
     // scroll-padding: map-get($sizes, 600)
-    padding-top: 13vh;
+    padding-top: $navbar-height;
 }
 
 h1 {
