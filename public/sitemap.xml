@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://espeople.netlify.app/clientele-beneficiaries/business/</loc>
+    <loc>https://espeople.netlify.app/clientele-beneficiaries/esp-business/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
     <loc>https://espeople.netlify.app/career/</loc>
@@ -11,19 +11,19 @@
     <loc>https://espeople.netlify.app/contact-us/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
-    <loc>https://espeople.netlify.app/clientele-beneficiaries/education/</loc>
+    <loc>https://espeople.netlify.app/clientele-beneficiaries/esp-education/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
     <loc>https://espeople.netlify.app/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
-    <loc>https://espeople.netlify.app/clientele-beneficiaries/focussed-individual-clientele/</loc>
+    <loc>https://espeople.netlify.app/clientele-beneficiaries/esp-focussed-individuals/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
-    <loc>https://espeople.netlify.app/clientele-beneficiaries/government-organizations/</loc>
+    <loc>https://espeople.netlify.app/clientele-beneficiaries/esp-government/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
-    <loc>https://espeople.netlify.app/clientele-beneficiaries/ngo/</loc>
+    <loc>https://espeople.netlify.app/clientele-beneficiaries/esp-non-profit/</loc>
     <lastmod>2024-10-17T14:37:47+05:30</lastmod>
   </url><url>
     <loc>https://espeople.netlify.app/other-l-and-d-services/</loc>
@@ -32,7 +32,7 @@
     <loc>https://espeople.netlify.app/clientele-beneficiaries/</loc>
     <lastmod>2024-10-17T14:37:45+05:30</lastmod>
   </url><url>
-    <loc>https://espeople.netlify.app/esp-approach/</loc>
+    <loc>https://espeople.netlify.app/about-us-esp-approach/</loc>
     <lastmod>2024-10-17T14:37:44+05:30</lastmod>
   </url><url>
     <loc>https://espeople.netlify.app/categories/</loc>

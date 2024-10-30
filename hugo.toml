@@ -22,13 +22,38 @@ og_image = "/ogimage.jpg"
 
   [[menu.main]]
     name = "ESP Approach"
-    url = "/esp-approach"
+    url = "/about-us-esp-approach"
     weight = 2
 
   [[menu.main]]
     name = "Clientele"
     url = "/clientele-beneficiaries"
     weight = 3
+
+    [[menu.main]]
+      name = "ESP Business"
+      url = "/clientele-beneficiaries/esp-business"
+      parent = "Clientele"
+      weight = 1
+
+    [[menu.main]]
+      name = "ESP Government"
+      url = "/clientele-beneficiaries/esp-government"
+      parent = "Clientele"
+      weight = 2
+
+    [[menu.main]]
+      name = "ESP Non-Profit"
+      url = "/clientele-beneficiaries/esp-non-profit"
+      parent = "Clientele"
+      weight = 3
+
+    [[menu.main]]
+      name = "ESP Education"
+      url = "/clientele-beneficiaries/esp-education"
+      parent = "Clientele"
+      weight = 4
+
 
   [[menu.main]]
     name = "Other L&D"
