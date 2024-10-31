@@ -1,8 +1,8 @@
 @import '../abstracts/variables';
 // hero
 .hero {
-  background-color: $white;
-  $hero-height: calc(100vh - #{$navbar-height});
+  // background-color: $white;
+  $hero-height: calc(70vh - #{$navbar-height});
   min-height: $hero-height;
   h1{
     @media(max-width:768px){
@@ -25,7 +25,7 @@
       /* Preserve aspect ratio and cover the area */
       &.neumorphism{
         @media(max-width:768px){
-          height: 400px;
+          // height: calc(#{$hero-height}/2);
           border-radius: 0;
         }
       }
@@ -58,21 +58,22 @@
     align-items: center;
     margin-inline:auto;
     @media(max-width:425px){
-      width:  30vw;
-      height: 30vw;
+      width:  40vw;
+      height: 40vw;
 
     }
   
     // Icon styling
     i {
       color: $accent-clr;
-      font-size: clamp(1rem, 4vw, 48px);
+      font-size: clamp(3rem, 4vw, 48px);
     }
   
     p {
       color: $light-clr;
-      font-size: clamp(0.6rem, 4vw, 0.9rem);
+      font-size: clamp(1rem, 4vw, 0.9rem);
       text-align: center;
+      margin-top: 5px;
     }
   }
   
@@ -86,6 +87,11 @@
   .industry-title {
     // font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    @media(max-width:768px){
+      font-size: 1.5rem;
+    }
   }
 
   .industry-icon {
@@ -97,7 +103,19 @@
       width: 50%;
     }
   }
-
+ i{
+  color: $accent-clr;
+  margin-right: 1rem;
+  background-color: $secondary-clr;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 }
 
 .evolution-vision-mission {

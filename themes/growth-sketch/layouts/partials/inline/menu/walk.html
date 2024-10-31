@@ -16,7 +16,7 @@
         <a class="nav-link dropdown-toggle pb-0" href="#" id="navbarDropdown-{{ .Name | urlize }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{ .Name }}
         </a>
-        <ul class="dropdown-menu border-0 bg-light end-0 pt-0 mt-0" aria-labelledby="navbarDropdown-{{ .Name | urlize }}">
+        <ul class="dropdown-menu border-0 bg-light end-0 text-end text-md-start" aria-labelledby="navbarDropdown-{{ .Name | urlize }}">
           {{- range .Children }}
             <!-- No deeper nesting allowed; only first-level items -->
             <li>

@@ -1,41 +1,104 @@
 @import '../abstracts/variables';
+$background-clr: #fffceb;
+$image-bg: hsla(45, 100%, 51%, 0.351);
 
 .esp-evolution {
-    background-color: $light-clr;
-    padding: 5rem 0;
-    
-    h1, h2, h3 {
-      color: $secondary-clr;
-    }
-  
-    p {
-      color: $secondary-clr;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-  
-    ul {
-      padding-left: 1.5rem;
-      list-style: none;
-  
-      li {
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        position: relative;
-  
-        &:before {
-          content: "\2022";
-          color: $secondary-clr;
-          font-weight: bold;
-          display: inline-block;
-          width: 1rem;
-          margin-left: -1.5rem;
-        }
+  background-color: $light-clr;
+  padding: 5rem 0;
+
+  h1,
+  h2,
+  h3 {
+    color: $secondary-clr;
+  }
+
+  p {
+    color: $secondary-clr;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    list-style: none;
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      position: relative;
+
+      &:before {
+        content: "\2022";
+        color: $secondary-clr;
+        font-weight: bold;
+        display: inline-block;
+        width: 1rem;
+        margin-left: -1.5rem;
       }
     }
-  
-    .container {
-      max-width: 800px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+}
+
+.learning-section {
+  // padding: 3rem;
+  background-color: $background-clr;
+
+  .text-content {
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: $secondary-clr;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .view-more-btn {
+      background-color: $accent-clr;
+      color: #fff;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($accent-clr, 10%);
+      }
     }
   }
-  
+
+  .image-content {
+    display: flex;
+    justify-content: center;
+
+    .image-wrapper {
+      position: relative;
+      background-color: $image-bg;
+      padding: 1rem;
+      clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 18% 100%, 0% 35%);
+      // display: inline-flex;
+      // align-items: center;
+      // justify-content: center;
+      // border-radius: 10px;
+      // overflow: hidden;
+      width: 300px;
+@media(min-width:768px){
+      transform: rotate(-10deg);
+
+}
+      img {
+        // width: 100%;
+        // border-radius: 5px;
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@
 </section>
 {{ if eq .Params.layout "about" }}
 
-<section class="esp-evolution pb-5">
+<section class="esp-evolution pb-5 d-none">
   <div class="container">
     <div class="d-none">
       
@@ -86,7 +86,107 @@
   </div>
 </section>
 
+<!-- Section 2- About us -->
+<section class="about-us py-5 d-none">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">About us</h2>
+    <div class="row justify-content-center">
+      <!-- Who We Are -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>Who We Are</h4>
+          <p>At ESPeople, we are a team of heart-centric Trainingsmiths (trainers), bringing the desired catalytic
+            change in line with your organizational aspirations through people enablement.</p>
+        </div>
+      </div>
+      <!-- What We Do -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>What We Do</h4>
+          <p>We deliver transformative, contemporary People Developmental Learning for desired results. These programs
+            enhance executive and managerial productivity with leadership optimization for your organization. This
+            facilitates desired organizational ranking within your industry through your people.</p>
+        </div>
+      </div>
+      <!-- How We Do It -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>How We Do It</h4>
+          <p>We simply ENERGIZE your people's capabilities and then SYNERGIZE them with their core team for high
+            performance.<br>Thus, we are ESPeople Trainingsmiths.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Know more Button -->
+    <div class="mt-4">
+      <a href="about-us.html" class="btn btn-primary">Know more</a>
+    </div>
+  </div>
+</section>
+
+<section class="learning-section px-3 py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">About ESPeople</h1>
+
+    <div class="row align-items-center">
+        <div class="col-md-6 text-content mt-5 mt-md-0">
+            <h2>Who We Are</h2>
+            <p>At ESPeople, we are a team of heart-centric Trainingsmiths (trainers), bringing the desired catalytic
+              change in line with your organizational aspirations through people enablement.</p>
+            <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+        </div>
+        <div class="col-md-6 image-content order-first order-md-2">
+            <!-- <div class="image-wrapper"> -->
+                <img src="/images/who-we-are.png" alt="Student Image" class="image-wrapper">
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6 text-content mt-5 mt-md-0">
+          <h2>What We Do</h2>
+          <p>We deliver transformative, contemporary People Developmental Learning for desired results. These programs
+            enhance executive and managerial productivity with leadership optimization for your organization. This
+            facilitates desired organizational ranking within your industry through your people.</p>
+          <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+      </div>
+      <div class="col-md-6 image-content order-first">
+          <!-- <div class="image-wrapper"> -->
+              <img src="/images/what-we-do.png" alt="Student Image" class="image-wrapper">
+          <!-- </div> -->
+      </div>
+  </div>
+  <div class="row align-items-center mt-5">
+    <div class="col-md-6 text-content mt-5 mt-md-0">
+      <h2>How We Do It</h2>
+          <p>We simply ENERGIZE your people's capabilities and then SYNERGIZE them with their core team for high
+            performance.<br>Thus, we are ESPeople Trainingsmiths.</p>
+        <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+    </div>
+    <div class="col-md-6 image-content order-first order-md-2">
+        <!-- <div class="image-wrapper"> -->
+            <img src="/images/how-we-do.png" alt="Student Image" class="image-wrapper">
+        <!-- </div> -->
+    </div>
+</div>
+  </div>
+</section>
+
+
 {{ end }}
+
+<!-- layout "approach" -->
+{{ if eq .Params.layout "approach" }}
+ <section class="approach py-8 bg-primary--light px-4 px-md-0">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 mx-auto mt-5 mt-md-4">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+ </section>
+{{ end }}
+ 
 <!-- layout 'contact' -->
 {{ if eq .Params.layout "contact" }}
 
@@ -172,7 +272,7 @@
 <!-- layout otherLD -->
 {{ if eq .Params.layout "other" }}
 
-<section class="otherLD">
+<section class="otherLD  py-8 bg-primary--light px-4 px-md-0">
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">

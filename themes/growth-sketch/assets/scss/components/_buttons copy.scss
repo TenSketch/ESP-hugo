@@ -1,0 +1,77 @@
+@import '../abstracts/variables';
+$btn-primary--clr: hsl($hue-primary, $saturation-primary,55%);
+
+
+// Mixin to handle button states with color inversion
+@mixin btn-state($color) {
+  &:hover {
+    background-color: $color !important;
+    // color: invert($color) !important;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+    background-color: $color !important;
+    border-color: $color !important;
+    color: invert($color) !important;
+  }
+
+  &:active {
+    background-color: $color !important;
+    border-color: $color !important;
+    color: invert($color) !important;
+  }
+}
+
+// Base button styles
+.btn {
+  padding: 0.6em 1.2em;
+  // margin: 1rem;
+}
+
+// Primary button
+.btn-primary {
+  background-color: $btn-primary--clr;
+  border-color: $btn-primary--clr;
+  color: $white;
+
+  @include btn-state($btn-primary--clr); // Pass the primary color to the mixin
+  &--outline_none{
+    border: none;
+  }
+}
+
+// Outline Primary button
+.btn-primary--outline {
+  background-color: transparent;
+  color: $btn-primary--clr;
+  border-color: $btn-primary--clr;
+
+  @include btn-state($btn-primary--clr); // Use the primary color for inversion
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: $secondary-clr;
+  border-color: $secondary-clr;
+  color: $white;
+
+  @include btn-state($secondary-clr); // Pass the secondary color to the mixin
+}
+
+// Outline Secondary button
+.btn-secondary--outline {
+  background-color: transparent;
+  color: $secondary-clr;
+  border-color: $secondary-clr;
+
+  @include btn-state($secondary-clr); // Use the secondary color for inversion
+}
+
+// .btn-light
+.btn-light {
+  background-color: $light-clr;
+  border-color: $light-clr;
+  color: $dark-clr;
+  @include btn-state($light-clr);
+}

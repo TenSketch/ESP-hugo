@@ -9,7 +9,7 @@
         }
 
         .brand-name {
-            font-size: min(0.8rem, 1rem);
+            font-size: min(1rem, 1.1rem);
         }
     }
 
@@ -30,6 +30,9 @@
     //     background-image: url('hamburger-icon.svg');
     // }
     .nav-item {
+        .dropdown-menu{
+            min-width: fit-content;
+        }
 
         .nav-link,
         .dropdown-item {

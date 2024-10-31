@@ -21,9 +21,21 @@ og_image = "/ogimage.jpg"
     weight = 1
 
   [[menu.main]]
-    name = "ESP Approach"
-    url = "/about-us-esp-approach"
+    name = "About"
+    url = "/about-us"
     weight = 2
+    
+    [[menu.main]]
+      name = "About us"
+      url = "/about-us"
+      parent = "About"
+      weight = 1
+
+    [[menu.main]]
+      name = "ESP Approach"
+      url = "/esp-approach"
+      parent = "About"
+      weight = 1
 
   [[menu.main]]
     name = "Clientele"
@@ -54,9 +66,15 @@ og_image = "/ogimage.jpg"
       parent = "Clientele"
       weight = 4
 
+    [[menu.main]]
+      name = "ESP Focused individuals"
+      url = "/clientele-beneficiaries/esp-focussed-individuals"
+      parent = "Clientele"
+      weight = 5
+
 
   [[menu.main]]
-    name = "Other L&D"
+    name = "Other L&D Services"
     url = "/other-L-and-D-services"
     weight = 4
 
