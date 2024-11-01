@@ -2,7 +2,7 @@
 // hero
 .hero {
   // background-color: $white;
-  $hero-height: calc(70vh - #{$navbar-height});
+  $hero-height: calc(100vh - #{$navbar-height});
   min-height: $hero-height;
   h1{
     @media(max-width:768px){
@@ -12,15 +12,16 @@
   }
   .carousel-inner {
     /* Set a fixed height */
-    height: calc(#{$hero-height}/2);
+    height: calc(#{$hero-height} - 10%);
     @media(min-width:768px){
-      height: 400px;
+      // height: 400px;
       border-radius: 10px;
 
     }
     .carousel-image {
       /* Make sure the image fills the height */
-      height: calc(#{$hero-height}/2);
+      // height: calc(#{$hero-height} - 10% );
+      height: 400px;
       object-fit: cover;
       /* Preserve aspect ratio and cover the area */
       &.neumorphism{
