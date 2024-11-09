@@ -1,17 +1,26 @@
 // Colors
+// Primary
 $hue-primary: 210;
 $saturation-primary: 100%;
 $lightness-primary: 25%;
 $color-primary: hsl($hue-primary, $saturation-primary, $lightness-primary);
 
-$primary-clr: hsl(210, 100%, 25%);
-$secondary-clr: hsl(200, 57%, 9%);
+// Secondary
 $hue-secondary:200;
 $saturation-secondary: 57%;
 $lightness-secondary: 9%;
 $color-secondary: hsl($hue-secondary, $saturation-secondary, $lightness-secondary);
 
+// Accent
+$hue-accent: 45;
+$saturation-accent: 100%;
+$lightness-accent: 51%;
+$color-accent: hsl($hue-accent, $saturation-accent, $lightness-accent);
+
+$primary-clr: hsl(210, 100%, 25%);
+$secondary-clr: hsl(200, 57%, 9%);
 $accent-clr: hsl(45, 100%, 51%);
+
 
 $primary-clr--light: hsla(194, 86%, 86%, 1);
 $primary-clr--dark: hsla(206, 79%, 17%, 1);
@@ -31,8 +40,11 @@ $card-shadow-dark: #cfcfd4;
 
 
 // Typography
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Lato', sans-serif;
+$font-primary: "EB Garamond", serif;;
+$font-secondary: 'Montserrat', sans-serif;
+$font-tertiary: 'Lato', sans-serif;
+$font-daniel: 'Daniel', sans-serif;
+
 $base-font-size: 16px;
 $base-line-height: 1.5;
 

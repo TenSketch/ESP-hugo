@@ -9,7 +9,14 @@
         }
 
         .brand-name {
-            font-size: min(1rem, 1.1rem);
+            // font-size: min(1rem, 1.1rem);
+            h6{
+                font-size: 1.5rem;
+            }
+            em{
+                font-weight: bold;
+                font-family: $font-daniel;
+            }
         }
     }
 
@@ -32,6 +39,7 @@
     .nav-item {
         .dropdown-menu{
             min-width: fit-content;
+            background-color: lighten($primary-clr, 70%);
         }
 
         .nav-link,

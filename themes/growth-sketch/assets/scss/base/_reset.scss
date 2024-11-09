@@ -4,13 +4,13 @@ html {
     scroll-behavior: smooth;
 
     @media(max-width:425px){
-        font-size: 14px;
+        font-size: 14.5px;
     }
 }
 
 body {
     // background-color: $primary-clr;
-    // font-family: $font-josefin;
+    // font-family: $font-tertiary;
     overflow-x: hidden;
     // padding-top: $navbar-height;
     // scroll-padding: map-get($sizes, 600)
@@ -22,11 +22,14 @@ h1 {
     line-height: 1.3 !important;
 }
 
-// h2,
-// h3,
-// h4 {
-//     font-family: "DM Serif Display", serif;
-// }
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+}
 
 h4 {
     line-height: 1.7;
@@ -39,7 +42,7 @@ li {
 
 a {
     text-decoration: none;
-    color: $text-dark;
+    color: $primary-clr--dark;
     // &:hover{
 
     //     text-decoration: none;

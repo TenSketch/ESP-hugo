@@ -44,31 +44,31 @@ og_image = "/ogimage.jpg"
 
     [[menu.main]]
       name = "ESP Business"
-      url = "/clientele-beneficiaries/esp-business"
+      url = "/esp-business"
       parent = "Clientele"
       weight = 1
 
     [[menu.main]]
       name = "ESP Government"
-      url = "/clientele-beneficiaries/esp-government"
+      url = "/esp-government"
       parent = "Clientele"
       weight = 2
 
     [[menu.main]]
       name = "ESP Non-Profit"
-      url = "/clientele-beneficiaries/esp-non-profit"
+      url = "/esp-non-profit"
       parent = "Clientele"
       weight = 3
 
     [[menu.main]]
       name = "ESP Education"
-      url = "/clientele-beneficiaries/esp-education"
+      url = "/esp-education"
       parent = "Clientele"
       weight = 4
 
     [[menu.main]]
       name = "ESP Focused individuals"
-      url = "/clientele-beneficiaries/esp-focussed-individuals"
+      url = "/esp-focussed-individuals"
       parent = "Clientele"
       weight = 5
 
