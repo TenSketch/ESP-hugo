@@ -69,3 +69,53 @@ np 2
     </div>
   </div>
 </div>
+
+
+
+ESPeople Business
+  Learning Solutions 
+
+Learning is a lifelong journey.
+We are here to sail along with your organization and your workforce to create a better transformation for themselves, their teams and your business.
+
+Our passion towards learning makes us the single candle awaiting to spread the light and make the space bright.
+
+Our learning solutions for business setting is unique which are in 2 types:-
+▪️ RTT Ready to train / Instant Energy Packs
+Readily available training modules for business setting.
+
+There is no one medicine for all illness. Some require capsules and some require shots. We are here to understand your symptoms, identify the root cause and treat the root cause and not the symptom.
+நோய்நாடி நோய்முதல் நாடி அதுதணிக்கும்
+வாய்நாடி வாய்ப்பச் செயல்.   (௯௱௪௰௮ - 948)
+Meaning: Diagnose the illness, trace its cause, Seek the proper remedy and apply it with skill.
+
+▪️ CTDD Customized training development & delivery
+Tailor-made modules
+Training designed & developed for your unique & specific needs
+
+RTT Our journey in the training space has been intensely reflective over a period of time.
+As a culminated effort of which, We have mastered various time tested & result oriented training modules for business setting. It guarantees a turn around result in your executive development, management & leadership development which are a game changer for your business. Many such proprietary curated modules have been created by us. 
+
+
+Here are our top 10 ranked training modules for business setting:-
+1. High Performance Teams
+2. AI for HR
+3. POSH
+4. ESG
+5. Engaging Gen Zs and Alphas
+6. BEI Techniques 
+7. 5S for HR
+8. Financial wellness - From CTC Structure to Investment 
+9. Volunteering as a tool to leverage Engagement 
+10. Internal Coaching 
+
+Learning needs like the light from a prism. It is different from person to person, from level to level and even for the same person differently at different points of time. We are here not only to train your teams but also your executives who would just need the gentle nudge.
+
+CTDD There are times the learning intervention required for business may be unique & distinct. In such cases our competent training needs assessment team will initiate a study to ascertain your apt needs. For that the study we will interact with all of your stakeholders and come with a road map to design & deliver with start to end clarity. 
+
+To further enquire and to move forward to engage us:
+
+Call: 0000000000
+Message:
+xxx@espeople.in
+9090909090
