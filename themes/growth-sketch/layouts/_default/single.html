@@ -293,10 +293,45 @@
 
   </div>
 </section>
-{{ else }}
+{{ else if eq .Params.category "focussed" }}
 
-<!-- HTML for default case -->
-<p>Default content</p>
+<section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
+  <h1 class="display-1">ESPeople Focussed Individuals</h1>
+  <h2 class="display-4 my-3">Learning Solutions</h2>
+  <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group....</h3>
+</section>
+<section class="learning-solutions p-5">
+  <div class="container">
+    <!-- <h3 class="text-primary mb-4 text-center">We have customised training options based on your need.</h3> -->
+    <div class="row justify-content-between">
+      <div class="col-md-6 mx-auto solution-box">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- layout otherLD -->
+{{ else if eq .Params.category "other" }}
+<section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
+  <h1 class="display-1">Other L&D Services</h1>
+  <!-- <h2 class="display-4 my-3">Learning Solutions</h2> -->
+  <!-- <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group....</h3> -->
+</section>
+
+<section class="learning-solutions p-5">
+  <div class="container">
+    <!-- <h3 class="text-primary mb-4 text-center">We have customised training options based on your need.</h3> -->
+    <div class="row justify-content-between">
+      <div class="col-md-6 mx-auto solution-box">
+        {{ .Content }}
+      </div>
+    </div>
+
+  </div>
+</section>
+
 {{ end }}
 
 {{ end }}
@@ -381,28 +416,5 @@
   </div>
 </section>
 {{ end }}
-<!-- layout otherLD -->
-{{ if eq .Params.layout "other" }}
-<section class="otherLD  py-8 bg-primary--light px-4 px-md-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 mx-auto">
-        <h3>Other L&D Services</h3>
-        <ul>
-          <li>Training Courseware Development (TCD)</li>
-          <li>Outbound training Programs logistics support – Learning activities conducted in outdoor settings, bringing
-            the joy of discovery through Nature.</li>
-          <li>External Periodic Programs</li>
-          <li>Support for Internal Training Programs</li>
-          <li>Faculty Co-facilitation</li>
-          <li>Training Needs Analysis & Effectiveness Audits</li>
-          <li>Design and Implementation of Training Processes</li>
-          <li>Capturing Innovative Practices – To preserve organizational learnings for future growth.</li>
-          <li>Training Facilitation in major Indian languages.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
+
 {{ end }}

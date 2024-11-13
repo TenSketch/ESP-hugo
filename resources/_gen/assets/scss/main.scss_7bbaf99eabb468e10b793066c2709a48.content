@@ -615,11 +615,6 @@ img {
   .ctdd-section h3 {
     color: #ffc105; }
 
-.contact-section {
-  background-color: #0a1b24; }
-  .contact-section h3 {
-    color: #ffc105; }
-
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
