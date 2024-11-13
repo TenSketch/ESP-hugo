@@ -143,3 +143,59 @@ Few of our service offerings are:
 11. Gaining community acceptance 
 12. Strategic goals setting for growth 
 13. Analytics and metrics
+
+
+
+ESPeople for Education:
+
+Students are the backbone for a family, society and the nation. As a culture, we place high regard for the Educators to whom the future of the nation are entrusted with.
+Yet, to stay competitive, every saw need to be sharpened...
+We genuinely believe that the strength of the seed sown determines the strength of the tree; to stand through the tests of time and character. So this segment is very close to our heart.
+Our team of experts with Behavioral, Developmental and applied psychology background are here to help educators and students chisel their dreams as future leaders.
+We have customised training options based on your need.
+
+Few of our courses for educators include:
+
+1. Handling adolescents 
+2. Conflict management and resolution 
+3. Complexities Gen alpha's go through - Understanding and Support to navigate 
+4. Reflective thinking 
+5. Encouraging Dialogue and Debate 
+6. Strategies for motivating students 
+7. Modern teaching methodologies
+8. AI and Technology for Teachers 
+9. Understanding diverse student needs 
+10. Classroom management 
+11. Effective lesson planning 
+12. Communication skills 
+13. Strategies for addressing diverse learning needs 
+14. Creating an inclusive learning environment
+15. DEI
+
+Few courses for students include:
+1. Problem solving 
+2. Career preparedness 
+3. Emotional intelligence for adolescents 
+4. Critical thinking 
+5. Habits building 
+6. Collaboration & Team building skills
+7. Campus to Corporate 
+8. Exploring hobbies
+9. Teamship Behaviour
+
+
+
+Training programs for ESPeople Government include but not limited to:
+1. Decision making 
+2. Governance 
+3. Crisis management 
+4. Delegation skills
+5. Problem solving 
+6. Inspirational leadership 
+7. Anchoring and exploring CSR
+8. Servant leadership 
+9. AI for leaders
+10. Agility and innovation
+11. Negotiation 
+12. Team management 
+13. Handling adverse scenarios

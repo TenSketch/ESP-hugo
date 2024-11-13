@@ -100,3 +100,164 @@
     
     </script>
   </section>
+
+
+  
+<section class="esp-evolution pb-5 d-none">
+  <div class="container">
+    <div class="d-none">
+
+      <h1 class="mb-4">The Evolution of ESPeople</h1>
+      <p>Every great organisation starts with a dream—a vision for achieving excellence. But to turn that vision into
+        reality, you need the right people who have the energy and ability to make things happen. That's where ESPeople
+        come in. We partner with organisations to develop and empower their teams, helping them turn their original
+        dream
+        into reality and inspire new heights of success.</p>
+      <h2 class="mt-5 mb-3">ESP Vision & Mission</h2>
+      <!-- <h3>Vision:</h3>
+      <p>To energize and synergize people’s abilities through impactful and everlasting learning experiences.</p>
+      <h3>Mission:</h3>
+      <ul>
+        <li>Deliver training that goes beyond conventional settings, using real-world scenarios, hands-on activities and IT enabled learning.
+        </li>
+        <li>Enhance people’s energy and team synergy to realize organizational goals.</li>
+        <li>Foster an understanding of the organization's goals among its team members.</li>
+      </ul> -->
+
+      <h5 class="mb-4"><strong>Energize & Synergize People capabilities through effective learning
+          interventions</strong></h5>
+      <!-- change font of above and below line -->
+      <h5 class="font-weight-bold"><strong>Be a best training service provider in enabling people</strong></h5>
+      </p>
+      <ul class="mt-4">
+        <li>To maximize their energy &</li>
+        <li>To effectively employ it in synergy with their team</li>
+        <li>Towards attaining organizational goals achievement</li>
+      </ul>
+    </div>
+    <h2 class="mt-5 mb-3">Who We Are</h2>
+    <p>At <strong>ESP (Energize, Synergize, People)</strong>, we are dedicated to helping organizations unlock their
+      potential by energizing individuals and synergizing teams. Our approach focuses on empowering people to grow,
+      collaborate, and drive success within their organizations.</p>
+
+    <h2 class="mt-5 mb-3">What We Do</h2>
+    <p>We offer specialized training and development programs aimed at improving leadership, management, and team
+      dynamics in business organizations. Our goal is to help individuals realize their strengths and bring teams
+      together to work toward a unified vision.</p>
+    <div class="d-none">
+
+      <p>Our proven <strong>ESP Learning Model</strong> follows a step-by-step approach to ensure growth through
+        practical
+        learning:</p>
+      <ul>
+        <li><strong>Awareness:</strong> We create awareness of the challenges faced by teams and individuals.</li>
+        <li><strong>Understanding:</strong> We deepen comprehension by offering clarity around key concepts.</li>
+        <li><strong>Learning:</strong> We teach actionable insights that can be applied in real-world scenarios.</li>
+        <li><strong>Realisation:</strong> We help individuals and teams internalize these insights.</li>
+        <li><strong>Habitualisation:</strong> Our programs ensure the adoption of new skills into everyday practices.
+        </li>
+      </ul>
+    </div>
+    <h2 class="mt-5 mb-3">How We Do It</h2>
+
+    <p>By combining in-person and virtual training solutions, we provide businesses with flexible options to meet their
+      unique needs.</p>
+  </div>
+</section>
+
+<!-- Section 2- About us -->
+<section class="about-us py-5 d-none">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">About us</h2>
+    <div class="row justify-content-center">
+      <!-- Who We Are -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>Who We Are</h4>
+          <p>At ESPeople, we are a team of heart-centric Trainingsmiths (trainers), bringing the desired catalytic
+            change in line with your organizational aspirations through people enablement.</p>
+        </div>
+      </div>
+      <!-- What We Do -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>What We Do</h4>
+          <p>We deliver transformative, contemporary People Developmental Learning for desired results. These programs
+            enhance executive and managerial productivity with leadership optimization for your organization. This
+            facilitates desired organizational ranking within your industry through your people.</p>
+        </div>
+      </div>
+      <!-- How We Do It -->
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>How We Do It</h4>
+          <p>We simply ENERGIZE your people's capabilities and then SYNERGIZE them with their core team for high
+            performance.<br>Thus, we are ESPeople Trainingsmiths.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Know more Button -->
+    <div class="mt-4">
+      <a href="about-us.html" class="btn btn-primary">Know more</a>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 d-none">
+  <div class="container d-none">
+    <div class="row justify-content-between align-items-center border-3 border-top border-bottom py-2">
+      <div class="col-auto">
+        <div class="d-flex align-items-center gap-2">
+          <!-- <img class="img-rouded img-profile" src="/images/logo.png" alt="profile picture Muralidharan"> -->
+          <p class="mb-0">Mr. Muralidharan</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_long" }}
+        <small class="text-sm-end mb-0">
+          Published on
+          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </small>
+      </div>
+    </div>
+    <div class="row mt-4 mt-md-5">
+      <!-- <h1>{{ .Title }}</h1> -->
+      <div class="col-md-8 mx-auto">
+        {{ .Content }}
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 d-none">
+  <div class="container d-none">
+    <div class="row justify-content-between align-items-center border-3 border-top border-bottom py-2">
+      <div class="col-auto">
+        <div class="d-flex align-items-center gap-2">
+          <!-- <img class="img-rouded img-profile" src="/images/logo.png" alt="profile picture Muralidharan"> -->
+          <p class="mb-0">Mr. Muralidharan</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_long" }}
+        <small class="text-sm-end mb-0">
+          Published on
+          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </small>
+      </div>
+    </div>
+    <div class="row mt-4 mt-md-5">
+      <!-- <h1>{{ .Title }}</h1> -->
+      <div class="col-md-8 mx-auto">
+        {{ .Content }}
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

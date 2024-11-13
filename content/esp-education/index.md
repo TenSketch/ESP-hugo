@@ -6,6 +6,7 @@ category: "education"
 draft: false
 ---
 
+<!-- 
 ## Education Sector Overview
 
 In the ever-evolving field of education, staying ahead of changes and ensuring that educators are equipped with the best tools is essential. Our range of programs is designed to enhance teaching capabilities, develop innovative curriculum designs, and provide experiential learning opportunities to foster creative thinking and problem-solving.
@@ -32,4 +33,4 @@ TDS assists in creating internal development programs for teachers, offering con
 
 EBC focuses on preserving educational breakthroughs and best practices, allowing educators to replicate successful strategies for long-term success.
 
-Each program is carefully crafted to address the unique challenges faced by educators today. Explore these offerings to find the right fit for your institution's needs.
+Each program is carefully crafted to address the unique challenges faced by educators today. Explore these offerings to find the right fit for your institution's needs. -->
