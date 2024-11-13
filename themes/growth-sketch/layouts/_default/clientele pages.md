@@ -119,3 +119,27 @@ Call: 0000000000
 Message:
 xxx@espeople.in
 9090909090
+
+
+ESPeople Non Profit:
+
+Photo by RDNE Stock project: https://www.pexels.com/photo/a-group-of-volunteers-assisting-an-elderly-person-on-a-black-wheelchair-for-charity-6646917/
+
+Non Profit Organizations that contribute more to the society as those businesses that contribute to the nation's economy are one of our key focus segment. 
+We are here to add value to those who add value to our society.
+With Professional Social Work background, our team of experts are aware of the challenges and complexities that are faced by the Non Profit Organizations as well as those dynamic requirements that arise both from the society as well as from the Human Capital.
+
+Few of our service offerings are:
+1. Managing volunteers 
+2. Handling conflicts 
+3. Reporting to Board
+4. Report writing 
+5. Essential Finance for Non Profit Organizations 
+6. Laws around operating Non Profit Organizations 
+7. Budding leaders program 
+8. Risk management 
+9. Fund raising planning and operations
+10. DEI
+11. Gaining community acceptance 
+12. Strategic goals setting for growth 
+13. Analytics and metrics

@@ -5,7 +5,7 @@ layout: "clientele"
 category: "nonprofit"
 draft: false
 ---
-
+<!-- 
 ## Non-Profit Sector Overview
 
 Our programs for non-profit organizations focus on empowering leaders and teams to enhance their operational capabilities and align with their missions. From leadership development to multilingual training, we provide targeted support that helps non-profits maximize their impact.
@@ -32,4 +32,4 @@ Assisting in the development and implementation of in-house training to drive mi
 
 Documenting best practices to ensure continuity and foster long-term organizational growth.
 
-Explore these programs to find the right solutions to empower your non-profit organization and enhance its impact.
+Explore these programs to find the right solutions to empower your non-profit organization and enhance its impact. -->

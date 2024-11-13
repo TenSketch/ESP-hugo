@@ -568,12 +568,14 @@ img {
   font-size: 2.5rem;
   margin-bottom: 3rem; }
 
-.hero-business {
+.hero-clientele {
   background: #004080 url("/images/manufacturing-business.jpg") no-repeat center/cover;
   background-blend-mode: overlay;
   color: white; }
-  .hero-business .hero-title {
+  .hero-clientele .hero-title {
     font-size: 2.5rem; }
+  .hero-clientele.non-profit {
+    background-image: url(/images/non-profit-bg.jpg); }
 
 .intro-section {
   background-color: #bdecfa;

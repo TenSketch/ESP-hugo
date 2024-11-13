@@ -181,7 +181,7 @@
 {{ if and (eq .Params.layout "clientele") (eq .Params.category "business") }}
 
 <!-- Hero Section -->
-<section class="hero-business text-center text-light p-5 min-vh-50">
+<section class="hero-clientele text-center text-light p-5 min-vh-50">
   <h1 class="display-1">ESPeople Business</h1>
   <h2 class="display-4 my-3">Learning Solutions</h2>
   <h3>Learning is a lifelong journey. <br> We are here to sail along with your organization and your workforce...</h3>
@@ -191,8 +191,9 @@
 <section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
   <div class="blob position-absolute"></div>
   <div class="container">
-    
-    <h1 class="display-5 mb-0">Our passion towards learning makes us the single candle awaiting to spread the light and make the space bright.
+
+    <h1 class="display-5 mb-0">Our passion towards learning makes us the single candle awaiting to spread the light and
+      make the space bright.
     </h1>
   </div>
 </section>
@@ -204,24 +205,23 @@
     <!-- <p>Our learning solutions for business settings are unique, offered in two types:</p> -->
     <div class="row justify-content-between">
       <div class="col-md-5 solution-box">
-        <h4>RTT - Ready to Train  / Instant Energy Packs</h4> 
-        <h5>Readily available training modules for business settings...</h5><hr>
-        <p>There is no one medicine for all illness. Some require capsules and some require shots. We are here to understand your symptoms, identify the root cause and treat the root cause and not the symptom.
-           <!-- <br> <br>
-          நோய்நாடி நோய்முதல் நாடி அதுதணிக்கும்
-          வாய்நாடி வாய்ப்பச் செயல். (௯௱௪௰௮ - 948) <br>
-          <strong>Meaning</strong>: Diagnose the illness, trace its cause, Seek the proper remedy and apply it with skill. -->
-        </p>
+        <h4>RTT - Ready to Train / Instant Energy Packs</h4>
+        <h5>Readily available training modules for business settings...</h5>
+        <hr>
+        <p>There is no one medicine for all illness. Some require capsules and some require shots. We are here to
+          understand your symptoms, identify the root cause and treat the root cause and not the symptom.</p>
       </div>
       <div class="col-md-5 solution-box">
         <h4>CTDD - Customized training development & delivery</h4>
-        <!-- <h5>Tailor-made modules</h5>  -->
-         <h5>Tailor-made modules designed & developed for your unique & specific needs...</h5>
+        <h5>Tailor-made modules designed & developed for your unique & specific needs...</h5>
         <hr>
-        <p>CTDD There are times the learning intervention required for business may be unique & distinct. In such cases our competent training needs assessment team will initiate a study to ascertain your apt needs. For that the study we will interact with all of your stakeholders and come with a road map to design & deliver with start to end clarity. </p>
+        <p>CTDD There are times the learning intervention required for business may be unique & distinct. In such cases
+          our competent training needs assessment team will initiate a study to ascertain your apt needs. For that the
+          study we will interact with all of your stakeholders and come with a road map to design & deliver with start
+          to end clarity. </p>
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -257,46 +257,85 @@
 <section class="ctdd-section p-5 text-center text-md-start d-none">
   <div class="container">
     <h3>CTDD - Tailor-made Solutions</h3>
-    <p>There are times the learning intervention required for business may be unique & distinct. In such cases our competent training needs assessment team will initiate a study to ascertain your apt needs. For that the study we will interact with all of your stakeholders and come with a road map to design & deliver with start to end clarity. </p>
+    <p>There are times the learning intervention required for business may be unique & distinct. In such cases our
+      competent training needs assessment team will initiate a study to ascertain your apt needs. For that the study we
+      will interact with all of your stakeholders and come with a road map to design & deliver with start to end
+      clarity. </p>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section class="contact-section p-5 text-light text-center d-none">
-  <div class="container">
-    <h3>Contact Us</h3>
-    <p>To further enquire and to move forward to engage us:</p>
-    <p>Call: 0000000000</p>
-    <p>Email: xxx@espeople.in</p>
-    <p>Phone: 9090909090</p>
-  </div>
-</section>
+
 <script>
   // scripts.js
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
 
-  sections.forEach((section) => {
-    observer.observe(section);
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
   });
-});
 
 </script>
 {{ else }}
 {{ if eq .Params.category "nonprofit" }}
+<!-- Hero Section -->
+<section class="hero-clientele non-profit text-center text-light p-5 min-vh-50">
+  <h1 class="display-1">ESPeople Non-Profit</h1>
+  <h2 class="display-4 my-3">Learning Solutions</h2>
+  <h3>Non Profit Organizations that contribute more to the society as those businesses that contribute to the nation's
+    economy are one of our key focus segment....</h3>
+</section>
+
+<!-- Introduction Section -->
+<section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
+  <div class="blob position-absolute"></div>
+  <div class="container">
+
+    <h1 class="display-5 mb-0">We are here to add value to those who add value to our society.</h1>
+  </div>
+</section>
+<section class="ctdd-section p-5 text-center text-md-start">
+  <div class="container">
+    <!-- <h3>CTDD - Tailor-made Solutions</h3> -->
+    <h4>With Professional Social Work background, our team of experts are aware of the challenges and complexities that are faced by the Non Profit Organizations as well as those dynamic requirements that arise both from the society as well as from the Human Capital. </h4>
+  </div>
+</section>
+<!-- key offerings -->
+<section class="rtt-section p-5 text-center">
+  <div class="container">
+    <h3>Few of our service offerings are:</h3>
+    <ol class="top-training-modules">
+      <li>Managing volunteers </li>
+      <li>Handling conflicts </li>
+      <li>Reporting to Board</li>
+      <li>Report writing </li>
+      <li>Essential Finance for Non Profit Organizations </li>
+      <li>Laws around operating Non Profit Organizations </li>
+      <li>Budding leaders program </li>
+      <li>Risk management </li>
+      <li>Fund raising planning and operations</li>
+      <li>DEI</li>
+      <li>Gaining community acceptance </li>
+      <li>Strategic goals setting for growth </li>
+      <li>Analytics and metrics</li>
+    </ol>
+    <!-- <hr> -->
+  </div>
+</section>
+
 {{ .Content }}
 
 {{ else if eq .Params.category "education" }}
