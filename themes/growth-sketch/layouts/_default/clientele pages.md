@@ -199,3 +199,30 @@ Training programs for ESPeople Government include but not limited to:
 11. Negotiation 
 12. Team management 
 13. Handling adverse scenarios
+
+
+RTT - Ready to Train
+(Timely to deliver at ease)
+
+Readily available training modules for business settings
+__________
+
+This RTT learning solutions are readily available, time tested, matured, refined, meets the urgent & critical learning needs of the client business.
+
+
+
+
+A future of a country can be tracked on the present students aspirations & dream of that nation.
+
+Education builds future youth of the country to compete with rest of the nation's. Students + Teachers + School/College/Universities play a critical component of a nations growth, development & prosperity.
+
+Our learning solutions for education setting are of 2 types:
+
+RTT - Ready to Train
+(Timely to deliver at ease)
+
+
+Readily available training modules for educational settings
+________
+
+This RTT learning solutions for educational settings are crafted by collecting valuable inputs from professionals who are engaged in youth growth domains viz., academia, economists,  developmental psychologist & sociologist etc., Such solutions are readily available, time tested, matured, refined, meets the growth dreams perspectives of educational settings.
