@@ -129,8 +129,12 @@ img {
   @media (max-width: 991px) {
     .navbar .nav-item {
       text-align: right; } }
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent !important;
+  color: #004080 !important; }
+
 .footer {
-  background-color: #0a1b24;
+  background-color: #4da6ff;
   color: #f8fbfc;
   padding: 40px 0;
   position: relative;
@@ -705,3 +709,57 @@ img {
     transform: translateX(40%); }
   100% {
     transform: translateX(0); } }
+
+.services-section {
+  background: #0a1b24;
+  background: linear-gradient(84deg, #0a1b24 51%, #004080 100%); }
+  .services-section .col-md-4:nth-child(odd) .service-card {
+    background: linear-gradient(135deg, #004080 60%, #0a1b24 100%);
+    color: white; }
+  .services-section .col-md-4:nth-child(even) .service-card {
+    background: linear-gradient(135deg, #0a1b24 60%, #004080 100%);
+    color: white; }
+  .services-section .service-card {
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .services-section .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); }
+    .services-section .service-card .service-title {
+      font-size: 1.2rem;
+      font-weight: 600; }
+    .services-section .service-card p {
+      margin-top: 10px;
+      font-size: 0.9rem; }
+
+.contact-section {
+  background: linear-gradient(84deg, #0a1b24 51%, #004080 100%); }
+  .contact-section .contact-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+  .contact-section .contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+    .contact-section .contact-form .form-control {
+      border: 1px solid rgba(0, 0, 0, 0.1); }
+      .contact-section .contact-form .form-control:focus {
+        outline: none;
+        border-color: #004080;
+        box-shadow: 0 0 5px rgba(0, 64, 128, 0.5); }
+    .contact-section .contact-form .btn-primary {
+      background-color: #004080;
+      border: none; }
+      .contact-section .contact-form .btn-primary:hover {
+        background-color: #003264; }
+
+.form {
+  min-height: 60vh; }

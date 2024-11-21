@@ -4,7 +4,7 @@ footer {
 }
 
 .footer {
-  background-color: $secondary-clr;
+  background-color: lighten($primary-clr, 40%);
   color: $light-clr;
   // background-color: #222; // Dark background
   padding: 40px 0;

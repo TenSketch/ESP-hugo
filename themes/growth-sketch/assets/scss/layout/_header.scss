@@ -47,8 +47,13 @@
             color: $primary-clr;
         }
 
+
         @media(max-width:991px) {
             text-align: right;
         }
     }
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: transparent!important;
+    color: $primary-clr!important;
 }

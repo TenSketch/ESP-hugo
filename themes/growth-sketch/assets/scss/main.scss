@@ -9,3 +9,42 @@
 body{
     // background-color: darkcyan;
 }
+
+.contact-section {
+    background: linear-gradient(84deg, rgba(10, 27, 36, 1) 51%, rgba(0, 64, 128, 1) 100%);
+    // padding: 50px 0;
+  
+    .contact-info {
+      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background for contrast
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.9);
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+      .form-control {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        &:focus {
+          outline: none;
+          border-color: rgba(0, 64, 128, 1);
+          box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+        }
+      }
+  
+      .btn-primary {
+        background-color: rgba(0, 64, 128, 1);
+        border: none;
+        &:hover {
+          background-color: rgba(0, 50, 100, 1);
+        }
+      }
+    }
+  }
+  
+  .form{
+    min-height: 60vh;
+  }

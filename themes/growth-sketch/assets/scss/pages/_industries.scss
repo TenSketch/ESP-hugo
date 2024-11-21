@@ -192,3 +192,47 @@ $blob: #ffc10586;
     100% { transform: translateX(0); }
   }
   
+
+  $text-light-clr: hsl(0, 0%, 100%);
+
+  .services-section {
+    // background: linear-gradient(135deg, $primary-clr, $secondary-clr);
+    background: rgb(10,27,36);
+background: linear-gradient(84deg, rgba(10,27,36,1) 51%, rgba(0,64,128,1) 100%);
+  
+    .col-md-4:nth-child(odd) .service-card {
+      background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
+      color: $text-light-clr;
+    }
+  
+    .col-md-4:nth-child(even) .service-card {
+      background: linear-gradient(135deg, $secondary-clr 60%, $primary-clr 100%);
+      color: $text-light-clr;
+    }
+  .service-card {
+    // background-color: $secondary-clr;
+    border-radius: 25px;
+    color: $text-light-clr;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+  }
+}
