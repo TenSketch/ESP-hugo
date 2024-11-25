@@ -226,3 +226,50 @@ Readily available training modules for educational settings
 ________
 
 This RTT learning solutions for educational settings are crafted by collecting valuable inputs from professionals who are engaged in youth growth domains viz., academia, economists,  developmental psychologist & sociologist etc., Such solutions are readily available, time tested, matured, refined, meets the growth dreams perspectives of educational settings.
+
+
+Other L&D Services
+
+Training Courseware Development
+
+We develop comprehensive course materials tailored to training needs
+
+Outbound Training Programs Logistics Support
+
+Coordinate logistics support from end-to-end for your outbound training programs
+
+External Periodic Programs
+
+We also conduct periodical external training programs. You can sponsor your team for that
+
+Supporting your in-house Training Programs
+
+We support & facilitate your in house training sessions whether it is small or in entirity
+
+Faculty Co-facilitation
+
+_Our resource persons support can be drawn for your in-house training for an
+impactful results_
+
+Training needs analysis & Effectiveness training audits
+
+We can be retained to assess & audit for overall training needs of your organization and come out with a detailed road map for implementation
+
+Designing, developing effective "Training Processes" for your organization
+
+Our expertise can be engaged for your in-house training robust processes designing, developing & seeding it for your organisational results
+
+
+Capturing your Innovative training practices
+
+Effective recording, documenting for future reference w.r.t your innovative training practices
+
+Training facilitation in major Indian languages
+
+We have capabilities to deliver training in multiple Indian languages for diverse audiences. It will facilitate full blossomed learnings to your teams
+
+
+<a href="https://www.freepik.com/free-vector/language-word-concept-background_2604399.htm#fromView=keyword&page=3&position=36&uuid=00e94eda-9603-4797-8d99-e578bcc746ad">Image by freepik</a>
+
+Photo by <a href="https://unsplash.com/@austindistel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Austin Distel</a> on <a href="https://unsplash.com/photos/three-men-sitting-while-using-laptops-and-watching-man-beside-whiteboard-wD1LRb9OeEo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      

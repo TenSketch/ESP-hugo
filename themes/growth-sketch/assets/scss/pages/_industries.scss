@@ -112,7 +112,7 @@ $blob: #ffc10586;
     p {
         max-width: 600px;
         margin: auto;
-        color: $secondary-clr;
+        // color: $secondary-clr;
     }
 }
 
@@ -121,13 +121,13 @@ $blob: #ffc10586;
 
     .solution-box {
         padding: 1rem;
-        background: linear-gradient(135deg, $primary-clr--light, white);
+        // background: linear-gradient(135deg, $primary-clr--light, white);
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
 
         h4 {
-            color: $primary-clr;
+            // color: $primary-clr;
         }
     }
 }
@@ -193,7 +193,6 @@ $blob: #ffc10586;
   }
   
 
-  $text-light-clr: hsl(0, 0%, 100%);
 
   .services-section {
     // background: linear-gradient(135deg, $primary-clr, $secondary-clr);
@@ -215,7 +214,7 @@ background: linear-gradient(84deg, rgba(10,27,36,1) 51%, rgba(0,64,128,1) 100%);
     color: $text-light-clr;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 190px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

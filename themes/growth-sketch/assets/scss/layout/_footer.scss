@@ -5,7 +5,9 @@ footer {
 
 .footer {
   background-color: lighten($primary-clr, 40%);
-  color: $light-clr;
+  background-color: $primary-clr--light;
+
+  // color: $light-clr;
   // background-color: #222; // Dark background
   padding: 40px 0;
   // color: #fff; // White text
@@ -30,7 +32,7 @@ footer {
 
   // Navigation Links
   .nav-link {
-      color: $accent-clr;
+      color: darken($accent-clr,20%);
       margin: 0 15px;
       text-transform: uppercase;
       font-weight: 500;
@@ -45,7 +47,8 @@ footer {
   // Social Icons
   .social-icons {
       .social-link {
-          color: $accent-clr;
+        color: darken($accent-clr,20%);
+
           margin: 0 10px;
           font-size: 24px;
           transition: color 0.3s ease, transform 0.3s ease;
@@ -63,7 +66,8 @@ footer {
       margin-top: 20px;
       // color: #666;
       a{
-        color: $accent-clr;
+        color: darken($accent-clr,20%);
+
         // transition: text-decoration 2000ms ease;
         &:hover{
           text-decoration: underline;
