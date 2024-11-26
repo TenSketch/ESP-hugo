@@ -8,7 +8,6 @@
         <h2>Who We Are</h2>
         <p>At ESPeople, we are a team of heart-centric Trainingsmiths (trainers), bringing the desired catalytic
           change in line with your organizational aspirations through people enablement.</p>
-        
       </div>
       <div class="col-md-6 image-content order-first order-md-2">
         <img src="/images/who-we-are.png" alt="Student Image" class="image-wrapper">
@@ -20,7 +19,6 @@
         <p>We deliver transformative, contemporary People Developmental Learning for desired results. These programs
           enhance executive and managerial productivity with leadership optimization for your organization. This
           facilitates desired organizational ranking within your industry through your people.</p>
-        
       </div>
       <div class="col-md-6 image-content order-first">
         <img src="/images/what-we-do.png" alt="Student Image" class="image-wrapper">
@@ -31,7 +29,6 @@
         <h2>How We Do It</h2>
         <p>We ENERGIZE your people's capabilities and then SYNERGIZE them with their core team for high
           performance.<br>Thus, we are ESPeople Trainingsmiths.</p>
-        
       </div>
       <div class="col-md-6 image-content order-first order-md-2">
         <img src="/images/how-we-do.png" alt="Student Image" class="image-wrapper">
@@ -665,20 +662,20 @@
           <h3 class="mb-4 text-light">Contact Form</h3>
           <div class="row g-3">
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name" required>
+              <input type="text" class="form-control" placeholder="Your Name" name="Name" required>
             </div>
             <div class="col-md-6">
-              <input type="tel" minlength="10" maxlength="10" class="form-control" placeholder="Your Mobile Number" required>
+              <input type="tel" minlength="10" maxlength="10" class="form-control" placeholder="Your Mobile Number" name="Mobile No." required>
             </div>
             <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="abc@email.com" required>
+              <input type="email" class="form-control" placeholder="abc@email.com" name="Email id" required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Subject" required>
+              <input type="text" class="form-control" placeholder="Subject" name="Subject" required>
             </div>
           </div>
           <div class="mt-3">
-            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            <textarea class="form-control" rows="5" placeholder="Your Message" name="Message" required></textarea>
           </div>
           <div class="mt-3 text-end">
             <button type="submit" class="btn btn-primary" aria-label="send Message button">Send Message</button>
@@ -689,9 +686,7 @@
   </div>
 </section>
 {{ end }}
-
 {{ if eq .Params.layout "thank" }}
-
 <section class="gradient-bg py-custom">
   <div class="container text-center">
       <div class="row justify-content-center">
@@ -713,6 +708,5 @@
       </div>
   </div>
 </section>
-
 {{ end }}
 {{ end }}
