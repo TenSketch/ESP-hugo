@@ -2,7 +2,7 @@
 
 .navbar {
     height: $navbar-height;
-
+    background-color: $primary-clr--light!important;
     .navbar-brand {
         img {
             width: clamp(50px, 60px, 12vw);
@@ -25,6 +25,8 @@
     }
 
     .navbar-collapse {
+    background-color: $primary-clr--light!important;
+
         @media(max-width:768px) {
             position: absolute;
             top: $navbar-height;

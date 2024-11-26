@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 {{ if eq .Params.layout "about" }}
 <section class="learning-section px-3 py-custom gradient-bg">
   <div class="container">
@@ -9,12 +8,10 @@
         <h2>Who We Are</h2>
         <p>At ESPeople, we are a team of heart-centric Trainingsmiths (trainers), bringing the desired catalytic
           change in line with your organizational aspirations through people enablement.</p>
-        <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+        
       </div>
       <div class="col-md-6 image-content order-first order-md-2">
-        <!-- <div class="image-wrapper"> -->
         <img src="/images/who-we-are.png" alt="Student Image" class="image-wrapper">
-        <!-- </div> -->
       </div>
     </div>
     <div class="row align-items-center mt-5">
@@ -23,12 +20,10 @@
         <p>We deliver transformative, contemporary People Developmental Learning for desired results. These programs
           enhance executive and managerial productivity with leadership optimization for your organization. This
           facilitates desired organizational ranking within your industry through your people.</p>
-        <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+        
       </div>
       <div class="col-md-6 image-content order-first">
-        <!-- <div class="image-wrapper"> -->
         <img src="/images/what-we-do.png" alt="Student Image" class="image-wrapper">
-        <!-- </div> -->
       </div>
     </div>
     <div class="row align-items-center mt-5">
@@ -36,121 +31,86 @@
         <h2>How We Do It</h2>
         <p>We ENERGIZE your people's capabilities and then SYNERGIZE them with their core team for high
           performance.<br>Thus, we are ESPeople Trainingsmiths.</p>
-        <!-- <a href="#" class="btn view-more-btn">View More</a> -->
+        
       </div>
       <div class="col-md-6 image-content order-first order-md-2">
-        <!-- <div class="image-wrapper"> -->
         <img src="/images/how-we-do.png" alt="Student Image" class="image-wrapper">
-        <!-- </div> -->
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-
 {{ if and (eq .Params.layout "clientele") (eq .Params.category "business") }}
-<!-- Hero Section -->
-<section class="hero-clientele text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">ESPeople Business</h1>
-  <h2 class="display-4 my-3">Learning Solutions</h2>
-  <h3>Learning is a lifelong journey. <br> We are here to sail along with your organization and your workforce...</h3>
-</section>
-<!-- Introduction Section -->
-<section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
-  <div class="blob position-absolute"></div>
-  <div class="container">
-    <h1 class="display-5 mb-0">Our passion towards learning makes us the single candle awaiting to spread the light and
-      make the space bright.
-    </h1>
-  </div>
-</section>
-<!-- Learning Solutions Section -->
-<section class="learning-solutions px-5 gradient-bg py-custom"> 
-  <div class="container">
-    <h2 class="text-primary mb-5">Our learning solutions for business setting is unique which are in 2 types:</h2>
-    <!-- <p>Our learning solutions for business settings are unique, offered in two types:</p> -->
-    <div class="row justify-content-between">
-      <div class="col-md-5 solution-box gradient-bg-card">
-        <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#FF0066" d="M37.7,-63.9C46.6,-60.2,49.9,-45.5,49.8,-33C49.7,-20.5,46.2,-10.3,51.5,3.1C56.8,16.4,71,32.8,67,38.2C63.1,43.7,41,38.2,26.8,41.7C12.6,45.1,6.3,57.6,-2.4,61.8C-11.1,66,-22.2,61.9,-30.5,54.9C-38.7,48,-44,38.2,-49.8,28.6C-55.6,19,-61.8,9.5,-64.5,-1.6C-67.3,-12.6,-66.5,-25.3,-61.5,-36.4C-56.6,-47.4,-47.5,-57,-36.5,-59.5C-25.6,-62,-12.8,-57.5,0.8,-58.9C14.4,-60.4,28.8,-67.6,37.7,-63.9Z" transform="translate(100 100)" />
-        </svg> -->
-        <h4>RTT - Ready to Train (Timely to deliver at ease)</h4>
-        <h5>Readily available training modules for business settings...</h5>
-        <hr>
-        <p>This RTT learning solutions are readily available, time tested, matured, refined, meets the urgent & critical
-          learning needs of the client business.</p>
-      </div>
-      <div class="col-md-5 solution-box gradient-bg-card">
-        <h4>CTDD - Customized training development & delivery</h4>
-        <h5>Tailor-made modules designed & developed for your unique & specific needs...</h5>
-        <hr>
-        <p>CTDD - There are times the learning interventions required for your business may be unique & distinct. In
-          such cases our competent training needs assessment team will initiate a study to ascertain your apt needs. For
-          that study we will interact with your appropriate stack holders and come with a road map to design, develop &
-          deliver learning solutions with start to end clarity.</p>
-      </div>
+<!-- Business Section -->
+<div class="bis">
+  <section class="hero-clientele business text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">ESPeople Business</h1>
+    <h2 class="display-4 my-3">Learning Solutions</h2>
+    <h3>Learning is a lifelong journey. <br> We are here to sail along with your organization and your workforce...</h3>
+  </section>
+  <!-- Introduction Section -->
+  <section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
+    <div class="blob position-absolute"></div>
+    <div class="container">
+      <h1 class="display-5 mb-0">Our passion towards learning makes us the single candle awaiting to spread the light
+        and
+        make the space bright.
+      </h1>
     </div>
-    <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
-      <!-- "Know More" Button -->
-      <!-- <a href="/esp-non-profit" class="btn btn-primary  ">Know more</a> -->
-    
+  </section>
+  <!-- Learning Solutions Section -->
+  <section class="learning-solutions px-5 gradient-bg py-custom">
+    <div class="container">
+      <h2 class="text-primary mb-5">Our learning solutions for business setting is unique which are in 2 types:</h2>
+      <!-- <p>Our learning solutions for business settings are unique, offered in two types:</p> -->
+      <div class="row justify-content-between">
+        <div class="col-md-5 solution-box gradient-bg-card">
+          <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FF0066" d="M37.7,-63.9C46.6,-60.2,49.9,-45.5,49.8,-33C49.7,-20.5,46.2,-10.3,51.5,3.1C56.8,16.4,71,32.8,67,38.2C63.1,43.7,41,38.2,26.8,41.7C12.6,45.1,6.3,57.6,-2.4,61.8C-11.1,66,-22.2,61.9,-30.5,54.9C-38.7,48,-44,38.2,-49.8,28.6C-55.6,19,-61.8,9.5,-64.5,-1.6C-67.3,-12.6,-66.5,-25.3,-61.5,-36.4C-56.6,-47.4,-47.5,-57,-36.5,-59.5C-25.6,-62,-12.8,-57.5,0.8,-58.9C14.4,-60.4,28.8,-67.6,37.7,-63.9Z" transform="translate(100 100)" />
+          </svg> -->
+          <h4>RTT - Ready to Train (Timely to deliver at ease)</h4>
+          <h5>Readily available training modules for business settings...</h5>
+          <hr>
+          <p>This RTT learning solutions are readily available, time tested, matured, refined, meets the urgent &
+            critical
+            learning needs of the client business.</p>
+        </div>
+        <div class="col-md-5 solution-box gradient-bg-card">
+          <h4>CTDD - Customized training development & delivery</h4>
+          <h5>Tailor-made modules designed & developed for your unique & specific needs...</h5>
+          <hr>
+          <p>CTDD - There are times the learning interventions required for your business may be unique & distinct. In
+            such cases our competent training needs assessment team will initiate a study to ascertain your apt needs.
+            For
+            that study we will interact with your appropriate stack holders and come with a road map to design, develop
+            &
+            deliver learning solutions with start to end clarity.</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
         <!-- PDF Icon with Dropdown for Brochure -->
         <div class="dropdown mt-2 mt-md-0">
-          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button"
+            id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-regular fa-file-pdf me-2"></i>Brochure
           </a>
           <ul class="dropdown-menu" aria-labelledby="brochureDropdown">
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" target="_blank"><i class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" download><i class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" target="_blank"><i
+                  class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" download><i
+                  class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
           </ul>
         </div>
         <!-- YouTube Icon with Link to Open Modal -->
-        <a href="#videoModal" data-bs-toggle="modal" class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
+        <a href="#videoModal" data-bs-toggle="modal"
+          class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
           <i class="fa-brands fa-youtube me-2"></i>Watch Video
         </a>
-    </div>
-  </div>
-</section>
-<!-- RTT Section -->
-<section class="rtt-section p-5 text-center d-none">
-  <div class="container">
-    <h3>Here are our top 10 ranked training modules for business setting</h3>
-    <p>Our journey in the training space has been intensely reflective...</p>
-    <ul class="top-training-modules">
-      <li>High Performance Teams</li>
-      <li>AI for HR</li>
-      <li>POSH</li>
-      <li>ESG</li>
-      <li>Engaging Gen Zs and Alphas</li>
-      <li>BEI Techniques</li>
-      <li>5S for HR</li>
-      <li>Financial wellness - From CTC Structure to Investment</li>
-      <li>Volunteering as a tool to leverage Engagement</li>
-      <li>Internal Coaching</li>
-    </ul>
-    <hr>
-    <!-- <div class="row">
-      <div class="col-md-8 mx-auto">
-        <p>RTT Our journey in the training space has been intensely reflective over a period of time.
-          As a culminated effort of which, We have mastered various time tested & result oriented training modules for business setting. It guarantees a turn around result in your executive development, management & leadership development which are a game changer for your business. Many such proprietary curated modules have been created by us. </p> <hr>
-          <p>Learning needs like the light from a prism. It is different from person to person, from level to level and even for the same person differently at different points of time. We are here not only to train your teams but also your executives who would just need the gentle nudge.</p>
       </div>
-    </div> -->
-  </div>
-  
-</section>
-<!-- CTDD Section -->
-<section class="ctdd-section p-5 text-center text-md-start d-none">
-  <div class="container">
-    <h3>CTDD - Tailor-made Solutions</h3>
-    <p>There are times the learning intervention required for business may be unique & distinct. In such cases our
-      competent training needs assessment team will initiate a study to ascertain your apt needs. For that the study we
-      will interact with all of your stakeholders and come with a road map to design & deliver with start to end
-      clarity. </p>
-  </div>
-</section>
+    </div>
+  </section>
+</div>
 <script>
-  // scripts.js
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
@@ -172,410 +132,375 @@
 </script>
 {{ else }}
 {{ if eq .Params.category "nonprofit" }}
-<!-- Hero Section -->
-<section class="hero-clientele non-profit text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">ESPeople Non-Profit</h1>
-  <h2 class="display-4 my-3">Learning Solutions</h2>
-  <h3>Non Profit Organizations that contribute more to the society as those businesses that contribute to the nation's
-    economy are one of our key focus segment....</h3>
-</section>
-<!-- Introduction Section -->
-<section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
-  <div class="blob position-absolute"></div>
-  <div class="container">
-    <h1 class="display-5 mb-0">We are here to add value to those who add value to our society.</h1>
-  </div>
-</section>
-<!-- key offerings -->
-<section class="rtt-section p-5 text-center gradient-bg">
-  <div class="container">
-    <div class="row py-5">
-      <div class="col-md-8 mx-auto">
-        <h4>With Professional Social Work background, our team of experts are aware of the challenges and complexities
-          that
-          are faced by the Non Profit Organizations as well as those dynamic requirements that arise both from the
-          society
-          as well as from the Human Capital. </h4>
-      </div>
+<div class="np">
+  <section class="hero-clientele non-profit text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">ESPeople Non-Profit</h1>
+    <h2 class="display-4 my-3">Learning Solutions</h2>
+    <h3>Non Profit Organizations that contribute more to the society as those businesses that contribute to the nation's
+      economy are one of our key focus segment....</h3>
+  </section>
+  <!-- Introduction Section -->
+  <section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
+    <div class="blob position-absolute"></div>
+    <div class="container">
+      <h1 class="display-5 mb-0">We are here to add value to those who add value to our society.</h1>
     </div>
-    <div class="row justify-content-between">
-      <div class="col-md-5 gradient-bg-card">
-        <h4>RTT - Ready to Train (Timely to deliver at ease)</h4>
-        <h5>Readily available training modules for non-profit settings</h5>
-        <hr>
-        <p>This RTT learning solutions are readily available, time tested, evolved based on various practicing experts
-          matured experience in non-profit field. Professionals from diverse fields of psychology, sociology & social
-          workers sculpted these contemporary learning solutions for non-profit settings.</p>
+  </section>
+  <!-- key offerings -->
+  <section class="rtt-section p-5 text-center gradient-bg">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-8 mx-auto">
+          <h4>With Professional Social Work background, our team of experts are aware of the challenges and complexities
+            that
+            are faced by the Non Profit Organizations as well as those dynamic requirements that arise both from the
+            society
+            as well as from the Human Capital. </h4>
+        </div>
       </div>
-      <div class="col-md-5 gradient-bg-card">
-        <h4>CTDD - Customized training development & delivery</h4>
-        <h5>Tailor-made modules designed & developed for your unique & specific needs</h5>
-        <hr>
-        <p>CTDD - There are times learning solutions to non-profits need to made for the hour, situations and apt needs.
-          Thus we study your unique needs, design, develop, implement & fully deliver customized learning solutions to
-          your non-profit settings. <br>In such cases our competent training needs assessment team will initiate a study
-          to ascertain your apt needs. For that study we will interact with your appropriate stack holders and come with
-          a road map to design, develop & deliver learning solutions with start to end clarity.</p>
+      <div class="row justify-content-between">
+        <div class="col-md-5 gradient-bg-card">
+          <h4>RTT - Ready to Train (Timely to deliver at ease)</h4>
+          <h5>Readily available training modules for non-profit settings</h5>
+          <hr>
+          <p>This RTT learning solutions are readily available, time tested, evolved based on various practicing experts
+            matured experience in non-profit field. Professionals from diverse fields of psychology, sociology & social
+            workers sculpted these contemporary learning solutions for non-profit settings.</p>
+        </div>
+        <div class="col-md-5 gradient-bg-card">
+          <h4>CTDD - Customized training development & delivery</h4>
+          <h5>Tailor-made modules designed & developed for your unique & specific needs</h5>
+          <hr>
+          <p>CTDD - There are times learning solutions to non-profits need to made for the hour, situations and apt
+            needs.
+            Thus we study your unique needs, design, develop, implement & fully deliver customized learning solutions to
+            your non-profit settings. <br>In such cases our competent training needs assessment team will initiate a
+            study
+            to ascertain your apt needs. For that study we will interact with your appropriate stack holders and come
+            with
+            a road map to design, develop & deliver learning solutions with start to end clarity.</p>
+        </div>
       </div>
-
+      <!-- <h3>Few of our service offerings are:</h3>
+      <ol class="top-training-modules">
+        <li>Managing volunteers </li>
+        <li>Handling conflicts </li>
+        <li>Reporting to Board</li>
+        <li>Report writing </li>
+        <li>Essential Finance for Non Profit Organizations </li>
+        <li>Laws around operating Non Profit Organizations </li>
+        <li>Budding leaders program </li>
+        <li>Risk management </li>
+        <li>Fund raising planning and operations</li>
+        <li>DEI</li>
+        <li>Gaining community acceptance </li>
+        <li>Strategic goals setting for growth </li>
+        <li>Analytics and metrics</li>
+      </ol> -->
+      <!-- <hr> -->
     </div>
-    <!-- <h3>Few of our service offerings are:</h3>
-    <ol class="top-training-modules">
-      <li>Managing volunteers </li>
-      <li>Handling conflicts </li>
-      <li>Reporting to Board</li>
-      <li>Report writing </li>
-      <li>Essential Finance for Non Profit Organizations </li>
-      <li>Laws around operating Non Profit Organizations </li>
-      <li>Budding leaders program </li>
-      <li>Risk management </li>
-      <li>Fund raising planning and operations</li>
-      <li>DEI</li>
-      <li>Gaining community acceptance </li>
-      <li>Strategic goals setting for growth </li>
-      <li>Analytics and metrics</li>
-    </ol> -->
-    <!-- <hr> -->
-  </div>
-  <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
-    <!-- "Know More" Button -->
-    <!-- <a href="/esp-non-profit" class="btn btn-primary  ">Know more</a> -->
-  
+    <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
       <!-- PDF Icon with Dropdown for Brochure -->
       <div class="dropdown mt-2 mt-md-0">
-        <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown"
+          data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-regular fa-file-pdf me-2"></i>Brochure
         </a>
         <ul class="dropdown-menu" aria-labelledby="brochureDropdown">
-          <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" target="_blank"><i class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
-          <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" download><i class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
+          <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" target="_blank"><i
+                class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
+          <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" download><i
+                class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
         </ul>
       </div>
       <!-- YouTube Icon with Link to Open Modal -->
-      <a href="#videoModal" data-bs-toggle="modal" class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
+      <a href="#videoModal" data-bs-toggle="modal"
+        class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
         <i class="fa-brands fa-youtube me-2"></i>Watch Video
       </a>
-  </div>
-</section>
-<!-- {{ .Content }} -->
+    </div>
+  </section>
+</div>
 {{ else if eq .Params.category "education" }}
-<section class="hero-clientele education text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">ESPeople Education</h1>
-  <h2 class="display-4 my-3">Learning Solutions</h2>
-  <!-- <h3>Students are the backbone for a family, society and the nation. As a culture, we place high regard for the
-    Educators to whom the future of the nation are entrusted with....</h3> -->
-  <h3>A future of a country can be tracked on the present students aspirations & dream of that nation.</h3>
-</section>
-
-<!-- Introduction Section -->
-<section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
-  <div class="blob position-absolute"></div>
-  <div class="container">
-    <!-- <h1 class="display-5 mb-0">Yet, to stay competitive, every saw need to be sharpened... <br>
-      We genuinely believe that the strength of the seed sown determines the strength of the tree; to stand through the
-      tests of time and character. So this segment is very close to our heart.</h1> -->
-    <h1 class="display-6 mb-0">Education builds future youth of the country to compete with rest of the nation's.
-      Students + Teachers + School/College/Universities play a critical component of a nations growth, development &
-      prosperity.</h1>
-  </div>
-</section>
-<section class="ctdd-section p-5 text-center text-md-start d-none">
-  <div class="container">
-    <!-- <h3>CTDD - Tailor-made Solutions</h3> -->
-    <h4>Our team of experts with Behavioral, Developmental and applied psychology background are here to help educators
-      and students chisel their dreams as future leaders. </h4>
-  </div>
-</section>
-
-<section class="learning-solutions p-5  gradient-bg">
-  <div class="container">
-    <h2 class="text-primary mb-5">Our learning solutions for education setting are of 2 types:</h2>
-    <div class="row justify-content-between">
-      <div class="col-md-5 solution-box gradient-bg-card">
-        <!-- <h4>Few of our courses for educators include</h4>
-        <hr>
-        <ol>
-          <li>Handling adolescents </li>
-          <li>Conflict management and resolution </li>
-          <li>Complexities Gen alpha's go through - Understanding and Support to navigate </li>
-          <li>Reflective thinking </li>
-          <li>Encouraging Dialogue and Debate </li>
-          <li>Strategies for motivating students </li>
-          <li>Modern teaching methodologies</li>
-          <li>AI and Technology for Teachers </li>
-          <li>Understanding diverse student needs </li>
-          <li>Classroom management </li>
-          <li>Effective lesson planning </li>
-          <li>Communication skills </li>
-          <li>Strategies for addressing diverse learning needs </li>
-          <li>Creating an inclusive learning environment</li>
-          <li>DEI</li>
-        </ol> -->
-        <h4>RTT - Re@ady to Train <br>(Timely to deliver at ease) </h4>
-
-
-        <h5>Readily available training modules for educational settings</h5>
-        <hr>
-
-        <p>This RTT learning solutions for educational settings are crafted by collecting valuable inputs from
-          professionals who are engaged in youth growth domains viz., academia, economists, developmental psychologist &
-          sociologist etc., Such solutions are readily available, time tested, matured, refined, meets the growth dreams
-          perspectives of educational settings.</p>
-      </div>
-      <div class="col-md-5 solution-box gradient-bg-card">
-        <h4>CTDD - Customized training development & delivery</h4>
-
-        <h5>Besides (RTT) readily available learning modules an institution in the education setting may face some
-          unique issues which may require tailor-made modules designed & developed for their unique & specific needs
-        </h5>
-        <hr>
-
-        <p>
-          CTDD - In certain situations educational institutions require training solutions for their unique issues faced
-          in the process of growth & development which are student centric, academic related practices or even
-          Governmental specific directions.Thus we study your unique needs, design, develop, implement & fully deliver
-          customized learning solutions to your educational settings.
-
-          In such cases our competent training needs assessment team will initiate a study to ascertain your apt needs.
-          For that study we will interact with your appropriate stack holders and come with a road map to design,
-          develop & deliver learning solutions with start to end clarity.
-        </p>
-        <!-- <h4>Few courses for students include</h4>
-        <hr>
-        <ol>
-          <li>Problem solving </li>
-          <li>Career preparedness </li>
-          <li>Emotional intelligence for adolescents </li>
-          <li>Critical thinking </li>
-          <li>Habits building </li>
-          <li>Collaboration & Team building skills</li>
-          <li>Campus to Corporate </li>
-          <li>Exploring hobbies</li>
-          <li>Teamship Behaviour</li>
-        </ol> -->
-      </div>
+<div class="edu">
+  <section class="hero-clientele education text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">ESPeople Education</h1>
+    <h2 class="display-4 my-3">Learning Solutions</h2>
+    <h3>A future of a country can be tracked on the present students aspirations & dream of that nation.</h3>
+  </section>
+  <!-- Introduction Section -->
+  <section class="intro-section p-5 text-center text-md-start position-relative py-5 d-flex align-items-center">
+    <div class="blob position-absolute"></div>
+    <div class="container">
+      <h1 class="display-6 mb-0">Education builds future youth of the country to compete with rest of the nation's.
+        Students + Teachers + School/College/Universities play a critical component of a nations growth, development &
+        prosperity.</h1>
     </div>
-    <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
-      <!-- "Know More" Button -->
-      <!-- <a href="/esp-non-profit" class="btn btn-primary  ">Know more</a> -->
-    
+  </section>
+  <section class="learning-solutions p-5 gradient-bg">
+    <div class="container">
+      <h2 class="text-primary mb-5">Our learning solutions for education setting are of 2 types:</h2>
+      <div class="row justify-content-between">
+        <div class="col-md-5 solution-box gradient-bg-card">
+          <hr>
+          <ol>
+            <li>Handling adolescents </li>
+            <li>Conflict management and resolution </li>
+            <li>Complexities Gen alpha's go through - Understanding and Support to navigate </li>
+            <li>Reflective thinking </li>
+            <li>Encouraging Dialogue and Debate </li>
+            <li>Strategies for motivating students </li>
+            <li>Modern teaching methodologies</li>
+            <li>AI and Technology for Teachers </li>
+            <li>Understanding diverse student needs </li>
+            <li>Classroom management </li>
+            <li>Effective lesson planning </li>
+            <li>Communication skills </li>
+            <li>Strategies for addressing diverse learning needs </li>
+            <li>Creating an inclusive learning environment</li>
+            <li>DEI</li>
+          </ol> -->
+          <h4>RTT - Re@ady to Train <br>(Timely to deliver at ease) </h4>
+          <h5>Readily available training modules for educational settings</h5>
+          <hr>
+          <p>This RTT learning solutions for educational settings are crafted by collecting valuable inputs from
+            professionals who are engaged in youth growth domains viz., academia, economists, developmental psychologist
+            &
+            sociologist etc., Such solutions are readily available, time tested, matured, refined, meets the growth
+            dreams
+            perspectives of educational settings.</p>
+        </div>
+        <div class="col-md-5 solution-box gradient-bg-card">
+          <h4>CTDD - Customized training development & delivery</h4>
+          <h5>Besides (RTT) readily available learning modules an institution in the education setting may face some
+            unique issues which may require tailor-made modules designed & developed for their unique & specific needs
+          </h5>
+          <hr>
+          <p>
+            CTDD - In certain situations educational institutions require training solutions for their unique issues
+            faced
+            in the process of growth & development which are student centric, academic related practices or even
+            Governmental specific directions.Thus we study your unique needs, design, develop, implement & fully deliver
+            customized learning solutions to your educational settings.
+            In such cases our competent training needs assessment team will initiate a study to ascertain your apt
+            needs.
+            For that study we will interact with your appropriate stack holders and come with a road map to design,
+            develop & deliver learning solutions with start to end clarity.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
         <!-- PDF Icon with Dropdown for Brochure -->
         <div class="dropdown mt-2 mt-md-0">
-          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button"
+            id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-regular fa-file-pdf me-2"></i>Brochure
           </a>
           <ul class="dropdown-menu" aria-labelledby="brochureDropdown">
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" target="_blank"><i class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" download><i class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" target="_blank"><i
+                  class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" download><i
+                  class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
           </ul>
         </div>
         <!-- YouTube Icon with Link to Open Modal -->
-        <a href="#videoModal" data-bs-toggle="modal" class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
+        <a href="#videoModal" data-bs-toggle="modal"
+          class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
           <i class="fa-brands fa-youtube me-2"></i>Watch Video
         </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 {{ else if eq .Params.category "government" }}
-<!-- <p>Content for other category 3</p> -->
-<section class="hero-clientele government text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">ESPeople Government</h1>
-  <h2 class="display-4 my-3">Learning Solutions</h2>
-  <h3>Our government-focused training programs at ESPeople are designed to empower leaders with essential skills in
-    decision-making, crisis management, servant leadership, innovation, and more, enabling them to lead with agility,
-    responsibility, and resilience....</h3>
-</section>
-
-<section class="learning-solutions p-5 gradient-bg ">
-  <div class="container">
-    <h3 class="text-primary mb-5 text-center">We have customised training options based on your need.</h3>
-    <div class="row justify-content-between">
-      <div class="col-md-8 mx-auto solution-box gradient-bg-card">
-        <h4>Training programs for ESPeople Government include but not limited to:</h4>
-        <hr>
-        <ol>
-          <li>Decision making </li>
-          <li>Governance </li>
-          <li>Crisis management </li>
-          <li>Delegation skills</li>
-          <li>Problem solving </li>
-          <li>Inspirational leadership </li>
-          <li>Anchoring and exploring CSR</li>
-          <li>Servant leadership </li>
-          <li>AI for leaders</li>
-          <li>Agility and innovation</li>
-          <li>Negotiation </li>
-          <li>Team management </li>
-          <li>Handling adverse scenarios</li>
-        </ol>
+<div class="gov">
+  <section class="hero-clientele government text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">ESPeople Government</h1>
+    <h2 class="display-4 my-3">Learning Solutions</h2>
+    <h3>Our government-focused training programs at ESPeople are designed to empower leaders with essential skills in
+      decision-making, crisis management, servant leadership, innovation, and more, enabling them to lead with agility,
+      responsibility, and resilience....</h3>
+  </section>
+  <section class="learning-solutions p-5 gradient-bg ">
+    <div class="container">
+      <h3 class="text-primary mb-5 text-center">We have customised training options based on your need.</h3>
+      <div class="row justify-content-between">
+        <div class="col-md-8 mx-auto solution-box gradient-bg-card">
+          <h4>Training programs for ESPeople Government include but not limited to:</h4>
+          <hr>
+          <ol>
+            <li>Decision making </li>
+            <li>Governance </li>
+            <li>Crisis management </li>
+            <li>Delegation skills</li>
+            <li>Problem solving </li>
+            <li>Inspirational leadership </li>
+            <li>Anchoring and exploring CSR</li>
+            <li>Servant leadership </li>
+            <li>AI for leaders</li>
+            <li>Agility and innovation</li>
+            <li>Negotiation </li>
+            <li>Team management </li>
+            <li>Handling adverse scenarios</li>
+          </ol>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <p>Governance by a government be at local body level, state level or at central level periodically requires
+            alignment on governments various policies & programs. Especially among bureaucrats as well government staffs
+            at all levels towards successful implementation of such developmental programs & projects from time to time.
+            Preparing for a higher degree level of deliverables by the government teams requires preparedness,
+            awareness,
+            motivation and zeal to ensure government programs & projects reach the common man. ESPeople Government
+            learning solutions team work hand in hand with government in training the entire machinery to reach out the
+            people beneficiaries.</p>
+        </div>
       </div>
-    </div>
-    <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
-      <!-- "Know More" Button -->
-      <!-- <a href="/esp-non-profit" class="btn btn-primary  ">Know more</a> -->
-    
+      <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
         <!-- PDF Icon with Dropdown for Brochure -->
         <div class="dropdown mt-2 mt-md-0">
-          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button"
+            id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-regular fa-file-pdf me-2"></i>Brochure
           </a>
           <ul class="dropdown-menu" aria-labelledby="brochureDropdown">
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" target="_blank"><i class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" download><i class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" target="_blank"><i
+                  class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" download><i
+                  class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
           </ul>
         </div>
         <!-- YouTube Icon with Link to Open Modal -->
-        <a href="#videoModal" data-bs-toggle="modal" class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
+        <a href="#videoModal" data-bs-toggle="modal"
+          class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
           <i class="fa-brands fa-youtube me-2"></i>Watch Video
         </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 {{ else if eq .Params.category "focussed" }}
-
-<section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">ESPeople Focussed Individuals</h1>
-  <h2 class="display-4 my-3">Learning Solutions</h2>
-  <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career
-    transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for
-    each group....</h3>
-</section>
-<section class="learning-solutions p-5 gradient-bg">
-  <div class="container">
-    <!-- <h3 class="text-primary mb-4 text-center">We have customised training options based on your need.</h3> -->
-    <div class="row justify-content-between">
-      <div class="col-md-6 mx-auto solution-box gradient-bg-card">
-        {{ .Content }}
+<div class="foc">
+  <section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">ESPeople Focussed Individuals</h1>
+    <h2 class="display-4 my-3">Learning Solutions</h2>
+    <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career
+      transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for
+      each group....</h3>
+  </section>
+  <section class="learning-solutions p-5 gradient-bg">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 mx-auto solution-box gradient-bg-card">
+          {{ .Content }}
+        </div>
       </div>
-    </div>
-    <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
-      <!-- "Know More" Button -->
-      <!-- <a href="/esp-non-profit" class="btn btn-primary  ">Know more</a> -->
-    
+      <div class="d-flex flex-column flex-md-row  align-items-center mt-4 justify-content-center gap-md-2 btn-row">
         <!-- PDF Icon with Dropdown for Brochure -->
         <div class="dropdown mt-2 mt-md-0">
-          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button" id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-primary--outline_none d-flex align-items-center " href="#" role="button"
+            id="brochureDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-regular fa-file-pdf me-2"></i>Brochure
           </a>
           <ul class="dropdown-menu" aria-labelledby="brochureDropdown">
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" target="_blank"><i class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/Kaya.pdf" download><i class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" target="_blank"><i
+                  class="fa-regular fa-eye me-1"></i>View Brochure</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-1" href="/PDF/ESP-brochure.pdf" download><i
+                  class="fa-solid fa-download me-1"></i>Download Brochure</a></li>
           </ul>
         </div>
         <!-- YouTube Icon with Link to Open Modal -->
-        <a href="#videoModal" data-bs-toggle="modal" class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
+        <a href="#videoModal" data-bs-toggle="modal"
+          class="btn btn-primary--outline_none  d-flex align-items-center justify-content-center">
           <i class="fa-brands fa-youtube me-2"></i>Watch Video
         </a>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- layout otherLD -->
+  </section>
+</div>
 {{ else if eq .Params.category "other" }}
-<section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
-  <h1 class="display-1">Other L&D Services</h1>
-  <!-- <h2 class="display-4 my-3">Learning Solutions</h2> -->
-  <!-- <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group....</h3> -->
-</section>
-
-<section class="learning-solutions p-5 d-none">
-  <div class="container">
-    <!-- <h3 class="text-primary mb-4 text-center">We have customised training options based on your need.</h3> -->
-    <div class="row justify-content-between">
-      <div class="col-md-6 mx-auto solution-box">
-        {{ .Content }}
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="services-section py-5">
-  <div class="container">
-    <h2 class="text-center mb-5 text-white">Other L&D Services</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Training Courseware Development</h4>
-          <p>We develop comprehensive course materials tailored to training needs</p>
+<div class="other">
+  <section class="hero-clientele other text-center text-light p-5 min-vh-50">
+    <h1 class="display-1">Other L&D Services</h1>
+  </section>
+  <section class="services-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">Other L&D Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Training Courseware Development</h4>
+            <p>We develop comprehensive course materials tailored to training needs</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Outbound Training Programs Logistics Support</h4>
-          <p>Coordinate logistics support from end-to-end for your outbound training programs</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Outbound Training Programs Logistics Support</h4>
+            <p>Coordinate logistics support from end-to-end for your outbound training programs</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">External Periodic Programs</h4>
-          <p>We also conduct periodical external training programs. You can sponsor your team for that</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">External Periodic Programs</h4>
+            <p>We also conduct periodical external training programs. You can sponsor your team for that</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Supporting your in-house Training Programs</h4>
-          <p>We support & facilitate your in house training sessions whether it is small or in entirity</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Supporting your in-house Training Programs</h4>
+            <p>We support & facilitate your in house training sessions whether it is small or in entirity</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Faculty Co-facilitation</h4>
-          <p><em>Our resource persons support can be drawn for your in-house training for an impactful results</em></p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Faculty Co-facilitation</h4>
+            <p><em>Our resource persons support can be drawn for your in-house training for an impactful results</em>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Training needs analysis & Effectiveness training audits</h4>
-          <p>We can be retained to assess & audit for overall training needs of your organization and come out with a detailed road map for implementation</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Training needs analysis & Effectiveness training audits</h4>
+            <p>We can be retained to assess & audit for overall training needs of your organization and come out with a
+              detailed road map for implementation</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Designing, developing effective "Training Processes" for your organization</h4>
-          <p>Our expertise can be engaged for your in-house training robust processes designing, developing & seeding it for your organisational results</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Designing, developing effective "Training Processes" for your organization</h4>
+            <p>Our expertise can be engaged for your in-house training robust processes designing, developing & seeding
+              it
+              for your organisational results</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Capturing your Innovative training practices</h4>
-          <p>Effective recording, documenting for future reference w.r.t your innovative training practices</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Capturing your Innovative training practices</h4>
+            <p>Effective recording, documenting for future reference w.r.t your innovative training practices</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card p-4">
-          <h4 class="service-title">Training facilitation in major Indian languages</h4>
-          <p>We have capabilities to deliver training in multiple Indian languages for diverse audiences. It will facilitate full blossomed learnings to your teams</p>
+        <div class="col-md-4">
+          <div class="service-card p-4">
+            <h4 class="service-title">Training facilitation in major Indian languages</h4>
+            <p>We have capabilities to deliver training in multiple Indian languages for diverse audiences. It will
+              facilitate full blossomed learnings to your teams</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
+  </section>
+</div>
 {{ end }}
-
 {{ end }}
-
-<!-- layout "approach" -->
 {{ if eq .Params.layout "approach" }}
-<!-- <section class="approach py-8 bg-primary--light px-4 px-md-0">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8 mx-auto mt-5 mt-md-4">
-        {{ .Content }}
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="esp-approach-section ">
   <div class="container">
     <h2 class="text-center text-white mb-0">ESP Approach</h2>
     <div class="row my-5">
       <div class="col-md-8 mx-auto">
         <p class="text-center text-light mb-0">
-          At ESPeople, we offer a comprehensive range of training and development methods designed to unlock the potential of individuals and teams. Our tailored programs enable personal and professional growth, empowering organizations to achieve their strategic goals through skilled, motivated, and aligned employees.
+          At ESPeople, we offer a comprehensive range of training and development methods designed to unlock the
+          potential of individuals and teams. Our tailored programs enable personal and professional growth, empowering
+          organizations to achieve their strategic goals through skilled, motivated, and aligned employees.
         </p>
       </div>
     </div>
@@ -589,7 +514,8 @@
           <div class="content">
             <h4 class="approach-title">People Developmental Learning (PDL)</h4>
             <p class="text-light">
-              Our PDL approach enhances capabilities, fosters growth, and aligns individual strengths with organizational goals.
+              Our PDL approach enhances capabilities, fosters growth, and aligns individual strengths with
+              organizational goals.
             </p>
             <ul class="key-benefits text-light">
               <li><strong>Skill Development:</strong> Empowers employees with essential skills.</li>
@@ -608,7 +534,8 @@
           <div class="content">
             <h4 class="approach-title">Rapid Training Delivery (RTD)</h4>
             <p class="text-light">
-              RTD is an accelerated method for quick, impactful learning using real-world examples and activity-based training.
+              RTD is an accelerated method for quick, impactful learning using real-world examples and activity-based
+              training.
             </p>
             <ul class="key-benefits text-light">
               <li><strong>Speed:</strong> High-impact learning in a condensed timeframe.</li>
@@ -627,7 +554,8 @@
           <div class="content">
             <h4 class="approach-title">L&D Coaching & Mentoring Services</h4>
             <p class="text-light">
-              Personalized guidance for employees at all levels, supporting their professional growth through tailored coaching plans.
+              Personalized guidance for employees at all levels, supporting their professional growth through tailored
+              coaching plans.
             </p>
             <ul class="key-benefits text-light">
               <li><strong>Personalized Growth Plans:</strong> Customized coaching for success.</li>
@@ -640,9 +568,7 @@
     </div>
   </div>
 </section>
-
 {{ end }}
-<!-- layout 'contact' -->
 {{ if eq .Params.layout "contact" }}
 <!-- contact form -->
 <section class="contact-section py-5 d-none">
@@ -709,14 +635,14 @@
     </div>
   </div>
 </section>
-
 <section class="contact-section">
   <div class="container p-5">
     <div class="text-center text-light mb-5">
       <h1 class="display-5">Get in Touch to Unlock Your Business Potential</h1>
       <p class="fst-italic">
         Struggling with leadership, team synergy, or performance? <br>
-        Our ESP (Energize & Synergize People) method helps businesses overcome these challenges. Reach out below, and we'll partner with you to unlock growth and success.
+        Our ESP (Energize & Synergize People) method helps businesses overcome these challenges. Reach out below, and
+        we'll partner with you to unlock growth and success.
       </p>
     </div>
     <div class="row">
@@ -735,36 +661,58 @@
         </div>
       </div>
       <div class="col-md-7 mt-4 mt-md-0 ps-md-0">
-        <form class="contact-form p-4">
+        <form id="contact" name="contact" method="POST" action="/thank-you" netlify class="contact-form p-4">
           <h3 class="mb-4 text-light">Contact Form</h3>
           <div class="row g-3">
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input type="text" class="form-control" placeholder="Your Name" required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Mobile Number">
+              <input type="tel" minlength="10" maxlength="10" class="form-control" placeholder="Your Mobile Number" required>
             </div>
             <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Email Address">
+              <input type="email" class="form-control" placeholder="abc@email.com" required>
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Subject">
+              <input type="text" class="form-control" placeholder="Subject" required>
             </div>
           </div>
           <div class="mt-3">
-            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
           </div>
           <div class="mt-3 text-end">
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary" aria-label="send Message button">Send Message</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- <a href="https://www.freepik.com/free-photo/3d-render-concept-phone-receiver-3d-art-design-illustration_22928596.htm#fromView=search&page=1&position=2&uuid=47c79a5b-f2d7-43e9-a8fb-f0f4c9c776ac">Image by Rochak Shukla on Freepik</a> -->
 {{ end }}
 
+{{ if eq .Params.layout "thank" }}
+
+<section class="gradient-bg py-custom">
+  <div class="container text-center">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="card shadow-lg p-4 ">
+                  <div class="card-body">
+                      <h1 class="display-4 text-success mb-4">Thank You!</h1>
+                      <p class="lead">We appreciate your enquiry and will get back to you as soon as possible.</p>
+                      <hr class="my-4">
+                      <p>If you need immediate assistance, feel free to call us
+                          <a class="nav-link phone-link" href="tel:+919962006364" title="tap to call mobile"
+                              aria-label="tap to call mobile">9962006364</a>
+                          <!-- <a href="/contact" class="text-primary">contact us directly</a>. -->
+                      </p>
+                      <!-- <a href="/" class="btn btn-primary btn-lg mt-3">Go Back to Home</a> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{{ end }}
 {{ end }}

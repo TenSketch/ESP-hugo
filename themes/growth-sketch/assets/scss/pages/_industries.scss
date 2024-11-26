@@ -86,12 +86,15 @@ $blob: #ffc10586;
 
 
 .hero-clientele {
-    background: $primary-clr url('/images/manufacturing-business.jpg') no-repeat center/cover;
+    background: $primary-clr no-repeat center/cover;
     background-blend-mode: overlay;
     color: white;
     
     .hero-title {
         font-size: 2.5rem;
+    }
+    &.business{
+        background-image: url(/images/manufacturing-business.jpg);
     }
     &.non-profit{
         background-image: url(/images/non-profit-bg.jpg);
@@ -102,6 +105,12 @@ $blob: #ffc10586;
     }
     &.government{
         background-image: url(/images/government-org.jpeg);
+    }
+    &.focussed{
+        background-image: url(/images/homemaker.jpg);
+    }
+    &.other{
+        background-image: url(/images/outbound-training.webp);
     }
 }
 
@@ -210,7 +219,7 @@ background: linear-gradient(84deg, rgba(10,27,36,1) 51%, rgba(0,64,128,1) 100%);
     }
   .service-card {
     // background-color: $secondary-clr;
-    border-radius: 25px;
+    border-radius: 10px;
     color: $text-light-clr;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

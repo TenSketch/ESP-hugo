@@ -273,3 +273,11 @@ We have capabilities to deliver training in multiple Indian languages for divers
 
 Photo by <a href="https://unsplash.com/@austindistel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Austin Distel</a> on <a href="https://unsplash.com/photos/three-men-sitting-while-using-laptops-and-watching-man-beside-whiteboard-wD1LRb9OeEo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
+
+<a href="https://www.freepik.com/free-photo/3d-render-concept-phone-receiver-3d-art-design-illustration_22928596.htm#fromView=search&page=1&position=2&uuid=47c79a5b-f2d7-43e9-a8fb-f0f4c9c776ac">Image by Rochak Shukla on Freepik</a>
+
+
+https://www.freepik.com/free-photo/portrait-woman-with-cancer-using-laptop-with-friend-home_94493472.htm#fromView=search&page=1&position=38&uuid=96afa429-21b2-47ff-b6be-085fc4d289c2
+
+outbound
+https://www.inspirit.co.in/wp-content/uploads/2023/09/1-2.jpg
