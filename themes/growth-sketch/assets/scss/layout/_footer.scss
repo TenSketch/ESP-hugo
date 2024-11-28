@@ -4,12 +4,10 @@ footer {
 }
 
 .footer {
-  background-color: lighten($primary-clr, 40%);
+  // background-color: lighten($primary-clr, 40%);
   background-color: $primary-clr--light;
 
-  // color: $light-clr;
-  // background-color: #222; // Dark background
-  padding: 40px 0;
+  padding: 3rem 0;
   // color: #fff; // White text
   position: relative;
   text-align: center;
@@ -33,6 +31,7 @@ footer {
   // Navigation Links
   .nav-link {
       color: darken($accent-clr,20%);
+      font-weight: bold;
       margin: 0 15px;
       text-transform: uppercase;
       font-weight: 500;
@@ -40,7 +39,7 @@ footer {
       transition: color 0.3s ease;
 
       &:hover {
-          color: #fff; // Change color on hover
+          color: $secondary-clr; // Change color on hover
       }
   }
 
@@ -62,9 +61,12 @@ footer {
 
   // Copyright Text
   .footer-copyright {
-      font-size: 14px;
+      // font-size: 14px;
       margin-top: 20px;
       // color: #666;
+      i{
+        color: $accent-clr;
+      }
       a{
         color: darken($accent-clr,20%);
 

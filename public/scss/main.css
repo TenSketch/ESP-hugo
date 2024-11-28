@@ -101,6 +101,8 @@ li {
 a {
   text-decoration: none;
   color: #09304e; }
+  a:hover {
+    text-decoration: underline; }
 
 img {
   max-width: 100%;
@@ -156,9 +158,8 @@ img {
   color: #004080 !important; }
 
 .footer {
-  background-color: #4da6ff;
   background-color: #bdecfa;
-  padding: 40px 0;
+  padding: 3rem 0;
   position: relative;
   text-align: center; }
   .footer .footer-logo .logo-img {
@@ -171,13 +172,14 @@ img {
     text-align: center; }
   .footer .nav-link {
     color: #9e7700;
+    font-weight: bold;
     margin: 0 15px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
     transition: color 0.3s ease; }
     .footer .nav-link:hover {
-      color: #fff; }
+      color: #0a1b24; }
   .footer .social-icons .social-link {
     color: #9e7700;
     margin: 0 10px;
@@ -187,8 +189,9 @@ img {
       color: #fff;
       transform: scale(1.2); }
   .footer .footer-copyright {
-    font-size: 14px;
     margin-top: 20px; }
+    .footer .footer-copyright i {
+      color: #ffc105; }
     .footer .footer-copyright a {
       color: #9e7700; }
       .footer .footer-copyright a:hover {
@@ -457,27 +460,6 @@ img {
         background-color: #0a1b24;
         color: #f8fbfc;
         box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5); }
-  .evolution-vision-mission .contact-section {
-    padding: 3rem 0; }
-    .evolution-vision-mission .contact-section .section-title {
-      font-size: 2.5rem;
-      color: #333; }
-    .evolution-vision-mission .contact-section .form-floating {
-      margin-bottom: 1.5rem; }
-      .evolution-vision-mission .contact-section .form-floating .form-control {
-        border: none;
-        border-bottom: 2px solid #ccc;
-        border-radius: 0;
-        box-shadow: none;
-        transition: border-color 0.3s ease;
-        background-color: transparent; }
-        .evolution-vision-mission .contact-section .form-floating .form-control:focus {
-          border-bottom-color: #333;
-          outline: 0;
-          box-shadow: none; }
-      .evolution-vision-mission .contact-section .form-floating label {
-        color: #777;
-        font-size: 1rem; }
 
 .why-espeople {
   font-family: 'Arial', sans-serif;
@@ -741,26 +723,13 @@ img {
       margin-top: 10px;
       font-size: 0.9rem; }
 
-.contact-section {
-  background: linear-gradient(84deg, #0a1b24 51%, #004080 100%); }
-  .contact-section .contact-left-bg {
-    background: #0a1b24 url(/images/contact-us-bg.jpg) no-repeat center/cover;
-    background-blend-mode: overlay; }
-  .contact-section .contact-form {
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-    .contact-section .contact-form .form-control {
-      border: 1px solid rgba(0, 0, 0, 0.1); }
-      .contact-section .contact-form .form-control:focus {
-        outline: none;
-        border-color: #004080;
-        box-shadow: 0 0 5px rgba(0, 64, 128, 0.5); }
-    .contact-section .contact-form .btn-primary {
-      background-color: #004080;
-      border: none; }
-      .contact-section .contact-form .btn-primary:hover {
-        background-color: #003264; }
+.contact-section .contact-left-bg {
+  background: url(/images/contact-us-bg.jpg) no-repeat center/cover;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #0a1b24;
+  box-shadow: inset 20px 20px 60px #0a1b24, inset -20px -20px 60px #0a1b24; }
 
-.form {
-  min-height: 60vh; }
+.contact-section .contact-form {
+  height: 100%; }
