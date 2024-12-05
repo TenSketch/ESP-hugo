@@ -159,153 +159,192 @@
   }
 }
 
+// .evolution-vision-mission {
+//   position: relative;
+//   // background-color: $secondary-clr; // Your base section background color
+//   padding: 9rem 0; // Padding for the section content
+//   // border-radius: 10px;
+
+//   // margin-inline: 5rem;
+//   // Pseudo-element to create the wave at the bottom
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     width: 100%;
+//     height: 200px; // Adjust the height as per your need
+//     background: url('/images/wave.svg') no-repeat bottom;
+//     background-size: cover;
+//     z-index: 1;
+//   }
+
+
+
+
+
+//   // learning model animation section
+//   .learning-model-container {
+//     display: flex;
+//     flex-direction: column;
+
+//     justify-content: space-around;
+//     align-items: center;
+//     padding: 2rem;
+//   }
+
+//   .stage {
+//     text-align: center;
+//     opacity: 0.5;
+//     transition: all 0.5s ease;
+//     cursor: pointer;
+//   }
+
+//   .stage img {
+//     // width: 80px;
+//     height: 70%;
+//     transition: transform 0.5s ease;
+//   }
+
+//   .stage p {
+//     font-weight: bold;
+//     color: #003f7d;
+//     /* Main blue color */
+//     margin-top: 0.5rem;
+//   }
+
+//   .awareness img {
+//     filter: grayscale(1);
+//   }
+
+//   .understanding img {
+//     filter: grayscale(1);
+//   }
+
+//   .learning img {
+//     filter: grayscale(1);
+//   }
+
+//   .realization img {
+//     filter: grayscale(1);
+//   }
+
+//   .habitualization img {
+//     filter: grayscale(1);
+//   }
+
+//   .stage.active img {
+//     filter: none;
+//     transform: scale(1.2);
+//   }
+
+//   .stage.active {
+//     opacity: 1;
+//   }
+
+
+//   // why choose us
+
+//   .why-choose-us {
+//     background-color: $white;
+
+//     .section-title {
+//       font-size: 2.5rem;
+//       margin-bottom: 3rem;
+//     }
+
+//     .neumorphic-card {
+//       padding: 1rem;
+//       transition: all 300ms ease;
+//       height: 100%;
+//       // background: linear-gradient(145deg, #ffffff, #e6e6e6);
+//       border-radius: 10px;
+//       background-color: $white;
+//       box-shadow: 20px 20px 60px $white,
+//         -20px -20px 60px #e5e5e5;
+
+//       img {
+//         height: 350px;
+//         // aspect-ratio: 1;
+//         // width: 350px;
+//         object-fit: contain;
+//       }
+
+//       h4 {
+//         font-size: 1.75rem;
+//         margin-bottom: 1rem;
+//       }
+
+//       p,
+//       ul {
+//         font-size: 1rem;
+//         // color: #333;
+//         text-align: left;
+//       }
+
+//       ul {
+//         padding-left: 1.5rem;
+
+//         li {
+//           margin-bottom: 0.5rem;
+//           line-height: 1.6;
+//         }
+//       }
+
+//       &:hover {
+//         transform: scale(1.05);
+//         background-color: $secondary-clr;
+//         color: $light-clr;
+//         box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5);
+//       }
+//     }
+
+
+//   }
+
+
+// } 
+
 .evolution-vision-mission {
   position: relative;
-  // background-color: $secondary-clr; // Your base section background color
-  padding: 9rem 0; // Padding for the section content
-  // border-radius: 10px;
+  background: linear-gradient(to bottom right, $secondary-clr, $primary-clr);
+  padding: 9rem 0;
 
-  // margin-inline: 5rem;
-  // Pseudo-element to create the wave at the bottom
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
     width: 100%;
-    height: 200px; // Adjust the height as per your need
+    height: 200px;
     background: url('/images/wave.svg') no-repeat bottom;
     background-size: cover;
     z-index: 1;
   }
 
+  .icon-image {
+    max-width: 100px;
+    margin-top: 1rem;
+  }
 
+  .vertical-divider {
+    height: 100%;
+    width: 4px;
+    background: $accent-clr;
+    border-radius: 50px;
+  }
 
-
-
-  // learning model animation section
-  .learning-model-container {
+  .vision-mission-section ul li {
     display: flex;
-    flex-direction: column;
-
-    justify-content: space-around;
     align-items: center;
-    padding: 2rem;
-  }
+    gap: 10px;
 
-  .stage {
-    text-align: center;
-    opacity: 0.5;
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-
-  .stage img {
-    // width: 80px;
-    height: 70%;
-    transition: transform 0.5s ease;
-  }
-
-  .stage p {
-    font-weight: bold;
-    color: #003f7d;
-    /* Main blue color */
-    margin-top: 0.5rem;
-  }
-
-  .awareness img {
-    filter: grayscale(1);
-  }
-
-  .understanding img {
-    filter: grayscale(1);
-  }
-
-  .learning img {
-    filter: grayscale(1);
-  }
-
-  .realization img {
-    filter: grayscale(1);
-  }
-
-  .habitualization img {
-    filter: grayscale(1);
-  }
-
-  .stage.active img {
-    filter: none;
-    transform: scale(1.2);
-  }
-
-  .stage.active {
-    opacity: 1;
-  }
-
-
-  // why choose us
-
-  .why-choose-us {
-    background-color: $white;
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
+    i {
+      color: $accent-clr;
     }
-
-    .neumorphic-card {
-      padding: 1rem;
-      transition: all 300ms ease;
-      height: 100%;
-      // background: linear-gradient(145deg, #ffffff, #e6e6e6);
-      border-radius: 10px;
-      background-color: $white;
-      box-shadow: 20px 20px 60px $white,
-        -20px -20px 60px #e5e5e5;
-
-      img {
-        height: 350px;
-        // aspect-ratio: 1;
-        // width: 350px;
-        object-fit: contain;
-      }
-
-      h4 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-      }
-
-      p,
-      ul {
-        font-size: 1rem;
-        // color: #333;
-        text-align: left;
-      }
-
-      ul {
-        padding-left: 1.5rem;
-
-        li {
-          margin-bottom: 0.5rem;
-          line-height: 1.6;
-        }
-      }
-
-      &:hover {
-        transform: scale(1.05);
-        background-color: $secondary-clr;
-        color: $light-clr;
-        box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5);
-      }
-    }
-
-
   }
-
-
-} 
-
+}
 
 .why-espeople {
   // padding: 2rem;
@@ -365,6 +404,17 @@
 .why-espeople strong {
   font-weight: bold;
   // color: #555;
+}
+.styled-list {
+  li {
+    margin-bottom: 1rem; // Adds spacing between items
+    line-height: 1.6; // Improves readability
+
+    span {
+      color: $accent-clr; // Highlight color
+      font-weight: bold; // Emphasize the word
+    }
+  }
 }
 
 /* Desktop Layout */

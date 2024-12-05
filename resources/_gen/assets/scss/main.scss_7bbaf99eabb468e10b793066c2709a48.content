@@ -382,84 +382,32 @@ img {
 
 .evolution-vision-mission {
   position: relative;
+  background: linear-gradient(to bottom right, #0a1b24, #004080);
   padding: 9rem 0; }
   .evolution-vision-mission::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
     width: 100%;
     height: 200px;
     background: url("/images/wave.svg") no-repeat bottom;
     background-size: cover;
     z-index: 1; }
-  .evolution-vision-mission .learning-model-container {
+  .evolution-vision-mission .icon-image {
+    max-width: 100px;
+    margin-top: 1rem; }
+  .evolution-vision-mission .vertical-divider {
+    height: 100%;
+    width: 4px;
+    background: #ffc105;
+    border-radius: 50px; }
+  .evolution-vision-mission .vision-mission-section ul li {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 2rem; }
-  .evolution-vision-mission .stage {
-    text-align: center;
-    opacity: 0.5;
-    transition: all 0.5s ease;
-    cursor: pointer; }
-  .evolution-vision-mission .stage img {
-    height: 70%;
-    transition: transform 0.5s ease; }
-  .evolution-vision-mission .stage p {
-    font-weight: bold;
-    color: #003f7d;
-    /* Main blue color */
-    margin-top: 0.5rem; }
-  .evolution-vision-mission .awareness img {
-    filter: grayscale(1); }
-  .evolution-vision-mission .understanding img {
-    filter: grayscale(1); }
-  .evolution-vision-mission .learning img {
-    filter: grayscale(1); }
-  .evolution-vision-mission .realization img {
-    filter: grayscale(1); }
-  .evolution-vision-mission .habitualization img {
-    filter: grayscale(1); }
-  .evolution-vision-mission .stage.active img {
-    filter: none;
-    transform: scale(1.2); }
-  .evolution-vision-mission .stage.active {
-    opacity: 1; }
-  .evolution-vision-mission .why-choose-us {
-    background-color: #fff; }
-    .evolution-vision-mission .why-choose-us .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 3rem; }
-    .evolution-vision-mission .why-choose-us .neumorphic-card {
-      padding: 1rem;
-      transition: all 300ms ease;
-      height: 100%;
-      border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 20px 20px 60px #fff, -20px -20px 60px #e5e5e5; }
-      .evolution-vision-mission .why-choose-us .neumorphic-card img {
-        height: 350px;
-        object-fit: contain; }
-      .evolution-vision-mission .why-choose-us .neumorphic-card h4 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem; }
-      .evolution-vision-mission .why-choose-us .neumorphic-card p,
-      .evolution-vision-mission .why-choose-us .neumorphic-card ul {
-        font-size: 1rem;
-        text-align: left; }
-      .evolution-vision-mission .why-choose-us .neumorphic-card ul {
-        padding-left: 1.5rem; }
-        .evolution-vision-mission .why-choose-us .neumorphic-card ul li {
-          margin-bottom: 0.5rem;
-          line-height: 1.6; }
-      .evolution-vision-mission .why-choose-us .neumorphic-card:hover {
-        transform: scale(1.05);
-        background-color: #0a1b24;
-        color: #f8fbfc;
-        box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.15), -25px -25px 75px rgba(255, 255, 255, 0.5); }
+    gap: 10px; }
+    .evolution-vision-mission .vision-mission-section ul li i {
+      color: #ffc105; }
 
 .why-espeople {
   font-family: 'Arial', sans-serif;
@@ -504,6 +452,13 @@ img {
 
 .why-espeople strong {
   font-weight: bold; }
+
+.styled-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6; }
+  .styled-list li span {
+    color: #ffc105;
+    font-weight: bold; }
 
 /* Desktop Layout */
 @media (min-width: 768px) {
