@@ -4,15 +4,20 @@
   AOS.init({
     offset: 120,
     // Offset from the original trigger point (adjust as needed)
-    delay: 0,
+    delay: 500,
     // Delay in milliseconds
     duration: 400,
     // Animation duration in milliseconds
     easing: "ease-in-out",
     // Easing function
-    once: true,
+    once: false,
     // Whether animation should happen only once
     mirror: false
     // Whether elements should animate out when scrolling past them
+  });
+  var videoModal = document.getElementById("videoModal");
+  var videoIframe = document.getElementById("videoIframe");
+  videoModal.addEventListener("hidden.bs.modal", function() {
+    videoIframe.src = videoIframe.src;
   });
 })();

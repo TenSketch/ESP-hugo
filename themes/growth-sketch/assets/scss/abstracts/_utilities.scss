@@ -1,5 +1,9 @@
 @import '../abstracts/variables';
 
+.container{
+    position: relative;
+}
+
 .pt-8 {
     padding-top: map-get($sizes, 800);
 }
@@ -23,7 +27,9 @@
 .icon {
     width: 60px;
 }
-
+.text-accent{
+    color: $accent-clr;
+}
 .neumorphism {
     background: linear-gradient(145deg, $card-shadow-light, $white);
     border-radius: 10px;
@@ -48,9 +54,8 @@
 }
 
 .gradient-bg{
-  background: linear-gradient(84deg, rgba(10, 27, 36, 1) 51%, rgba(0, 64, 128, 1) 100%);
+  background: linear-gradient(270deg, rgba(10, 27, 36, 1) 30%, rgba(0, 64, 128, 1) 100%);
   color: $text-light-clr;
-
   .btn-primary--outline_none{
     color: $text-light-clr;
     i{
@@ -68,6 +73,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
     color: $text-light-clr;
+    padding: 1.2rem;
 
     &:hover {
       transform: translateY(-10px);

@@ -1,10 +1,7 @@
 @import '../abstracts/variables';
 $blob: #ffc10586;
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
+
 
 // .industry-section {
 //     position: relative;
@@ -89,9 +86,17 @@ $blob: #ffc10586;
     background: $primary-clr no-repeat center/cover;
     background-blend-mode: overlay;
     color: white;
-    
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5rem;
+    h1{
+        margin: 0;
+    }
     .hero-title {
-        font-size: 2.5rem;
+        // font-size: 2.5rem;
     }
     &.business{
         background-image: url(/images/manufacturing-business.jpg);
@@ -204,43 +209,61 @@ $blob: #ffc10586;
 
 
   .services-section {
-    // background: linear-gradient(135deg, $primary-clr, $secondary-clr);
     background: rgb(10,27,36);
-background: linear-gradient(84deg, rgba(10,27,36,1) 51%, rgba(0,64,128,1) 100%);
+    background: linear-gradient(84deg, rgba(10,27,36,1) 51%, rgba(0,64,128,1) 100%);
   
     .col-md-4:nth-child(odd) .service-card {
-      background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
-      color: $text-light-clr;
+        background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
+        color: $text-light-clr;
     }
   
     .col-md-4:nth-child(even) .service-card {
-      background: linear-gradient(135deg, $secondary-clr 60%, $primary-clr 100%);
-      color: $text-light-clr;
-    }
-  .service-card {
-    // background-color: $secondary-clr;
-    border-radius: 10px;
-    color: $text-light-clr;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, $secondary-clr 60%, $primary-clr 100%);
+        color: $text-light-clr;
     }
 
-    .service-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
+    .service-card {
+        border-radius: 10px;
+        color: $text-light-clr;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), 
+                   -8px -8px 15px rgba(255, 255, 255, 0.7); // Neumorphic shadow
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    p {
-      margin-top: 10px;
-      font-size: 0.9rem;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.3), 
+            -12px -12px 20px rgba(255, 255, 255, 0.8); // Change shadow on hover
+        }
+
+        .service-title {
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: $accent-clr; // Define your hover color variable
+                transform: translateX(5px); // Move slightly to the right
+            }
+        }
+
+       h3, p {
+            // margin-top: 10px;
+            margin: 0;
+        }
+p{
+    line-height: 1.6;
+}
+        i {
+            font-size: 3rem; // Increase icon size
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1); // Slightly enlarge icon on hover
+            }
+        }
     }
-  }
 }

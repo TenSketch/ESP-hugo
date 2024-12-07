@@ -40,7 +40,7 @@
 {{ if and (eq .Params.layout "clientele") (eq .Params.category "business") }}
 <!-- Business Section -->
 <div class="bis">
-  <section class="hero-clientele business text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele business text-center text-light p-5 ">
     <h1 class="display-1">ESPeople Business</h1>
     <h2 class="display-4 my-3">Learning Solutions</h2>
     <h3>Learning is a lifelong journey. <br> We are here to sail along with your organization and your workforce...</h3>
@@ -130,7 +130,7 @@
 {{ else }}
 {{ if eq .Params.category "nonprofit" }}
 <div class="np">
-  <section class="hero-clientele non-profit text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele non-profit text-center text-light p-5 ">
     <h1 class="display-1">ESPeople Non-Profit</h1>
     <h2 class="display-4 my-3">Learning Solutions</h2>
     <h3>Non Profit Organizations that contribute more to the society as those businesses that contribute to the nation's
@@ -220,7 +220,7 @@
 </div>
 {{ else if eq .Params.category "education" }}
 <div class="edu">
-  <section class="hero-clientele education text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele education text-center text-light p-5 ">
     <h1 class="display-1">ESPeople Education</h1>
     <h2 class="display-4 my-3">Learning Solutions</h2>
     <h3>A future of a country can be tracked on the present students aspirations & dream of that nation.</h3>
@@ -239,8 +239,8 @@
       <h2 class="text-primary mb-5">Our learning solutions for education setting are of 2 types:</h2>
       <div class="row justify-content-between">
         <div class="col-md-5 solution-box gradient-bg-card">
-          <hr>
-          <ol>
+          <!-- <hr> -->
+          <!-- <ol>
             <li>Handling adolescents </li>
             <li>Conflict management and resolution </li>
             <li>Complexities Gen alpha's go through - Understanding and Support to navigate </li>
@@ -311,7 +311,7 @@
 </div>
 {{ else if eq .Params.category "government" }}
 <div class="gov">
-  <section class="hero-clientele government text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele government text-center text-light p-5 ">
     <h1 class="display-1">ESPeople Government</h1>
     <h2 class="display-4 my-3">Learning Solutions</h2>
     <h3>Our government-focused training programs at ESPeople are designed to empower leaders with essential skills in
@@ -377,7 +377,7 @@
 </div>
 {{ else if eq .Params.category "focussed" }}
 <div class="foc">
-  <section class="hero-clientele focussed text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele focussed text-center text-light p-5 ">
     <h1 class="display-1">ESPeople Focussed Individuals</h1>
     <h2 class="display-4 my-3">Learning Solutions</h2>
     <h3>We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career
@@ -416,73 +416,97 @@
 </div>
 {{ else if eq .Params.category "other" }}
 <div class="other">
-  <section class="hero-clientele other text-center text-light p-5 min-vh-50">
+  <section class="hero-clientele other text-center text-light p-5">
     <h1 class="display-1">Other L&D Services</h1>
   </section>
-  <section class="services-section py-5">
+  <section class="services-section py-custom">
     <div class="container">
-      <h2 class="text-center mb-5 text-white">Other L&D Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Training Courseware Development</h4>
+      <!-- <h2 class="text-center mb-5 text-white">Other L&D Services</h2> -->
+      <div class="row g-5">
+    <div class="col-md-4" data-aos="fade-right">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Training Courseware Development
+            </h3>
+            <i class="bi bi-book"></i> 
             <p>We develop comprehensive course materials tailored to training needs</p>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Outbound Training Programs Logistics Support</h4>
+    </div>
+    <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Outbound Training Programs Logistics Support
+            </h3>
+            <i class="bi bi-truck"></i> 
             <p>Coordinate logistics support from end-to-end for your outbound training programs</p>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">External Periodic Programs</h4>
+    </div>
+    <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                External Periodic Programs
+            </h3>
+            <i class="bi bi-calendar-event"></i> 
             <p>We also conduct periodical external training programs. You can sponsor your team for that</p>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Supporting your in-house Training Programs</h4>
-            <p>We support & facilitate your in house training sessions whether it is small or in entirity</p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-right">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Supporting Your In-House Training Programs
+            </h3>
+            <i class="bi bi-building"></i> 
+            <p>We support & facilitate your in-house training sessions whether it is small or in entirety</p>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Faculty Co-facilitation</h4>
-            <p><em>Our resource persons support can be drawn for your in-house training for an impactful results</em>
-            </p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Faculty Co-Facilitation
+            </h3>
+            <i class="bi bi-people"></i>
+            <p><em>Our resource persons' support can be drawn for your in-house training for impactful results</em></p>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Training needs analysis & Effectiveness training audits</h4>
-            <p>We can be retained to assess & audit for overall training needs of your organization and come out with a
-              detailed road map for implementation</p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Training Needs Analysis & Effectiveness Audits
+            </h3>
+            <i class="bi bi-graph-up-arrow"></i> 
+            <p>We can be retained to assess & audit the overall training needs of your organization and provide a detailed roadmap for implementation</p>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Designing, developing effective "Training Processes" for your organization</h4>
-            <p>Our expertise can be engaged for your in-house training robust processes designing, developing & seeding
-              it
-              for your organisational results</p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-right">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Designing Effective "Training Processes"
+            </h3>
+            <i class="bi bi-diagram-2"></i> 
+            <p>Our expertise can be engaged for your in-house training robust processes designing, developing & seeding for your organizational results</p>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Capturing your Innovative training practices</h4>
-            <p>Effective recording, documenting for future reference w.r.t your innovative training practices</p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Capturing Your Innovative Training Practices
+            </h3>
+            <i class="bi bi-journal-text"></i>
+            <p>Effective recording and documenting for future reference w.r.t your innovative training practices</p>
         </div>
-        <div class="col-md-4">
-          <div class="service-card p-4">
-            <h4 class="service-title">Training facilitation in major Indian languages</h4>
-            <p>We have capabilities to deliver training in multiple Indian languages for diverse audiences. It will
-              facilitate full blossomed learnings to your teams</p>
-          </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+        <div class="service-card p-4">
+            <h3 class="service-title fst-italic">
+                Training Facilitation in Major Indian Languages
+            </h3>
+            <i class="bi bi-chat-left-text"></i>
+            <p>We have capabilities to deliver training in multiple Indian languages for diverse audiences. It will facilitate full blossomed learnings to your teams</p>
         </div>
-      </div>
+    </div>
+</div>
+
+      
     </div>
   </section>
 </div>

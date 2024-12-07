@@ -14,8 +14,8 @@ $image-bg: hsl(45, 100%, 51%);
 
   p {
     color: $secondary-clr;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    // font-size: 1.1rem;
+    // line-height: 1.8;
   }
 
   ul {
@@ -24,7 +24,7 @@ $image-bg: hsl(45, 100%, 51%);
 
     li {
       margin-bottom: 1rem;
-      font-size: 1rem;
+      // font-size: 1rem;
       position: relative;
 
       &:before {
@@ -49,7 +49,7 @@ $image-bg: hsl(45, 100%, 51%);
 
   .text-content {
     h3 {
-      font-size: 1.75rem;
+      // font-size: 1.75rem;
       font-weight: 700;
       color: $secondary-clr;
       margin-bottom: 1rem;
@@ -152,14 +152,14 @@ $text-muted: hsl(0, 0%, 60%);
     h4 {
       // margin-top: 2rem;
       color: $text-light;
-      font-size: 1.3rem;
+      // font-size: 1.3rem;
       margin-bottom: 1rem;
-      font-weight: bold;
+      // font-weight: bold;
     }
 
     p {
       color: $text-muted;
-      font-size: 0.95rem;
+      // font-size: 0.95rem;
     }
 
     .key-benefits {
@@ -170,7 +170,7 @@ $text-muted: hsl(0, 0%, 60%);
       li {
         margin-bottom: 0.5rem;
         color: $text-light;
-        font-size: 0.9rem;
+        // font-size: 0.9rem;
 
         strong {
           color: hsl(210, 100%, 70%);
@@ -186,3 +186,4 @@ $text-muted: hsl(0, 0%, 60%);
     }
   }
 }
+

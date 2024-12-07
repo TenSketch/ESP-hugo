@@ -6,11 +6,15 @@
   $hero-height: calc(100vh - #{$navbar-height});
   min-height: $hero-height;
 
-  h1 {
+  .title {
+    font-size: 3rem;
     @media(max-width:768px) {
       font-size: 1.5rem;
-      font-weight: 400;
+      // font-weight: 400;
     }
+  }
+  .subtitle{
+    font-size: 1.2rem;
   }
 
   h4 {
@@ -93,7 +97,7 @@
 
     p {
       color: $light-clr;
-      font-size: clamp(1rem, 4vw, 0.9rem);
+      // font-size: clamp(1rem, 4vw, 0.9rem);
       text-align: center;
       margin-top: 5px;
     }
@@ -113,7 +117,7 @@
     align-items: center;
 
     @media(max-width:768px) {
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
     }
   }
 
@@ -346,86 +350,85 @@
   }
 }
 
+
+// $primary-light: hsla(194, 86%, 86%, 1);
+
 .why-espeople {
-  // padding: 2rem;
-  font-family: 'Arial', sans-serif;
-  // color: #333;
-  background: #f9f9f9;
+  background: linear-gradient(to right, $secondary-clr, $primary-clr);
+animation: gradient-shift 5s infinite;
+color: $white;
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
-.why-espeople .content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  h2 {
+    // color: $primary-clr;
+    // font-size: 2.5rem;
+    // font-weight: bold;
+    margin-bottom: 2rem;
+  }
 
-.why-espeople .column {
-  // background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+  .section-heading {
+    // color: $secondary-clr;
+    // font-size: 1.8rem;
+    // font-weight: bold;
+    border-bottom: 2px solid $accent-clr;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
 
-.why-espeople .column img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
+  .custom-list {
+    list-style: none;
+    padding-left: 0;
 
-.why-espeople h3 {
-  margin-bottom: 1rem;
-  // color: #444;
-  font-size: 1.5rem;
-}
+    li {
+      margin-bottom: 1rem;
+      // font-size: 1rem;
+      line-height: 1.8;
 
-.why-espeople ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
+      span {
+        font-weight: bold;
+        color: $accent-clr;
+        font-size: 1.2rem;
+      }
+    }
+  }
 
-.why-espeople ul li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
+  .highlight-text {
+    // color: $primary-clr;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    font-style: italic;
+    // margin-top: 1rem;
+  }
 
-.why-espeople p {
-  margin-top: 1rem;
-  line-height: 1.6;
-}
+  .highlight-title {
+    font-size: 1.4rem;
+    // color: $secondary-clr;
+    margin-top: 1rem;
+  }
 
-.why-espeople em {
-  font-style: italic;
-  // color: #777;
-}
+  .quote {
+    font-size: 1.3rem;
+    // font-style: italic;
+    color: $accent-clr;
+    margin-top: 2rem;
+    font-family: $font-daniel;
+  }
 
-.why-espeople strong {
-  font-weight: bold;
-  // color: #555;
-}
-.styled-list {
-  li {
-    margin-bottom: 1rem; // Adds spacing between items
-    line-height: 1.6; // Improves readability
-
-    span {
-      color: $accent-clr; // Highlight color
-      font-weight: bold; // Emphasize the word
+  img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
     }
   }
 }
 
-/* Desktop Layout */
-@media (min-width: 768px) {
-  .why-espeople .content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
-  .why-espeople .column {
-    flex: 1;
-    margin: 0 1rem;
-  }
-}
+
+
+
