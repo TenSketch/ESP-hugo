@@ -16,7 +16,7 @@
     font-weight: 900; // Black weight (heaviest)
   }
   
-  @mixin heading-style($size, $weight, $spacing: 0) {
+  @mixin heading-style($size, $weight, $spacing: 0.1em) {
     font-family: "Playfair Display", serif;
     font-size: $size;
     font-weight: $weight;
@@ -27,7 +27,7 @@
   
   // Heading Styles
   h1, .h1 {
-    @include heading-style(2.5rem, bold, 0.5px); // Main Headline
+    @include heading-style(2.5rem, bold); // Main Headline
   }
   
   h2, .h2 {

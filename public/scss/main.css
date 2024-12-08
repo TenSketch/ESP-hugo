@@ -19,6 +19,10 @@
 .text-accent {
   color: #ffc105; }
 
+.tagline {
+  font-family: "Daniel", cursive;
+  font-size: 1.5rem; }
+
 .neumorphism {
   background: linear-gradient(145deg, #dcdce0, #fff);
   border-radius: 10px;
@@ -79,13 +83,15 @@ hr.section-divider {
   border-radius: 50%; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  letter-spacing: 0.1em;
+  line-height: 1.5; }
   @media (max-width: 425px) {
     html {
       font-size: 14px; } }
 body {
   overflow-x: hidden;
-  padding-top: 12vh;
+  padding-top: 10vh;
   font-family: "Lato", sans-serif; }
 
 p {
@@ -132,7 +138,7 @@ h1, .h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
@@ -140,7 +146,7 @@ h2, .h2 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
@@ -148,7 +154,7 @@ h3, .h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
@@ -156,7 +162,7 @@ h4, .h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
@@ -164,7 +170,7 @@ h5, .h5 {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
@@ -172,34 +178,32 @@ h6, .h6 {
   font-family: "Playfair Display", serif;
   font-size: 0.8rem;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
   font-optical-sizing: auto;
   line-height: 1.3; }
 
 .navbar {
-  height: 12vh;
+  height: 10vh;
   background-color: #bdecfa !important;
   box-shadow: 0px 3px 10px 0px #1a8cff; }
+  @media (min-width: 768px) {
+    .navbar {
+      height: calc(10vh + 2vh); } }
   .navbar .navbar-brand img {
     width: clamp(50px, 60px, 12vw); }
   .navbar .navbar-brand .brand-name .brand {
     font-weight: normal; }
-    @media (max-width: 768px) {
-      .navbar .navbar-brand .brand-name .brand {
-        font-size: 1.5rem; } }
-  .navbar .navbar-brand .brand-name .tagline {
-    font-weight: bold;
-    font-family: "Daniel", cursive; }
   .navbar .navbar-toggler {
     border: none; }
   .navbar .navbar-collapse {
-    background-color: #bdecfa !important; }
+    background-color: #bdecfa !important;
+    box-shadow: 0px 3px 10px 0px #1a8cff; }
     @media (max-width: 768px) {
       .navbar .navbar-collapse {
         position: absolute;
-        top: 12vh;
-        left: 0;
-        right: 0; } }
+        top: calc(10vh - 2vh);
+        right: 0;
+        height: 100vh; } }
   .navbar .nav-item {
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -219,7 +223,8 @@ h6, .h6 {
     @media (max-width: 991px) {
       .navbar .nav-item {
         text-align: right; } }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: transparent !important;
   color: #004080 !important; }
 
@@ -344,19 +349,17 @@ h6, .h6 {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); }
 
 .hero {
-  min-height: calc(100vh - 12vh); }
+  min-height: calc(100vh - 10vh); }
   .hero .title {
-    font-size: 3rem; }
-    @media (max-width: 768px) {
+    font-size: 2rem; }
+    @media (min-width: 768px) {
       .hero .title {
-        font-size: 1.5rem; } }
+        font-size: 3rem; } }
   .hero .subtitle {
     font-size: 1.2rem; }
-  .hero h4 {
-    font-family: "Daniel", cursive; }
   .hero .carousel-inner {
     /* Set a fixed height */
-    height: calc(calc(100vh - 12vh) /2.6); }
+    height: calc(calc(100vh - 10vh) /2.6); }
     @media (min-width: 768px) {
       .hero .carousel-inner {
         height: 400px;
@@ -368,7 +371,7 @@ h6, .h6 {
       /* Preserve aspect ratio and cover the area */ }
       @media (max-width: 768px) {
         .hero .carousel-inner .carousel-image.neumorphism {
-          height: calc(calc(100vh - 12vh) /2.6);
+          height: calc(calc(100vh - 10vh) /2.6);
           border-radius: 0; } }
   .hero .carousel-indicators {
     bottom: -20px;
