@@ -21,7 +21,7 @@ p{
     line-height: 1.6;
 }
 [data-aos] {
-    transform-origin: center; // Ensure animation originates within the visible viewport
+    // transform-origin: center; // Ensure animation originates within the visible viewport
     max-width: 100%; // Prevent overflowing elements
 }
 
@@ -52,7 +52,7 @@ a {
 
     &:hover {
 
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
