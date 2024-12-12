@@ -4,71 +4,124 @@ $hero-height: calc(100vh - #{$navbar-height});
 // hero
 .hero {
   min-height: $hero-height;
+  @media(min-width:991px){
+    padding-block: $navbar-height;
 
-  .title {
-    font-size: 2rem;
-
-    @media(min-width:768px) {
-      font-size: 2.5rem;
-    }
   }
-
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .tagline {
-    font-size: 1.2rem;
-  }
-
-  .carousel-inner {
-    /* Set a fixed height */
-    height: calc(#{$hero-height} /2.6);
-
-    @media(min-width:768px) {
-      height: 400px;
-      border-radius: 10px;
-
-    }
-
-    .carousel-image {
-      /* Make sure the image fills the height */
-      height: 400px;
-      object-fit: cover;
-
-      /* Preserve aspect ratio and cover the area */
-      @media(max-width:768px) {
-        height: calc(#{$hero-height} /2.6);
-        border-radius: 0;
+  .content{
+    padding-block: $navbar-height/2;
+    .title {
+      font-size: 1.5rem;
+  
+      @media(min-width:768px) {
+        font-size: 2rem;
+      }
+      @media(min-width:991px) {
+        font-size: 2.5rem;
       }
     }
-
+  
+    .subtitle {
+      font-size: 1rem;
+  
+    }
+  
+    .tagline {
+      line-height: 1.5;
+      // font-size: 1.1rem;
+      // text-align: center;
+      line-height: normal;
+      // color: $primary-clr;
+      // padding-inline: 1em;
+      @media(min-width:76px) {
+        font-size: 1.1rem;
+    }
+    }
   }
+  .carousel{
 
-  .carousel-indicators {
-    bottom: -20px;
-    /* Adjust position of the dots */
+    .carousel-inner {
+      /* Set a fixed height */
+      height: calc(#{$hero-height} /3);
+  
+      @media(min-width:768px) {
+        // height: 400px;
+      height: calc(#{$hero-height} - calc(#{$hero-height}/2));
+        border-radius: 10px;
+  
+      }
+  
+      .carousel-image {
+        /* Make sure the image fills the height */
+        // height: 400px;
+      height: calc(#{$hero-height} - calc(#{$hero-height}/2));
+  
+        object-fit: cover;
+  
+        /* Preserve aspect ratio and cover the area */
+        @media(max-width:768px) {
+          // height: calc(#{$hero-height} /2.6);
+          border-radius: 0;
+        }
+      }
+      .carousel-caption{
+        background-color: hsla($hue-primary, $saturation-primary, $lightness-primary, 0.7);
+      //  width: fit-content;
+      //  margin-inline: autp;
+        h5{
+          margin-bottom: 0;
+        }
+      }
+  
+    }
+  
+    .carousel-indicators {
+      bottom: -20px;
+      /* Adjust position of the dots */
+    }
   }
+&-desc{
 
+  .title{
+    color: $primary-clr;
+  }
+}
 }
 
+$secondary-clr--card: #0e2a3b;
+$accent-clr--icon:hsl(45, 80%, 55%);
 .clientele {
   color: $secondary-clr;
 
-  .sub-title {
-    font-weight: bold;
+  .container {
+    @media (max-width: 425px) {
+      padding: 0 1rem;
+
+    }
+  }
+  .title{
+    color: $primary-clr;
+  }
+  .subtitle{
+    color: $accent-clr--dark;
+  }
+  .desc {
+    // font-weight: bold;
+    line-height: 1.7;
   }
 
   .beneficiary-card {
-    background: $primary-clr;
+    display: block;
+    cursor: pointer;
+    background: $secondary-clr--card;
     background: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: $text-light-clr;
     padding: min(0.3rem, 1rem);
     text-align: center;
-    width: 160px;
-    height: 160px;
+    width:  180px;
+    height: 180px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -78,7 +131,9 @@ $hero-height: calc(100vh - #{$navbar-height});
 
     &:hover {
       transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      // box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+
     }
 
     @media(max-width:425px) {
@@ -89,8 +144,8 @@ $hero-height: calc(100vh - #{$navbar-height});
 
     // Icon styling
     i {
-      color: $accent-clr;
-      font-size: clamp(3rem, 4vw, 48px);
+      color: $accent-clr--icon;
+      font-size: clamp(2.5rem, 4vw, 3rem);
     }
 
     p {
@@ -98,16 +153,22 @@ $hero-height: calc(100vh - #{$navbar-height});
       // font-size: clamp(1rem, 4vw, 0.9rem);
       text-align: center;
       margin-top: 5px;
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
+      font-size: clamp(0.9rem, 4vw, 1rem);
       letter-spacing: normal;
-      @media(min-width:768px){
-        font-size: 1rem;
+
+      &:hover {
+        color: lighten($accent-clr, 20%);
+
+      }
+
+      @media(min-width:768px) {
+        font-size: 1.2rem;
       }
     }
   }
 
 }
-
 
 .clientele-brief {
   position: relative;

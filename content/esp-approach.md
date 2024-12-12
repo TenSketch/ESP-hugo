@@ -8,7 +8,7 @@ layout: "approach"
 draft: false
 ---
 
-# **ESP Approach**
+## **ESP Approach**
 
 At ESPeople, we offer a comprehensive range of training and development methods designed to unlock the potential of individuals and teams. Our tailored programs enable personal and professional growth, empowering organizations to achieve their strategic goals through skilled, motivated, and aligned employees. Here’s a closer look at our core approaches:
 

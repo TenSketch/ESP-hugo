@@ -1,0 +1,16 @@
+/* Coolors Exported Palette - https://coolors.co/003f7d-ff9800-ffffff */
+/* CSS HEX */
+:root {
+  --yale-blue: #003f7dff;
+  --orange-peel: #ff9800ff;
+  --white: #ffffffff;
+  /* CSS HSL */
+  --yale-blue: hsla(210, 100%, 25%, 1);
+  --orange-peel: hsla(36, 100%, 50%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient *//*# sourceMappingURL=palette.css.map */
