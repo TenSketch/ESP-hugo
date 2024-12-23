@@ -1,0 +1,20 @@
+
+
+.contact-section {
+    .contact-left-bg {
+      background: $primary-clr url(/images/contact-us-bg.jpg) no-repeat center/cover;
+    //   background-blend-mode: overlay;
+      border-radius: 25px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: hsl(201, 57%, 9%);
+      box-shadow: inset  20px 20px 60px #0a1b24,
+                  inset -20px -20px 60px #0a1b24;
+                  
+    }
+  
+    .contact-form {
+      height: 100%;
+  
+    }
+  }

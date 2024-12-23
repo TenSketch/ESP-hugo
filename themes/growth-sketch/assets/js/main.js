@@ -25,3 +25,23 @@ const videoIframe = document.getElementById('videoIframe');
 videoModal.addEventListener('hidden.bs.modal', function () {
   videoIframe.src = videoIframe.src; // Reset the iframe src to stop the video
 });
+
+// fadein animation on scroll to that section
+// document.addEventListener("DOMContentLoaded", () => {
+//   const sections = document.querySelectorAll("section");
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("fade-in");
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.1,
+//     }
+//   );
+//   sections.forEach((section) => {
+//     observer.observe(section);
+//   });
+// });

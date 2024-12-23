@@ -4,7 +4,9 @@
 .container{
     position: relative;
 }
-
+.px-custom{
+    padding-inline: 2rem;
+}
 .pt-8 {
     padding-top: map-get($sizes, 800);
 }
@@ -63,10 +65,22 @@
 .text-primary {
     color: $primary-clr;
 }
+.bg-primary{
+    background-color: $primary-clr!important;
+}
 // text-primary--light
 .text-primary--light{
     color: $primary-clr--light;
 }
+// primary--dark
+.text-primary--dark{
+    color:$primary-clr--dark;
+}
+// text-secondary   
+.text-secondary{
+    color: $secondary-clr!important;
+}
+
 
 .gradient-bg{
   background: linear-gradient(270deg, rgba(10, 27, 36, 1) 30%, rgba(0, 64, 128, 1) 100%);
@@ -99,3 +113,23 @@
 .py-custom{
     padding-block: 5rem;
 }
+
+// hr.accent {  
+//     border: none; // Remove default border  
+//     height: 4px; // Height of the line  
+//     background-color: $accent-clr; // Set color  
+//     margin: 0; // Remove default margin  
+//     width: 100%; // Full width  
+//     border: none;
+// }  
+
+
+hr.bg-accent {
+    height: 4px;
+    opacity: 1;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 50%;
+    border: none;
+  
+  }

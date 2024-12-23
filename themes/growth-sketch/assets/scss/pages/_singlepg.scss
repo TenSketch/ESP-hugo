@@ -1,0 +1,157 @@
+@import '../abstracts/variables';
+
+//  clientele
+blockquote {
+    background-color: $primary-clr--light; // Light gray background for the quote
+    border-left: 5px solid #007bff; // Blue left border
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    @media (max-width: 576px) {
+        font-size: 1.2rem; // Increase font size for mobile
+    }
+    .text{
+        font-weight: 500;
+    }
+    .blockquote-footer{
+        color: $primary-clr;
+    }
+    .subtext{
+        font-size: 1.1rem;
+    }
+}
+
+.card-horizontal {
+    // min-height: 40vh;
+    // border: none; // Remove default card border
+    padding: 0.5rem;
+    transition: transform 0.2s; // Smooth hover effect
+
+    &:hover {
+        transform: scale(1.05); // Scale up on hover
+    }
+
+    .desc {
+        .title {
+            
+            font-weight: bold; // Bold titles for emphasis
+        }
+    }
+}
+
+// other
+.cards-section {  
+    background: $primary-clr;  
+    // background: linear-gradient(45deg, $primary-clr 50%, $secondary-clr 100%);  
+  
+
+    .card-custom {  
+        // background: linear-gradient(90deg, $secondary-clr 0%, $primary-clr 100%);
+        border-radius: 10px;  
+        color: $primary-clr--light;  
+        background: $primary-clr;
+        box-shadow: inset 9px 9px 18px #002c58,
+                                inset -9px -9px 18px #0054a8;
+        display: flex;  
+        flex-direction: column;  
+        justify-content: space-between;  
+        transition: transform 0.3s ease;  
+        // @media(min-width:768px){
+        // min-height: 200px;  
+
+        // }
+        &:hover {  
+            transform: translateY(-10px);  
+        }  
+        .icon {  
+            font-size: 1.5rem; // Increase icon size  
+        }  
+        img{
+            width: 80px;
+            aspect-ratio: 1;
+        }
+        .subheading {  
+            font-weight: 500;
+            font-size: 1.2rem;
+        }  
+        .desc{
+            font-size: 0.9rem;
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        
+            li {
+                position: relative;
+                padding-left: 2rem; // Adjust for the tick icon space
+                margin-bottom: 1rem;
+        
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    // background-color: $primary-clr--light; // Light background for the icon
+                    background: url(/images/tick.svg) no-repeat center / contain; // Set the SVG as a mask
+                    mask: url('/images/tick.svg') no-repeat center / contain;
+                    -webkit-mask: url('/images/tick.svg') no-repeat center / contain;
+                    background-color: $primary-clr--light!important; // Color the tick
+                }
+            }
+        }
+        
+        
+    }  
+}
+
+// downloads
+.downloads {  
+    padding: 20px;  
+    background-color: #f8f9fa; // Adjust color as needed  
+
+    .download-container {  
+        display: flex;  
+        flex-wrap: wrap;  
+        justify-content: space-between; // Desktop alignment  
+
+        .download-item {  
+            flex: 1 1 calc(50% - 10px); // Two items per row on desktop  
+            margin: 5px;  
+
+            a {  
+                display: flex;  
+                align-items: center;  
+                padding: 10px;  
+                background-color: #ffffff; // Button background color  
+                border: 1px solid #ced4da; // Border color  
+                border-radius: 4px;  
+                text-decoration: none;  
+                color: #333; // Text color  
+                transition: background-color 0.2s;  
+
+                &:hover {  
+                    background-color: #e9ecef; // Hover effect  
+                }  
+
+                i {  
+                    margin-right: 10px; // Space between icon and text  
+                }  
+            }  
+        }  
+    }  
+
+    @media (max-width: 768px) {  
+        .download-item {  
+            flex: 1 1 100%; // Stack items on mobile  
+        }  
+    }  
+}

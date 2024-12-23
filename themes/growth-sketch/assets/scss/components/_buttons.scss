@@ -1,90 +1,148 @@
-@import '../abstracts/variables';
+@import '../abstracts/variables';  
 
-$btn-primary--clr: hsl($hue-primary, $saturation-primary, 55%);
-$btn-hover-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); // Soft shadow for hover
+$btn-primary--clr: hsl($hue-primary, $saturation-primary, 55%);  
+// btn-secondary
+$btn-secondary--clr: hsl($hue-secondary, $saturation-secondary, 39%);
+// $btn-accent--clr
+$btn-accent--clr: hsl($hue-accent, $saturation-accent, $lightness-accent);
 
-// Mixin to handle button states with best-practice styles
-@mixin btn-state($color) {
-  &:hover {
-    background-color: darken($color, 7%); // Slight darken effect for hover
-    box-shadow: $btn-hover-shadow; // Soft shadow on hover
-  }
+$btn-hover-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); // Softer shadow for hover  
+$btn-transition: all 0.3s ease; // Unified transition for smoothness  
+$outline-offset: 2px; // Offset for outline when focusing  
 
-  &:focus-visible {
-    outline: 2px solid lighten($color, 15%); // Lightened outline for accessibility
-  }
+// Mixin to handle button states with best-practice styles  
+@mixin btn-state($color) {  
+  &:hover {  
+    background-color: darken($color, 7%); // Slight darken effect for hover  
+    box-shadow: $btn-hover-shadow; // Shadow on hover  
+    transform: translateY(-1px); // Lift effect on hover  
+  }  
 
-  &:active {
-    background-color: darken($color, 10%); // Darken further on active
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); // Inset shadow for pressed effect
-  }
-}
+  &:focus-visible {  
+    outline: $outline-offset solid lighten($color, 15%); // Enhanced outline for accessibility  
+    outline-offset: 4px; // Space between element and outline  
+  }  
 
-// Base button styles
-.btn {
-  padding: 0.5em 1em;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease outline 0.3s ease; // Smooth transitions
-}
+  &:active {  
+    background-color: darken($color, 10%); // Darken further on active  
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); // Inset shadow for pressed effect  
+    transform: translateY(1px); // Depress effect on active  
+  }  
+}  
 
-// Primary button
-.btn-primary {
-  background-color: $btn-primary--clr;
-  border-color: $btn-primary--clr;
-  color: $white;
+// Base button styles  
+.btn {  
+  padding: 0.5em 1em; // Increased padding for size  
+  border-radius: 50px; // Rounded corners for a modern look  
+  font-size: 1rem; // Base font size  
+  transition: $btn-transition;  
+  text-align: center;
+}  
 
-  @include btn-state($btn-primary--clr); // Primary color state styles
-}
+// Primary button  
+.btn-primary {  
+  background: linear-gradient(135deg, lighten($btn-primary--clr, 10%), darken($btn-primary--clr, 10%));  
 
-// Primary Outline button
-.btn-primary--outline {
-  background-color: transparent;
-  color: $btn-primary--clr;
-  border: 2px solid $btn-primary--clr;
+  border-color: $btn-primary--clr;  
+  color: $white;  
 
-  &:hover {
-    background-color: $btn-primary--clr;
-    color: $white;
-  }
-  &_none{
-    border: none;
-    color: $primary-clr;
-    &:hover{
-      // background-color: $btn-primary--clr;
-      outline: 2px solid $btn-primary--clr
-    }
-  }
+  @include btn-state($btn-primary--clr); // Primary color state styles  
+}  
 
-  @include btn-state($btn-primary--clr);
-}
+// Primary Outline button  
+.btn-primary--outline {  
+  background-color: transparent;  
+  color: $btn-primary--clr;  
+  border: 2px solid $btn-primary--clr;  
 
-// Secondary button
-.btn-secondary {
-  background-color: $secondary-clr;
-  border-color: $secondary-clr;
-  color: $white;
+  &:hover {  
+  background: linear-gradient(135deg, lighten($btn-primary--clr, 10%), darken($btn-primary--clr, 10%));  
 
-  @include btn-state($secondary-clr);
-}
+    color: $white;  
+  }  
 
-// Secondary Outline button
-.btn-secondary--outline {
-  background-color: transparent;
-  color: $secondary-clr;
-  border: 2px solid $secondary-clr;
+  &_none {  
+    border: none;  
+    color: $primary-clr;  
 
-  &:hover {
-    background-color: $secondary-clr;
-    color: $white;
-  }
+    &:hover {  
+      outline: $outline-offset solid $btn-primary--clr;  
+      outline-offset: 2px; // Adjust outline offset for clarity  
+    }  
+  }  
 
-  @include btn-state($secondary-clr);
-}
+  @include btn-state($btn-primary--clr);  
+}  
 
-// Light button
-.btn-light {
-  background-color: $light-clr;
-  border-color: $light-clr;
+// Secondary button  
+.btn-secondary {  
+  background: linear-gradient(135deg, lighten($btn-secondary--clr, 10%), darken($btn-secondary--clr, 10%));  
+
+  border-color: $secondary-clr;  
+  color: $white;  
+
+  @include btn-state($btn-secondary--clr);  
+}  
+
+// Secondary Outline button  
+.btn-secondary--outline {  
+  background-color: transparent;  
+  color: $secondary-clr;  
+  border: 2px solid $secondary-clr;  
+
+  &:hover {  
+    background-color: $secondary-clr;  
+    color: $white;  
+  }  
+
+  @include btn-state($secondary-clr);  
+}  
+// btn-accent
+.btn-accent {
+  background: $btn-accent--clr;
   color: $dark-clr;
+  border-color: $btn-accent--clr;
+  @include btn-state($btn-accent--clr);
+  }
 
-  @include btn-state($light-clr);
+// Light button  
+.btn-light {  
+  background-color: $light-clr;  
+  border-color: $light-clr;  
+  color: $dark-clr;  
+
+  @include btn-state($light-clr);  
+}  
+
+// Additional fancy button styles  
+.fancy-button {  
+  /* Add fancy hover effects */  
+  position: relative;  
+  overflow: hidden;  
+
+  &:before {  
+    content: '';  
+    position: absolute;  
+    top: 0;  
+    left: 50%;  
+    width: 300%;  
+    height: 100%;  
+    background-color: rgba(255, 255, 255, 0.3);  
+    transform: translateX(-50%) scaleX(0);  
+    transition: transform 0.5s ease; // Delay transition for effect  
+    z-index: 0; // Behind the text  
+  }  
+
+  &:hover:before {  
+    transform: translateX(-50%) scaleX(1); // Scale effect on hover  
+  }  
+
+  &:hover {  
+    color: $primary-clr; // Change text color on hover  
+  }  
+
+  span {  
+    position: relative; // For z-index layering  
+    z-index: 1; // On top of the hover effect  
+  }  
 }

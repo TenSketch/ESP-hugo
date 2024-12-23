@@ -56,3 +56,18 @@ $sizes: (); // An empty map to store the size values
   $sizes: map-merge($sizes, ($size: $size-value));
 }
 $navbar-height: 10vh;
+
+
+// card Variables  
+
+// Box Shadow Variables  
+$box-shadow-light: rgba(0, 0, 0, 0.2);  // Light shadow for base cards  
+$box-shadow-dark: rgba(0, 0, 0, 0.3);   // Darker shadow for hover effect  
+$box-shadow-white: rgba(255, 255, 255, 0.7); // White shadow for neumorphism  
+
+// Gradient Background Variables for Cards  
+$card-odd-bg: linear-gradient(135deg, $primary-clr 60%, $secondary-clr 100%);  
+$card-even-bg: linear-gradient(135deg, $secondary-clr 60%, $primary-clr 100%);  
+
+// Additional Box Shadow Variables (if needed)  
+$box-shadow-hover: 12px 12px 20px $box-shadow-dark, -12px -12px 20px $box-shadow-white; // Box shadow on hover

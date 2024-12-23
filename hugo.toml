@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "ESP | Energize, Synergize, People - Unlock Your Business Potential"
 theme = 'growth-sketch'
 [params]
-favicon = "/favicon.ico"
+favicon = "/images/favicon1.ico"
 description = "ESP (Energize, Synergize, People) helps businesses unlock their potential through innovative training, leadership development, and team-building solutions. Focused on enhancing organizational growth and performance through proven methods."
 keywords = "business training, leadership development, team building, organizational growth, corporate training, ESP, Energize Synergize People, business consulting, performance improvement"
 author = "Balachandiran - TenSketch"
@@ -22,61 +22,65 @@ og_image = "/ogimage.jpg"
 
   [[menu.main]]
     name = "About"
-    url = "/about-us"
+    url = "/about"
     weight = 2
     
     [[menu.main]]
-      name = "About us"
-      url = "/about-us"
+      name = "About ESPeople"
+      url = "/about/about-espeople"
       parent = "About"
       weight = 1
 
     [[menu.main]]
       name = "ESP Approach"
-      url = "/esp-approach"
+      url = "/about/esp-approach"
       parent = "About"
       weight = 1
 
   [[menu.main]]
     name = "Clientele"
-    url = "/clientele-beneficiaries"
     weight = 3
 
     [[menu.main]]
       name = "ESP Business"
-      url = "/esp-business"
+      url = "/clientele-beneficiaries/esp-business"
       parent = "Clientele"
       weight = 1
 
     [[menu.main]]
       name = "ESP Non-Profit"
-      url = "/esp-non-profit"
+      url = "/clientele-beneficiaries/esp-non-profit"
       parent = "Clientele"
       weight = 3
 
     [[menu.main]]
       name = "ESP Education"
-      url = "/esp-education"
+      url = "/clientele-beneficiaries/esp-education"
       parent = "Clientele"
       weight = 4
 
     [[menu.main]]
       name = "ESP Government"
-      url = "/esp-government"
+      url = "/clientele-beneficiaries/esp-government"
       parent = "Clientele"
       weight = 2
 
     [[menu.main]]
       name = "ESP Focused individuals"
-      url = "/esp-focussed-individuals"
+      url = "/clientele-beneficiaries/esp-focussed-individuals"
       parent = "Clientele"
       weight = 5
 
 
   [[menu.main]]
     name = "Other L&D Services"
-    url = "/other-L-and-D-services"
+    url = "/other-Learning-and-Development-services"
     weight = 4
+  
+  [[menu.main]]
+    name = "Downloads"
+    url = "/downloads"
+    weight = 5    
 
   [[menu.main]]
     name = "Contact Us"
