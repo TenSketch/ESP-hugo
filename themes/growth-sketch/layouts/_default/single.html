@@ -104,9 +104,9 @@
 {{ end }}
 
 {{ if eq .Params.layout "contact" }}
-<section class="contact-section gradient-bg">
+<section class="contact-section">
   <div class="container p-5">
-    <div class="text-center text-light mb-5">
+    <div class="text-center  mb-5">
       <h1 class="display-5">Get in Touch to Unlock Your Business Potential</h1>
       <p class="fst-italic">
         {{ .Description }} 
@@ -115,49 +115,60 @@
     <div class="row">
       <div class="col-md-5 contact-left-bg px-0">
         <div class="contact-info p-4">
-          <h3 class="mb-4 text-light">{{ .Params.contact_info.heading }}</h3>
-          <h5>{{ .Params.contact_info.address_1.label }}:</h5>
-          <!-- <p><strong>{{ .Params.contact_info.address_1.label }}:</strong></p> -->
+          <h4 class="mb-0 ">{{ .Params.contact_info.heading }}</h4>
+          <hr>
+
+          <h5 class="mb-1">{{ .Params.contact_info.name }}</h5>
+          <p class="fst-italic">{{ .Params.contact_info.designation }}</p>
+          <hr>
+
+          <h6 class="mb-1">Mobile #:</h6>
+          <a class="" href="{{ .Params.contact_info.mobile_link }}">{{ .Params.contact_info.mobile }}</a>
+          <hr>
+
+          <h6 class="mb-1">Email:</h6>
+          <a class="" href="{{ .Params.contact_info.email_link }}">{{ .Params.contact_info.email }}</a>
+          <hr>
+
+          <h6 class="mb-1">Address:</h6>
+          <p class="fst-italic mb-0 small">{{ .Params.contact_info.address_1.label }}:</p>
           <address>{{ .Params.contact_info.address_1.address }}</address>
-          <!-- <h5>{{ .Params.contact_info.address_2.label }}:</h5> -->
-          <p><strong>{{ .Params.contact_info.address_2.label }}:</strong></p>
+          <hr>
+
+          <p class="fst-italic mb-0 small">{{ .Params.contact_info.address_2.label }}:</p>
           <address>{{ .Params.contact_info.address_2.address }}</address>
-          <h5>Mobile #:</h5>
-          <a class="text-white" href="{{ .Params.contact_info.mobile_link }}">{{ .Params.contact_info.mobile }}</a>
-          <h5 class="mt-2">Email:</h5>
-          <a class="text-white" href="{{ .Params.contact_info.email_link }}">{{ .Params.contact_info.email }}</a>
         </div>
       </div>
       <div class="col-md-7 mt-4 mt-md-0 px-0">
         <form id="contact" name="contact" method="POST" action="/thank-you" netlify class="contact-form ps-md-5">
-          <h3 class="mb-4 text-light">Contact Form</h3>
+          <h3 class="mb-4 ">Contact Form</h3>
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="name" class="form-label text-light">Your Name</label>
+              <label for="name" class="form-label ">Your Name</label>
               <input type="text" id="name" class="form-control" placeholder="Enter your name" name="Name" required>
             </div>
             <div class="col-md-6">
-              <label for="mobile" class="form-label text-light">Your Mobile Number</label>
+              <label for="mobile" class="form-label ">Your Mobile Number</label>
               <input type="tel" id="mobile" minlength="10" maxlength="10" class="form-control"
                 placeholder="Enter your mobile number" name="Mobile No." required>
             </div>
             <div class="col-md-6">
-              <label for="email" class="form-label text-light">Email Address</label>
+              <label for="email" class="form-label ">Email Address</label>
               <input type="email" id="email" class="form-control" placeholder="abc@email.com" name="Email id" required>
             </div>
             <div class="col-md-6">
-              <label for="subject" class="form-label text-light">Subject</label>
+              <label for="subject" class="form-label ">Subject</label>
               <input type="text" id="subject" class="form-control" placeholder="Enter the subject" name="Subject"
                 required>
             </div>
           </div>
           <div class="mt-3">
-            <label for="message" class="form-label text-light">Your Message</label>
+            <label for="message" class="form-label ">Your Message</label>
             <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" name="Message"
               required></textarea>
           </div>
           <div class="mt-4">
-            <button type="submit" class="btn btn-primary" aria-label="Send Message button">Send Message</button>
+            <button type="submit" class="btn btn-accent" aria-label="Send Message button">Send Message</button>
           </div>
         </form>
       </div>

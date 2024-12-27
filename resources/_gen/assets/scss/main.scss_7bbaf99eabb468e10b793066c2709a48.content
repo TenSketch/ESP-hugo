@@ -728,11 +728,14 @@ blockquote {
       flex: 1 1 100%; } }
 .contact-section .contact-left-bg {
   background: #004080 url(/images/contact-us-bg.jpg) no-repeat center/cover;
+  background-blend-mode: overlay;
   border-radius: 25px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   background-color: #0a1b24;
-  box-shadow: inset  20px 20px 60px #0a1b24, inset -20px -20px 60px #0a1b24; }
+  color: #fff; }
+  .contact-section .contact-left-bg a {
+    color: #ffc105; }
 
 .contact-section .contact-form {
   height: 100%; }
