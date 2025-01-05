@@ -9,8 +9,13 @@
     }
 
     .navbar-brand {
+        flex: 1 0 25%;
         img {
-            width: clamp(40px, 60px, 12vw);
+            // width: clamp(100px, 120px, 50vw);
+            width: 50%;
+            @media (max-width:425px) {
+                width: 70%;
+            }
         }
 
         .brand-name {

@@ -193,21 +193,26 @@ li {
   @media (min-width: 768px) {
     .navbar {
       height: calc(10vh + 2vh); } }
-  .navbar .navbar-brand img {
-    width: clamp(40px, 60px, 12vw); }
-  .navbar .navbar-brand .brand-name .brand {
-    font-size: 1.3rem;
-    font-weight: bold;
-    line-height: 1.4; }
-    @media (max-width: 768px) {
-      .navbar .navbar-brand .brand-name .brand {
-        font-size: 1.2rem; } }
-  .navbar .navbar-brand .brand-name .tagline {
-    font-size: 1.3rem;
-    font-weight: 700; }
-    @media (max-width: 768px) {
-      .navbar .navbar-brand .brand-name .tagline {
-        font-size: 1.2rem; } }
+  .navbar .navbar-brand {
+    flex: 1 0 25%; }
+    .navbar .navbar-brand img {
+      width: 50%; }
+      @media (max-width: 425px) {
+        .navbar .navbar-brand img {
+          width: 70%; } }
+    .navbar .navbar-brand .brand-name .brand {
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 1.4; }
+      @media (max-width: 768px) {
+        .navbar .navbar-brand .brand-name .brand {
+          font-size: 1.2rem; } }
+    .navbar .navbar-brand .brand-name .tagline {
+      font-size: 1.3rem;
+      font-weight: 700; }
+      @media (max-width: 768px) {
+        .navbar .navbar-brand .brand-name .tagline {
+          font-size: 1.2rem; } }
   .navbar .navbar-toggler {
     border: none; }
   .navbar .navbar-collapse {
