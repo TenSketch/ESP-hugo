@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clientele Beneficiaries on ESP | Energize, Synergize, People - Unlock Your Business Potential</title>
-    <link>http://localhost:45535/clientele-beneficiaries/</link>
+    <link>http://localhost:1313/clientele-beneficiaries/</link>
     <description>Recent content in Clientele Beneficiaries on ESP | Energize, Synergize, People - Unlock Your Business Potential</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Oct 2024 14:37:47 +0530</lastBuildDate>
-    <atom:link href="http://localhost:45535/clientele-beneficiaries/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/clientele-beneficiaries/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ESP Business</title>
-      <link>http://localhost:45535/clientele-beneficiaries/esp-business/</link>
+      <link>http://localhost:1313/clientele-beneficiaries/esp-business/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:47 +0530</pubDate>
-      <guid>http://localhost:45535/clientele-beneficiaries/esp-business/</guid>
+      <guid>http://localhost:1313/clientele-beneficiaries/esp-business/</guid>
       <description></description>
     </item>
     <item>
       <title>ESP Education</title>
-      <link>http://localhost:45535/clientele-beneficiaries/esp-education/</link>
+      <link>http://localhost:1313/clientele-beneficiaries/esp-education/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:47 +0530</pubDate>
-      <guid>http://localhost:45535/clientele-beneficiaries/esp-education/</guid>
+      <guid>http://localhost:1313/clientele-beneficiaries/esp-education/</guid>
       <description></description>
     </item>
     <item>
       <title>ESP Focussed Individuals</title>
-      <link>http://localhost:45535/clientele-beneficiaries/esp-focussed-individuals/</link>
+      <link>http://localhost:1313/clientele-beneficiaries/esp-focussed-individuals/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:47 +0530</pubDate>
-      <guid>http://localhost:45535/clientele-beneficiaries/esp-focussed-individuals/</guid>
+      <guid>http://localhost:1313/clientele-beneficiaries/esp-focussed-individuals/</guid>
       <description></description>
     </item>
     <item>
       <title>ESP Government</title>
-      <link>http://localhost:45535/clientele-beneficiaries/esp-government/</link>
+      <link>http://localhost:1313/clientele-beneficiaries/esp-government/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:47 +0530</pubDate>
-      <guid>http://localhost:45535/clientele-beneficiaries/esp-government/</guid>
+      <guid>http://localhost:1313/clientele-beneficiaries/esp-government/</guid>
       <description></description>
     </item>
     <item>
       <title>ESP Non-Profit</title>
-      <link>http://localhost:45535/clientele-beneficiaries/esp-non-profit/</link>
+      <link>http://localhost:1313/clientele-beneficiaries/esp-non-profit/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:47 +0530</pubDate>
-      <guid>http://localhost:45535/clientele-beneficiaries/esp-non-profit/</guid>
+      <guid>http://localhost:1313/clientele-beneficiaries/esp-non-profit/</guid>
       <description></description>
     </item>
   </channel>

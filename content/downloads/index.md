@@ -5,16 +5,16 @@ draft: false
 layout: 'downloads'
 pdfs:  
   - name: "ESP Business Brochure"  
-    path: "/pdfs/esp-business-brochure.pdf"  
+    path: "/PDF/ESP-Brochure-Business.pdf"  
     icon: "fa-file-pdf"  
   - name: "ESP Non-Profit Brochure"  
-    path: "/pdfs/esp-non-profit-brochure.pdf"  
+    path: "/PDF/ESP-Brochure-Non_Profit.pdf"  
     icon: "fa-file-pdf"  
   - name: "ESP Education Brochure"  
-    path: "/pdfs/esp-education-brochure.pdf"  
+    path: "/PDF/ESP-Brochure-Education.pdf"  
     icon: "fa-file-pdf"  
   - name: "ESP Government Brochure"  
-    path: "/pdfs/esp-government-brochure.pdf"  
+    path: "/PDF/ESP-brochure.pdf"  
     icon: "fa-file-pdf"  
 ---  
 ## Downloads  

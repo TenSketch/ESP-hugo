@@ -19,7 +19,7 @@ solutions:
     subtitle: "Tailor-made modules designed & developed for your unique & specific needs..."
     description: "There are times the learning interventions required for your business may be unique & distinct. In such cases our competent training needs assessment team will initiate a study to ascertain your apt needs. For that study we will interact with your appropriate stakeholders and come with a road map to design, develop & deliver learning solutions with start to end clarity."
 brochure:
-  view_link: "PDF/ESP-brochure.pdf"
-  download_link: "PDF/ESP-brochure.pdf"
+  view_link: "/PDF/ESP-Brochure-Business.pdf"
+  download_link: "/PDF/ESP-Brochure-Business.pdf"
 video_link: "#videoModal"
 ---

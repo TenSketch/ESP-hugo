@@ -33,7 +33,7 @@
     <h2 class="text-center mt-5 mb-0 text-primary--dark">{{ .Params.intro }}</h2>
     {{ range .Params.solutions }}
 
-    <div class="card-horizontal row align-items-center mt-4 neumorphism">
+    <div class="card-horizontal row align-items-center mt-5 neumorphism">
       <div class="img col-md-4">
         <img src="{{ .image | relURL }}" class="img-fluid" alt="{{ .alt }}" style="border-radius: 8px;">
       </div>
@@ -44,17 +44,17 @@
       </div>
     </div>
     {{ end }}
-    <hr class="bg-accent">
+    <!-- <hr class="bg-accent"> -->
 
-    <h5 class="text-center">Brochures</h5>
+    <!-- <h5 class="text-center">Brochures</h5>
     <div class="d-flex gap-4 justify-content-around my-4">
-      <a href="{{ .Params.brochure.view_link | relURL }}" class="btn btn-primary mx-2">View</a>
+      <a href="{{ .Params.brochure.view_link | relURL }}" class="btn btn-primary mx-2 d-none d-md-block">View</a>
       <a href="{{ .Params.brochure.download_link | relURL }}" class="btn btn-primary--outline mx-2">Download</a>
     </div>
     <hr class="bg-accent">
     <div class="text-center my-4">
       <a href="{{ .Params.video_link }}" class="btn btn-accent fancy-button"><span>Watch Video</span></a>
-    </div>
+    </div> -->
   </div>
 </section>
 {{ end }}
@@ -204,11 +204,13 @@
 {{ if eq .Params.layout "downloads" }}
 
 <section class="downloads min-vh-50 py-5">  
-  <h2>{{ .Title }}</h2>  
   <div class="container download-container">  
+    <div class="col-12">
+      <h2>{{ .Title }}</h2>
+    </div>  
       {{ range .Params.pdfs }}  
           <div class="download-item">  
-              <a href="{{ .path }}" class="download-link">  
+              <a href="{{ .path }}" class="download-link" download>  
                   <i class="fa {{ .icon }}"></i> {{ .name }}  
               </a>  
           </div>  
