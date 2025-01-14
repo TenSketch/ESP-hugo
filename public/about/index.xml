@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on ESP | Energize, Synergize, People - Unlock Your Business Potential</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://espeople.in/about/</link>
     <description>Recent content in Abouts on ESP | Energize, Synergize, People - Unlock Your Business Potential</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Oct 2024 14:37:44 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://espeople.in/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About ESPeople</title>
-      <link>http://localhost:1313/about/about-espeople/</link>
+      <link>https://espeople.in/about/about-espeople/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:44 +0530</pubDate>
-      <guid>http://localhost:1313/about/about-espeople/</guid>
+      <guid>https://espeople.in/about/about-espeople/</guid>
       <description></description>
     </item>
     <item>
       <title>ESP Approach</title>
-      <link>http://localhost:1313/about/esp-approach/</link>
+      <link>https://espeople.in/about/esp-approach/</link>
       <pubDate>Thu, 17 Oct 2024 14:37:44 +0530</pubDate>
-      <guid>http://localhost:1313/about/esp-approach/</guid>
+      <guid>https://espeople.in/about/esp-approach/</guid>
       <description></description>
     </item>
   </channel>

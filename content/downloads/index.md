@@ -14,7 +14,7 @@ pdfs:
     path: "/PDF/ESP-Brochure-Education.pdf"  
     icon: "fa-file-pdf"  
   - name: "ESP Government Brochure"  
-    path: "/PDF/ESP-brochure.pdf"  
+    path: "/PDF/ESP-Brochure-Government.pdf"  
     icon: "fa-file-pdf"  
 ---  
 ## Downloads  
