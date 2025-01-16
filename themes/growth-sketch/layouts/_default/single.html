@@ -5,15 +5,15 @@
   <div class="container">
     <h1 class="text-center mb-4">{{ .Title }}</h1>
     {{ range .Params.sections }}
-      <div class="row align-items-center mt-5">
-        <div class="col-md-6 text-content mt-5 mt-md-0">
-          <h2>{{ .title }}</h2>
-          <p>{{ .description }}</p>
-        </div>
-        <div class="col-md-6 image-content order-first order-md-2">
-          <img src="{{ .image }}" alt="{{ .title }}" class="image-wrapper">
-        </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6 text-content mt-5 mt-md-0">
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
       </div>
+      <div class="col-md-6 image-content order-first order-md-2">
+        <img src="{{ .image }}" alt="{{ .title }}" class="image-wrapper">
+      </div>
+    </div>
     {{ end }}
   </div>
 </section>
@@ -44,14 +44,48 @@
       </div>
     </div>
     {{ end }}
-    <!-- <hr class="bg-accent"> -->
-
-    <!-- <h5 class="text-center">Brochures</h5>
-    <div class="d-flex gap-4 justify-content-around my-4">
-      <a href="{{ .Params.brochure.view_link | relURL }}" class="btn btn-primary mx-2 d-none d-md-block">View</a>
-      <a href="{{ .Params.brochure.download_link | relURL }}" class="btn btn-primary--outline mx-2">Download</a>
-    </div>
     <hr class="bg-accent">
+
+    <h5 class="text-center">Brochures</h5>
+    <div class="d-flex gap-4 justify-content-around my-4">
+      <!-- Button to Trigger the Modal -->
+<button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#pdfModal">
+  <i class="fa-regular fa-eye me-1"></i> View
+</button>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Adjust modal size with 'modal-xl' for large content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pdfModalLabel">Brochure</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Embed PDF in an iframe -->
+        <iframe 
+          src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" 
+          width="100%" 
+          height="500px" 
+          style="border: none;">
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- <iframe src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" 
+      width="100%" height="500px" style="border: none;">
+      </iframe>
+      <a href="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" target="_blank" rel="noopenner"
+        class="btn btn-primary mx-2">View</a> -->
+      <a href="{{ .Params.brochure.download_link | relURL }}" download class="btn btn-primary--outline mx-2"><i class="fa-solid fa-download me-1"></i> Download</a>
+    </div>
+    <!-- <hr class="bg-accent">
     <div class="text-center my-4">
       <a href="{{ .Params.video_link }}" class="btn btn-accent fancy-button"><span>Watch Video</span></a>
     </div> -->
@@ -69,26 +103,34 @@
         <div class="card-custom p-4">
           <div class="d-flex align-items-center">
             {{ if .icon }}
-                <span class="icon me-3">{{ .icon }}</span>
+            <span class="icon me-3">{{ .icon }}</span>
             {{ else if .image }}
-                <img src="{{ .image }}" alt="{{ .subheading }}" class="me-3" />
+            <img src="{{ .image }}" alt="{{ .subheading }}" class="me-3" />
             {{ else if .fa_icon }}
-                <span class="fa {{ .fa_icon }} icon me-3"></span>
+            <span class="fa {{ .fa_icon }} icon me-3"></span>
             {{ end }}
-                <h5 class="subheading mb-1">{{ .subheading }}</h5>
+            <h5 class="subheading mb-1">{{ .subheading }}</h5>
           </div>
           <p class="desc mt-3">{{ .desc }}</p>
           {{ if .benefits }}
           <ul class="benefits mt-2">
-              {{ range .benefits }}
-              <li>{{ . }}</li>
-              {{ end }}
+            {{ range .benefits }}
+            <li>{{ . }}</li>
+            {{ end }}
           </ul>
           {{ end }}
         </div>
       </div>
       {{ end }}
     </div>
+    {{ if .Params.brochure }}
+    <h5 class="text-white text-center">Brochures</h5>
+    <div class="d-flex gap-3 justify-content-center my-4">
+      <a href="{{ .Params.brochure.view_link | relURL }}" target="_blank" rel="noopenner"
+        class="btn btn-primary d-none d-md-block">View</a>
+      <a href="{{ .Params.brochure.download_link | relURL }}" class="btn btn-primary--outline">Download</a>
+    </div>
+    {{ end }}
   </div>
 </section>
 <!-- <section class="cards-section mt-5 vh-100">
@@ -109,7 +151,7 @@
     <div class="text-center  mb-5">
       <h1 class="display-5">Get in Touch to Unlock Your Business Potential</h1>
       <p class="fst-italic">
-        {{ .Description }} 
+        {{ .Description }}
       </p>
     </div>
     <div class="row">
@@ -192,7 +234,8 @@
                 aria-label="tap to call mobile">9962006364</a>
             </p>
             <!-- Link to go back to the previous page -->
-            <a class="nav-link text-primary" href="javascript:history.back()" title="Back to previous page" aria-label="Back to previous page">Back to previous page</a>
+            <a class="nav-link text-primary" href="javascript:history.back()" title="Back to previous page"
+              aria-label="Back to previous page">Back to previous page</a>
           </div>
         </div>
       </div>
@@ -203,19 +246,19 @@
 
 {{ if eq .Params.layout "downloads" }}
 
-<section class="downloads min-vh-50 py-5">  
-  <div class="container download-container">  
+<section class="downloads min-vh-50 py-5">
+  <div class="container download-container">
     <div class="col-12">
       <h2>{{ .Title }}</h2>
-    </div>  
-      {{ range .Params.pdfs }}  
-          <div class="download-item">  
-              <a href="{{ .path }}" class="download-link" download>  
-                  <i class="fa {{ .icon }}"></i> {{ .name }}  
-              </a>  
-          </div>  
-      {{ end }}  
-  </div>  
+    </div>
+    {{ range .Params.pdfs }}
+    <div class="download-item">
+      <a href="{{ .path }}" class="download-link" download>
+        <i class="fa {{ .icon }}"></i> {{ .name }}
+      </a>
+    </div>
+    {{ end }}
+  </div>
 </section>
 {{ end }}
 
@@ -228,7 +271,7 @@
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
         <h3>{{.Params.title}}</h3>
-         <p>{{.Content}}</p>
+        <p>{{.Content}}</p>
       </div>
     </div>
   </div>

@@ -11,31 +11,33 @@
     .navbar-brand {
         flex: 1 0 25%;
         img {
+            width: clamp(120px, 15vw, 220px);
+
             // width: clamp(100px, 120px, 50vw);
-            width: 50%;
-            @media (max-width:425px) {
-                width: 70%;
-            }
+            // width: 50%;
+            // @media (max-width:425px) {
+            //     width: 70%;
+            // }
         }
 
-        .brand-name {
-            .brand {
-                font-size: 1.3rem;
-                font-weight: bold;
-                line-height: 1.4;
-                @media(max-width:768px) {
-                    font-size: 1.2rem;
-                }
-            }
+        // .brand-name {
+        //     .brand {
+        //         font-size: 1.3rem;
+        //         font-weight: bold;
+        //         line-height: 1.4;
+        //         @media(max-width:768px) {
+        //             font-size: 1.2rem;
+        //         }
+        //     }
 
-            .tagline{
-                font-size: 1.3rem;
-                font-weight: 700;
-                @media(max-width:768px) {
-                    font-size: 1.2rem;
-                }
-            }
-        }
+        //     .tagline{
+        //         font-size: 1.3rem;
+        //         font-weight: 700;
+        //         @media(max-width:768px) {
+        //             font-size: 1.2rem;
+        //         }
+        //     }
+        // }
     }
 
     .navbar-toggler {

@@ -196,23 +196,7 @@ li {
   .navbar .navbar-brand {
     flex: 1 0 25%; }
     .navbar .navbar-brand img {
-      width: 50%; }
-      @media (max-width: 425px) {
-        .navbar .navbar-brand img {
-          width: 70%; } }
-    .navbar .navbar-brand .brand-name .brand {
-      font-size: 1.3rem;
-      font-weight: bold;
-      line-height: 1.4; }
-      @media (max-width: 768px) {
-        .navbar .navbar-brand .brand-name .brand {
-          font-size: 1.2rem; } }
-    .navbar .navbar-brand .brand-name .tagline {
-      font-size: 1.3rem;
-      font-weight: 700; }
-      @media (max-width: 768px) {
-        .navbar .navbar-brand .brand-name .tagline {
-          font-size: 1.2rem; } }
+      width: clamp(120px, 15vw, 220px); }
   .navbar .navbar-toggler {
     border: none; }
   .navbar .navbar-collapse {

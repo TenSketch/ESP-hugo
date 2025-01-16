@@ -3,11 +3,17 @@ title: "ESP Focussed Individuals"
 date: 2024-10-17T14:37:47+05:30  
 layout: "other"  
 draft: false  
-intro: "We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group."  
+intro: "We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group."
+brochure:
+  view_link: "PDF/ESP-brochure.pdf"
+  download_link: "PDF/ESP-brochure.pdf"
 services:  
     - subheading: "Slow Learners"  
       fa_icon: "fa-clock"  
       desc: "Develop a slow-paced, individualized learning structure emphasizing clarity, repetition, and practical examples."  
+      # benefits:
+      #   - "Personalized Learning Experience"
+      #   - "Our programs are designed to cater to the unique needs and goals of each group"
 
     - subheading: "Consultants"  
       fa_icon: "fa-briefcase"  
