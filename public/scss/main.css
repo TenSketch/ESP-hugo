@@ -196,7 +196,7 @@ li {
   .navbar .navbar-brand {
     flex: 1 0 25%; }
     .navbar .navbar-brand img {
-      width: clamp(120px, 15vw, 220px); }
+      width: clamp(130px, 15vw, 220px); }
   .navbar .navbar-toggler {
     border: none; }
   .navbar .navbar-collapse {
