@@ -28,7 +28,7 @@ solutions:
 
       In such cases, our competent training needs assessment team will initiate a study to ascertain your apt needs. During this process, we will interact with your appropriate stakeholders and create a roadmap to design, develop, and deliver learning solutions with clarity from start to finish.
 brochure:
-  view_link: "PDF/ESP-brochure.pdf"
-  download_link: "PDF/ESP-brochure.pdf"
+  FILE_ID: "1RF-GQotEEtPko2WlCejKsVsNxH64_2kN"
+  download_link: "/PDF/ESP-Brochure-Non_Profit.pdf"
 video_link: "#videoModal"
 ---

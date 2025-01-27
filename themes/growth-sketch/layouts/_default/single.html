@@ -47,48 +47,38 @@
     <hr class="bg-accent">
 
     <h5 class="text-center">Brochures</h5>
-    <div class="d-flex gap-4 justify-content-around my-4">
+    <div class="d-flex gap-4 justify-content-center my-4">
       <!-- Button to Trigger the Modal -->
-<button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#pdfModal">
-  <i class="fa-regular fa-eye me-1"></i> View
-</button>
+      <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#pdfModal">
+        <i class="fa-regular fa-eye me-1"></i> View
+      </button>
 
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- Adjust modal size with 'modal-xl' for large content -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="pdfModalLabel">Brochure</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Bootstrap Modal -->
+      <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <!-- Adjust modal size with 'modal-xl' for large content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pdfModalLabel">Brochure</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Embed PDF in an iframe -->
+              <iframe src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" width="100%"
+                height="500px" style="border: none;">
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <!-- Embed PDF in an iframe -->
-        <iframe 
-          src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" 
-          width="100%" 
-          height="500px" 
-          style="border: none;">
-        </iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
+
+
+      <a href="{{ .Params.brochure.download_link | relURL }}" download class="btn btn-primary--outline mx-2"><i
+          class="fa-solid fa-download me-1"></i> Download</a>
     </div>
-  </div>
-</div>
-
-
-      <!-- <iframe src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" 
-      width="100%" height="500px" style="border: none;">
-      </iframe>
-      <a href="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" target="_blank" rel="noopenner"
-        class="btn btn-primary mx-2">View</a> -->
-      <a href="{{ .Params.brochure.download_link | relURL }}" download class="btn btn-primary--outline mx-2"><i class="fa-solid fa-download me-1"></i> Download</a>
-    </div>
-    <!-- <hr class="bg-accent">
-    <div class="text-center my-4">
-      <a href="{{ .Params.video_link }}" class="btn btn-accent fancy-button"><span>Watch Video</span></a>
-    </div> -->
   </div>
 </section>
 {{ end }}
@@ -124,25 +114,40 @@
       {{ end }}
     </div>
     {{ if .Params.brochure }}
-    <h5 class="text-white text-center">Brochures</h5>
-    <div class="d-flex gap-3 justify-content-center my-4">
-      <a href="{{ .Params.brochure.view_link | relURL }}" target="_blank" rel="noopenner"
-        class="btn btn-primary d-none d-md-block">View</a>
-      <a href="{{ .Params.brochure.download_link | relURL }}" class="btn btn-primary--outline">Download</a>
+    <div class="d-flex gap-4 justify-content-center my-4">
+      <!-- Button to Trigger the Modal -->
+      <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#pdfModal">
+        <i class="fa-regular fa-eye me-1"></i> View
+      </button>
+
+      <!-- Bootstrap Modal -->
+      <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <!-- Adjust modal size with 'modal-xl' for large content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pdfModalLabel">Brochure</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Embed PDF in an iframe -->
+              <iframe src="https://drive.google.com/file/d/{{ .Params.brochure.FILE_ID }}/preview" width="100%"
+                height="500px" style="border: none;">
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="{{ .Params.brochure.download_link | relURL }}" download class="btn btn-primary--outline mx-2"><i
+          class="fa-solid fa-download me-1"></i> Download</a>
     </div>
     {{ end }}
   </div>
 </section>
-<!-- <section class="cards-section mt-5 vh-100">
-  <div class="container h-100">
-    <div class="row align-items-center justify-items-center h-100">
-      <div class="col-md-4 mx-auto">
-        <div class="card-custom" style="height: 400px; aspect-ratio: 1; margin-inline: auto;">
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 {{ end }}
 
 {{ if eq .Params.layout "contact" }}

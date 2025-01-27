@@ -35,7 +35,7 @@ solutions:
 
       ESPeople's Government learning solutions team works hand-in-hand with the government to train the entire machinery for reaching the people beneficiaries.
 brochure:
-  view_link: "PDF/ESP-brochure.pdf"
-  download_link: "PDF/ESP-brochure.pdf"
+  FILE_ID: "14x4UOMXkfVVLedhocDULuK9eEIy8FQ5w"
+  download_link: "/PDF/ESP-Brochure-Government.pdf"
 video_link: "#videoModal"
 ---

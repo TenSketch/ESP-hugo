@@ -18,7 +18,7 @@ solutions:
     subtitle: "Besides (RTT) readily available learning modules, an institution in the education setting may face some unique issues which may require tailor-made modules designed & developed for their unique & specific needs."
     description: "CTDD - In certain situations, educational institutions require training solutions for their unique issues faced in the process of growth & development which are student-centric, academic-related practices, or even Governmental specific directions. Thus, we study your unique needs, design, develop, implement & fully deliver customized learning solutions to your educational settings. In such cases, our competent training needs assessment team will initiate a study to ascertain your apt needs. For that study, we will interact with your appropriate stakeholders and come with a roadmap to design, develop & deliver learning solutions with start-to-end clarity."
 brochure:
-  view_link: "PDF/ESP-brochure.pdf"
-  download_link: "PDF/ESP-brochure.pdf"
+  FILE_ID: "1-UI85USrkcBNZO9RGVQ1dVzm7ODi5TMy"
+  download_link: "/PDF/ESP-Brochure-Education.pdf"
 video_link: "#videoModal"
 ---

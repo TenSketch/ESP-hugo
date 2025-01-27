@@ -5,8 +5,8 @@ layout: "other"
 draft: false  
 intro: "We offer tailored programs for specific groups, including slow learners, consultants, homemakers, career transitioners, and more. Our training is designed to meet unique needs and provide targeted learning solutions for each group."
 brochure:
-  view_link: "PDF/ESP-brochure.pdf"
-  download_link: "PDF/ESP-brochure.pdf"
+  FILE_ID: "1IpDG1OIF1hMrxzd4b7gxuNoa0tVAul-G"
+  download_link: "/PDF/ESP-Brochure-Focussed_Individuals.pdf"
 services:  
     - subheading: "Slow Learners"  
       fa_icon: "fa-clock"  
