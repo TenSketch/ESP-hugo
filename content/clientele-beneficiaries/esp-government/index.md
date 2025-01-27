@@ -7,7 +7,7 @@ intro_blockquote:
   text: "Our government-focused training programs at ESPeople are designed to empower leaders with essential skills in decision-making, crisis management, servant leadership, innovation, and more, enabling them to lead with agility, responsibility, and resilience."
 solutions:
   - type: "Customized Training Solutions"
-    image: "/images/government-training.jpg"
+    image: "/images/CTDD-2.jpeg"
     alt: "Government Training"
     subtitle: "Empowering leaders for effective governance."
     description: |
@@ -27,7 +27,7 @@ solutions:
       12. Team management  
       13. Handling adverse scenarios
   - type: "Governance and Implementation"
-    image: "/images/governance-implementation.jpg"
+    image: "/images/CTDD-1.jpeg"
     alt: "Governance Implementation"
     subtitle: "Ensuring policy and program success through aligned training."
     description: |
