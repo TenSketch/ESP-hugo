@@ -285,8 +285,7 @@ li {
   color: #fff; }
   .btn-primary:hover {
     background-color: #007af5;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-primary:focus-visible {
     outline: 2px solid #66b3ff;
     outline-offset: 4px; }
@@ -310,8 +309,7 @@ li {
       outline-offset: 2px; }
   .btn-primary--outline:hover {
     background-color: #007af5;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-primary--outline:focus-visible {
     outline: 2px solid #66b3ff;
     outline-offset: 4px; }
@@ -326,8 +324,7 @@ li {
   color: #fff; }
   .btn-secondary:hover {
     background-color: #236180;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-secondary:focus-visible {
     outline: 2px solid #47a0cd;
     outline-offset: 4px; }
@@ -345,8 +342,7 @@ li {
     color: #fff; }
   .btn-secondary--outline:hover {
     background-color: #020608;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-secondary--outline:focus-visible {
     outline: 2px solid #1a4960;
     outline-offset: 4px; }
@@ -361,8 +357,7 @@ li {
   border-color: #ffc105; }
   .btn-accent:hover {
     background-color: #e0a800;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-accent:focus-visible {
     outline: 2px solid #ffd452;
     outline-offset: 4px; }
@@ -377,8 +372,7 @@ li {
   color: #2b2b2b; }
   .btn-light:hover {
     background-color: #e0ecf0;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px); }
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); }
   .btn-light:focus-visible {
     outline: 2px solid white;
     outline-offset: 4px; }
@@ -409,6 +403,20 @@ li {
   .fancy-button span {
     position: relative;
     z-index: 1; }
+
+.know-more-btn {
+  position: relative;
+  padding-right: 30px; }
+
+.know-more-btn i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out; }
+
+.know-more-btn:hover i {
+  transform: translateX(5px) translateY(-50%); }
 
 .hero {
   min-height: calc(100vh - 10vh); }

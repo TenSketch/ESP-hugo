@@ -15,7 +15,7 @@ $outline-offset: 2px; // Offset for outline when focusing
   &:hover {  
     background-color: darken($color, 7%); // Slight darken effect for hover  
     box-shadow: $btn-hover-shadow; // Shadow on hover  
-    transform: translateY(-1px); // Lift effect on hover  
+    // transform: translateY(-1px); // Lift effect on hover  
   }  
 
   &:focus-visible {  
@@ -145,4 +145,21 @@ $outline-offset: 2px; // Offset for outline when focusing
     position: relative; // For z-index layering  
     z-index: 1; // On top of the hover effect  
   }  
+}
+
+.know-more-btn {
+  position: relative;
+  padding-right: 30px;
+}
+
+.know-more-btn i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.know-more-btn:hover i {
+  transform: translateX(5px) translateY(-50%);
 }

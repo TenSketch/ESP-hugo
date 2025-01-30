@@ -501,3 +501,44 @@ That’s why we at ESPeople have developed solutions tailored to meet the needs 
   </div>
 </div>
 {{ end }}
+
+
+<!-- brochure home -->
+<section class="row align-items-center mt-4 justify-content-center justify-content-md-start gap-3 btn-row">
+  <div class="col-auto">
+    <a href="{{ .links.know_more }}" class="btn btn-primary">Know more</a>
+  </div>
+  <!-- Button to Trigger the Modal -->
+  <div class="col-auto d-none">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#{{ .id }}Modal">
+      <i class="fa-regular fa-eye me-1"></i> View brochure
+    </button>
+  </div>
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="{{ .id }}Modal" tabindex="-1" aria-labelledby="{{ .id }}ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="{{ .id }}ModalLabel">{{ .title }} Brochure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://drive.google.com/file/d/{{ .links.brochure.FILE_ID }}/preview" 
+            title="Brochure {{ .title }}"
+            width="100%" height="500px" style="border: none;">
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-auto">
+    <a href="{{ .links.brochure.download_link | relURL }}" download class="btn btn-primary--outline">
+      <i class="fa-solid fa-download me-1"></i> Download brochure
+    </a>
+  </div>
+</section>
