@@ -12,7 +12,7 @@ learning_solutions:
     description:
       - "We deliver transformative, contemporary People Developmental Learning for desired results of your business."
       - "It will enhance executive and managerial productivity with leadership optimization for your organization."
-      - "Thus ESPeople facilitates for desired organizational ranking within your industry through your people."
+      - "Thus ESPeople facilitates transformative and desired organizational ranking within your industry through your people."
     links:
       know_more: "/clientele-beneficiaries/esp-business"
       brochure:
@@ -49,8 +49,8 @@ learning_solutions:
     icon: "fa-landmark"
     image: "/images/government-org.png"
     description:
-      - "We align & train Government teams to work towards efficient, transparent good governance."
-      - "Besides, we can join hands with the Governance team to create awareness and align with stakeholders."
+      - "We align & train Government teams to work towards efficient, transparent & good governance."
+      - "Besides, we can join hands with the Governance team to create awareness and alignment with stakeholders."
       - "ESPeople efforts are invested for Nations' priority growth & development Roadmap."
     links:
       know_more: "/clientele-beneficiaries/esp-government"

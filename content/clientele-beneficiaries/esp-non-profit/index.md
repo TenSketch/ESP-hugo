@@ -12,12 +12,12 @@ solutions:
   - type: "RTT - Ready To Train"
     image: "/images/RTT-1.jpg"
     alt: "RTT Image"
-    subtitle: "Timely to deliver at ease."
+    subtitle: "Delivering timely at ease."
     description: |
       Readily available training modules for non-profit settings.
 
       These RTT learning solutions are readily available, time-tested, and evolved based on the experiences of practicing experts in the non-profit field. Professionals from diverse fields such as psychology, sociology, and social work have sculpted these contemporary learning solutions for non-profit settings.
-  - type: "CTDD - Customized Training Development & Delivery"
+  - type: "CTDD - Customized Training Design & Development"
     image: "/images/CTDD-4a.png"
     alt: "CTDD Image"
     subtitle: "Tailor-made modules designed and developed for your unique and specific needs."

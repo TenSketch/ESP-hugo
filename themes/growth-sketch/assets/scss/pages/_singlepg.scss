@@ -91,21 +91,24 @@ blockquote {
                 margin-bottom: 1rem;
         
                 &::before {
-                    content: "";
-                    display: inline-block;
+                    content: "\f00c"; // Unicode for FontAwesome check icon
+                    font-family: "Font Awesome 6 Free"; // Ensure correct FontAwesome version
+                    font-weight: 900; // For solid icon
+                    // display: inline-block;
                     position: absolute;
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
-                    width: 24px;
-                    height: 24px;
-                    border-radius: 50%;
-                    // background-color: $primary-clr--light; // Light background for the icon
-                    background: url(/images/tick.svg) no-repeat center / contain; // Set the SVG as a mask
-                    mask: url('/images/tick.svg') no-repeat center / contain;
-                    -webkit-mask: url('/images/tick.svg') no-repeat center / contain;
-                    background-color: $primary-clr--light!important; // Color the tick
+                    // width: 24px;
+                    // height: 24px;
+                    // border-radius: 50%;
+                    // background-color: $primary-clr--light !important; // Light background circle
+                    // color: white; // White tick icon
+                    // text-align: center;
+                    // line-height: 24px; // Center the icon inside the circle
+                    // font-size: 16px;
                 }
+                
             }
         }
         

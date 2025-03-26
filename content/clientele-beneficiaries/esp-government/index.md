@@ -4,7 +4,7 @@ date: 2024-10-17T14:37:47+05:30
 layout: "clientele"
 draft: false
 intro_blockquote:
-  text: "Our government-focused training programs at ESPeople are designed to empower leaders with essential skills in decision-making, crisis management, servant leadership, innovation, and more, enabling them to lead with agility, responsibility, and resilience."
+  text: "Our Government-focused training programs at ESPeople are designed to empower leaders with essential skills in decision-making, crisis management, servant leadership, innovation, and more, enabling them to lead with agility, responsibility, and resilience."
 solutions:
   - type: "Customized Training Solutions"
     image: "/images/CTDD-2.jpeg"

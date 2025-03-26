@@ -682,19 +682,13 @@ blockquote {
         padding-left: 2rem;
         margin-bottom: 1rem; }
         .cards-section .card-custom .benefits li::before {
-          content: "";
-          display: inline-block;
+          content: "\f00c";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
           position: absolute;
           left: 0;
           top: 50%;
-          transform: translateY(-50%);
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: url(/images/tick.svg) no-repeat center/contain;
-          mask: url("/images/tick.svg") no-repeat center/contain;
-          -webkit-mask: url("/images/tick.svg") no-repeat center/contain;
-          background-color: #bdecfa !important; }
+          transform: translateY(-50%); }
 
 .downloads {
   padding: 20px;
