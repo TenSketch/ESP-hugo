@@ -624,26 +624,24 @@ li {
       @media (min-width: 768px) {
         .about-section .image-content .image-wrapper {
           transform: rotate(-10deg); } }
-blockquote {
+.blockquote {
   background-color: #bdecfa;
   border-left: 5px solid #007bff;
   padding: 1.5rem;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  font-size: 1.1rem !important; }
   @media (max-width: 576px) {
-    blockquote {
+    .blockquote {
       font-size: 1.2rem; } }
-  blockquote .text {
+  .blockquote .text {
     font-weight: 500; }
-  blockquote .blockquote-footer {
+  .blockquote .blockquote-footer {
     color: #004080; }
-  blockquote .subtext {
+  .blockquote .subtext {
     font-size: 1.1rem; }
 
 .card-horizontal {
-  padding: 0.5rem;
-  transition: transform 0.2s; }
-  .card-horizontal:hover {
-    transform: scale(1.05); }
+  padding: 0.5rem; }
   .card-horizontal .desc .title {
     font-weight: bold; }
 

@@ -10,7 +10,7 @@ learning_solutions:
     icon: "fa-business-time"
     image: "/images/manufacturing-business.png"
     description:
-      - "We deliver transformative, contemporary People Developmental Learning for desired results of your business."
+      - "We deliver transformative and contemporary People Developmental Learning for desired results of your business."
       - "It will enhance executive and managerial productivity with leadership optimization for your organization."
       - "Thus ESPeople facilitates transformative and desired organizational ranking within your industry through your people."
     links:
@@ -49,7 +49,7 @@ learning_solutions:
     icon: "fa-landmark"
     image: "/images/government-org.png"
     description:
-      - "We align & train Government teams to work towards efficient, transparent & good governance."
+      - "We align & train government teams to work towards efficient, transparent & good governance."
       - "Besides, we can join hands with the Governance team to create awareness and alignment with stakeholders."
       - "ESPeople efforts are invested for Nations' priority growth & development Roadmap."
     links:
